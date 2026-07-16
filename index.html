@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atela Homes | Real Estate & Relocation</title>
+    <meta
+      name="description"
+      content="Atela Homes is based in Madrid and supports international buyers with property purchase, sale and relocation in Spain through a boutique service led by Miren Fernández Atela."
+    />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.25/dist/lenis.css" />
+    <link rel="stylesheet" href="./styles.css?v=37" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <a class="brand" href="#home" aria-label="Atela Homes home">
+        <span class="brand-kicker">Atela</span>
+        <span class="brand-name">Homes</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#method" data-i18n="navMethod">Método</a>
+        <a href="#areas" data-i18n="navAreas">Zonas</a>
+        <a href="#services" data-i18n="navServices">Servicios</a>
+        <a href="#homes" data-i18n="navHomes">Rutas</a>
+        <a href="#contact" data-i18n="navContact">Contacto</a>
+        <div class="language-switch" aria-label="Language selector">
+          <button type="button" data-lang="es">ES</button>
+          <button class="active" type="button" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero editorial-section" aria-label="Atela Homes">
+        <div class="hero-layout">
+          <p class="hero-index">01</p>
+          <div class="hero-title">
+            <span>Atela</span>
+            <strong>Homes</strong>
+          </div>
+          <p class="hero-line" data-i18n="heroLine">
+            Asesoría inmobiliaria y relocation para compradores internacionales en España.
+          </p>
+        </div>
+        <div class="hero-band">
+          <p data-i18n="heroBand">Boutique real estate · Based in Madrid · Purchase · Sale · Relocation</p>
+        </div>
+      </section>
+
+      <section class="intro editorial-section" id="method">
+        <div class="section-label">
+          <span data-i18n="methodLabel">Método</span>
+        </div>
+        <div class="intro-copy">
+          <h1 data-i18n="methodTitle">Una búsqueda inmobiliaria guiada con criterio local y mirada internacional.</h1>
+          <p data-i18n="methodCopy">
+            Atela Homes trabaja como una única interlocutora para filtrar oportunidades, interpretar zonas, coordinar
+            visitas, acompañar la negociación y ordenar los pasos de relocation antes y después de la firma.
+          </p>
+        </div>
+      </section>
+
+      <section class="figure-gallery editorial-section" aria-label="Atela Homes method figures">
+        <article class="figure-card large">
+          <div class="image-frame">
+            <img src="./assets/hero.jpg" alt="Mediterranean property with terrace and pool" />
+          </div>
+          <p><span>FIG 1.</span> <span data-i18n="figOne">Viviendas con luz, exterior y vida mediterránea.</span></p>
+        </article>
+        <article class="figure-card">
+          <div class="image-frame">
+            <img src="./assets/property-apartment.jpg" alt="Elegant apartment living room" />
+          </div>
+          <p><span>FIG 2.</span> <span data-i18n="figTwo">Apartamentos urbanos cerca de servicios y colegios.</span></p>
+        </article>
+        <article class="figure-card">
+          <div class="image-frame">
+            <img src="./assets/property-family.jpg" alt="Family home terrace and pool" />
+          </div>
+          <p><span>FIG 3.</span> <span data-i18n="figThree">Casas para instalarse con calma.</span></p>
+        </article>
+      </section>
+
+      <section class="areas editorial-section" id="areas">
+        <div class="section-label">
+          <span data-i18n="areasLabel">Zonas</span>
+        </div>
+        <div class="areas-heading">
+          <h2 data-i18n="areasTitle">Cada decisión empieza por entender dónde encaja tu vida.</h2>
+        </div>
+        <div class="map-panel" aria-label="Relocation area map">
+          <svg viewBox="0 0 960 520" role="img" aria-labelledby="map-title">
+            <title id="map-title">Atela Homes area map</title>
+            <path class="map-coast" d="M83 402 C195 330 247 375 336 287 C423 201 535 239 620 142 C700 51 819 91 884 44" />
+            <path class="map-road" d="M88 116 H847 M166 62 V456 M313 90 V476 M493 64 V432 M676 106 V492 M801 80 V428" />
+            <path class="map-road" d="M106 249 H882 M113 363 H852" />
+            <rect x="213" y="154" width="130" height="76" />
+            <rect x="386" y="284" width="152" height="96" />
+            <rect x="660" y="184" width="126" height="112" />
+            <circle class="pin" cx="252" cy="337" r="28" />
+            <circle class="pin" cx="483" cy="208" r="28" />
+            <circle class="pin" cx="712" cy="368" r="28" />
+            <text x="252" y="345">1</text>
+            <text x="483" y="216">2</text>
+            <text x="712" y="376">3</text>
+          </svg>
+          <div class="area-list">
+            <article>
+              <span>1</span>
+              <h3 data-i18n="areaOneTitle">Costa y segunda residencia</h3>
+              <p data-i18n="areaOneCopy">Propiedades con exterior, privacidad y acceso sencillo a servicios.</p>
+            </article>
+            <article>
+              <span>2</span>
+              <h3 data-i18n="areaTwoTitle">Centro urbano</h3>
+              <p data-i18n="areaTwoCopy">Barrios conectados para clientes que priorizan movilidad y vida diaria.</p>
+            </article>
+            <article>
+              <span>3</span>
+              <h3 data-i18n="areaThreeTitle">Entorno familiar</h3>
+              <p data-i18n="areaThreeCopy">Zonas tranquilas con colegios, comunidad y espacio para instalarse.</p>
+            </article>
+          </div>
+        </div>
+        <div class="zone-photo-grid" aria-label="Area lifestyle photographs">
+          <article>
+            <div class="image-frame">
+              <img src="./assets/fig-4-outdoor.png" alt="Outdoor terrace and garden with Mediterranean trees" />
+            </div>
+            <p><span>FIG 4.</span> <span data-i18n="zonePhotoOne">Exterior, privacidad y vida al aire libre.</span></p>
+          </article>
+          <article>
+            <div class="image-frame">
+              <img src="./assets/fig-5-madrid.jpg" alt="Madrid street with balconies and outdoor cafes" />
+            </div>
+            <p><span>FIG 5.</span> <span data-i18n="zonePhotoTwo">Conexión urbana y servicios cerca.</span></p>
+          </article>
+          <article>
+            <div class="image-frame">
+              <img src="./assets/area-interior.jpg" alt="Calm residential interior with sofa and natural light" />
+            </div>
+            <p><span>FIG 6.</span> <span data-i18n="zonePhotoThree">Interiores listos para una llegada cómoda.</span></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="services editorial-section" id="services">
+        <div class="section-label">
+          <span data-i18n="servicesLabel">Servicios</span>
+        </div>
+        <div class="services-grid">
+          <article class="service-chapter">
+            <p>FIG 1.</p>
+            <svg class="service-graphic" viewBox="0 0 220 120" aria-hidden="true" focusable="false">
+              <path class="graphic-line" d="M34 68 L110 25 L186 68" />
+              <path class="graphic-soft" d="M51 65 V101 H169 V65" />
+              <path class="graphic-line" d="M92 101 V74 H128 V101" />
+              <circle class="graphic-soft" cx="160" cy="78" r="21" />
+              <path class="graphic-line" d="M175 94 L193 112" />
+            </svg>
+            <h2 data-i18n="serviceOneTitle">Compra</h2>
+            <p data-i18n="serviceOneCopy">
+              Búsqueda curada, análisis de zona, visitas presenciales o remotas, negociación y coordinación hasta notaría.
+            </p>
+          </article>
+          <article class="service-chapter">
+            <p>FIG 2.</p>
+            <svg class="service-graphic" viewBox="0 0 220 120" aria-hidden="true" focusable="false">
+              <path class="graphic-soft" d="M54 24 H142 L166 48 V101 H54 Z" />
+              <path class="graphic-line" d="M142 24 V49 H166" />
+              <path class="graphic-line" d="M78 68 H125 M78 84 H142" />
+              <path class="graphic-line" d="M136 86 L181 41" />
+              <path class="graphic-line" d="M154 41 H181 V68" />
+            </svg>
+            <h2 data-i18n="serviceTwoTitle">Venta</h2>
+            <p data-i18n="serviceTwoCopy">
+              Preparación del activo, estrategia de presentación, interlocución con compradores y seguimiento comercial.
+            </p>
+          </article>
+          <article class="service-chapter">
+            <p>FIG 3.</p>
+            <svg class="service-graphic" viewBox="0 0 220 120" aria-hidden="true" focusable="false">
+              <path class="graphic-line graphic-dashed" d="M47 78 C78 34 116 101 170 48" />
+              <path class="graphic-soft" d="M43 55 C43 43 53 34 65 34 C77 34 87 43 87 55 C87 72 65 93 65 93 C65 93 43 72 43 55Z" />
+              <circle class="graphic-dot" cx="65" cy="55" r="6" />
+              <path class="graphic-soft" d="M139 69 H181 V101 H139 Z" />
+              <path class="graphic-line" d="M151 69 V58 H169 V69 M139 82 H181" />
+            </svg>
+            <h2 data-i18n="serviceThreeTitle">Relocation</h2>
+            <p data-i18n="serviceThreeCopy">
+              Orientación sobre barrios, colegios, proveedores, tiempos y primeros pasos para aterrizar en España.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="homes editorial-section" id="homes">
+        <div class="section-label">
+          <span data-i18n="homesLabel">Rutas</span>
+        </div>
+        <div class="availability-heading">
+          <h2 data-i18n="homesTitle">Tres formas de empezar, todas con atención directa de Miren.</h2>
+        </div>
+        <div class="routes-table" role="table" aria-label="Atela Homes client routes">
+          <div class="table-row table-head" role="row">
+            <span role="columnheader" data-i18n="tableType">Tipo</span>
+            <span role="columnheader" data-i18n="tableBestFor">Perfil</span>
+            <span role="columnheader" data-i18n="tableIncludes">Incluye</span>
+            <span role="columnheader" data-i18n="tableStatus">Estado</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell" data-i18n="routeBuyer">Buyer brief</span>
+            <span role="cell" data-i18n="routeBuyerProfile">Comprador internacional</span>
+            <span role="cell" data-i18n="routeBuyerIncludes">Shortlist, visitas, negociación</span>
+            <span role="cell" data-i18n="routeAvailable">Disponible</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell" data-i18n="routeSeller">Seller strategy</span>
+            <span role="cell" data-i18n="routeSellerProfile">Propietario vendedor</span>
+            <span role="cell" data-i18n="routeSellerIncludes">Valoración, presentación, seguimiento</span>
+            <span role="cell" data-i18n="routeAvailable">Disponible</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell" data-i18n="routeRelocation">Relocation plan</span>
+            <span role="cell" data-i18n="routeRelocationProfile">Familia o profesional</span>
+            <span role="cell" data-i18n="routeRelocationIncludes">Zonas, servicios, instalación</span>
+            <span role="cell" data-i18n="routeAvailable">Disponible</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about editorial-section" id="about">
+        <div class="about-image">
+          <div class="image-frame">
+            <img src="./assets/miren-fernandez-atela.jpg" alt="Miren Fernández Atela" />
+          </div>
+          <p><span>FIG 5.</span> <span data-i18n="aboutCaption">Miren Fernández Atela, interlocutora única del proceso.</span></p>
+        </div>
+        <div class="about-copy">
+          <p class="section-label-inline" data-i18n="aboutLabel">Miren Fernández Atela</p>
+          <h2 data-i18n="aboutTitle">Una asesora cercana para decisiones importantes.</h2>
+          <p data-i18n="aboutCopy">
+            El valor de Atela Homes está en reducir ruido: escuchar bien, filtrar mejor y explicar cada paso con
+            transparencia para que el cliente extranjero sepa qué está comprando, dónde y por qué.
+          </p>
+          <p class="about-brief" data-i18n="aboutBrief">
+            Asociada en Estate One en Madrid, Miren combina experiencia en servicios inmobiliarios con formación de
+            negocio en Instituto de Empresa/IE Business School y Universidad Complutense de Madrid.
+          </p>
+          <a
+            class="profile-link"
+            href="https://www.linkedin.com/in/miren-fernandez-atela-0191a841/"
+            target="_blank"
+            rel="noopener"
+            data-i18n="aboutLinkedIn"
+          >
+            Ver perfil en LinkedIn
+          </a>
+        </div>
+      </section>
+
+      <section class="contact editorial-section" id="contact">
+        <div class="contact-heading">
+          <p class="section-label-inline" data-i18n="contactLabel">Contacto</p>
+          <h2>Atela Homes</h2>
+          <p data-i18n="contactIntro">
+            Consultas disponibles para compra, venta y relocation en España.
+          </p>
+          <div class="contact-people">
+            <p>Miren Fernández Atela</p>
+            <a class="contact-link" href="mailto:info@atelaproperties.com">info@atelaproperties.com</a>
+            <a class="contact-link" href="tel:+34650075747">+34 650 07 57 47</a>
+            <a href="https://www.linkedin.com/in/miren-fernandez-atela-0191a841/" target="_blank" rel="noopener">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="mailto:info@atelaproperties.com" method="post" enctype="text/plain">
+          <label>
+            <span data-i18n="formName">Nombre</span>
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            <span data-i18n="formEmail">Email</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span data-i18n="formPhone">Teléfono</span>
+            <input type="tel" name="phone" autocomplete="tel" />
+          </label>
+          <label>
+            <span data-i18n="formLocation">País o ciudad actual</span>
+            <input type="text" name="location" autocomplete="address-level2" />
+          </label>
+          <label>
+            <span data-i18n="formInterest">Interés principal</span>
+            <select name="interest" required>
+              <option value="" data-i18n="formInterestPlaceholder">Selecciona una opción</option>
+              <option value="buy" data-i18n="formBuy">Comprar propiedad</option>
+              <option value="sell" data-i18n="formSell">Vender propiedad</option>
+              <option value="relocation" data-i18n="formRelocation">Relocation</option>
+            </select>
+          </label>
+          <fieldset class="residence-field">
+            <legend data-i18n="formResidenceType">Residence type*</legend>
+            <details class="residence-select" data-residence-select aria-required="true">
+              <summary>
+                <span data-residence-current data-i18n="formResidencePlaceholder">Select</span>
+                <span class="select-chevron" aria-hidden="true"></span>
+              </summary>
+              <div class="residence-options">
+                <label>
+                  <input type="radio" name="residence_type" value="1 Bedroom" data-residence-option />
+                  <span data-i18n="residenceOneBedroom">1 Bedroom</span>
+                </label>
+                <label>
+                  <input type="radio" name="residence_type" value="2 Bedroom" data-residence-option />
+                  <span data-i18n="residenceTwoBedroom">2 Bedroom</span>
+                </label>
+                <label>
+                  <input type="radio" name="residence_type" value="3 Bedroom" data-residence-option />
+                  <span data-i18n="residenceThreeBedroom">3 Bedroom</span>
+                </label>
+                <label>
+                  <input type="radio" name="residence_type" value="Penthouse" data-residence-option />
+                  <span data-i18n="residencePenthouse">Penthouse</span>
+                </label>
+              </div>
+            </details>
+          </fieldset>
+          <label>
+            <span data-i18n="formBudget">Rango de presupuesto</span>
+            <div class="budget-slider">
+              <output class="budget-value" id="budget-value" data-budget-output>€900,000</output>
+              <input
+                type="range"
+                min="300000"
+                max="3000000"
+                step="50000"
+                value="900000"
+                aria-describedby="budget-value"
+                aria-label="Budget amount"
+                data-budget-range
+              />
+              <div class="budget-ticks" aria-hidden="true">
+                <span>€300K</span>
+                <span>€3M+</span>
+              </div>
+              <input type="hidden" name="budget" value="€900,000" data-budget-value-input />
+            </div>
+          </label>
+          <label class="full">
+            <span data-i18n="formMessage">Qué deberíamos saber</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button" type="submit" data-i18n="formSubmit">Enviar consulta</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Atela Homes</p>
+      <a href="#home" data-i18n="footerTop">Volver arriba</a>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+    <script src="./script.js?v=37"></script>
+  </body>
+</html>
