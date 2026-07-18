@@ -470,14 +470,16 @@ document.addEventListener("click", (event) => {
 });
 
 contactForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
   let hasError = false;
   
   customSelects.forEach((select) => {
     const type = select.dataset.customSelect;
     const options = document.querySelectorAll(`[data-custom-option="${type}"]`);
     const hasSelection = Array.from(options).some((option) => option.checked);
+    const isRequired = select.getAttribute("aria-required") === "true";
     
-    if (!hasSelection) {
+    if (isRequired && !hasSelection) {
       hasError = true;
       select.setAttribute("open", "");
       select.classList.add("is-invalid");
@@ -485,9 +487,33 @@ contactForm?.addEventListener("submit", (event) => {
     }
   });
 
-  if (hasError) {
-    event.preventDefault();
-  }
+  if (hasError) return;
+
+  const fd = new FormData(contactForm);
+  const name = fd.get("name") || "";
+  const email = fd.get("email") || "";
+  const phone = fd.get("phone") || "";
+  const location = fd.get("location") || "";
+  const interest = fd.get("interest") || "";
+  const residence = fd.get("residence_type") || "";
+  const budget = fd.get("budget") || "";
+  const message = fd.get("message") || "";
+
+  const subject = `Nueva consulta web: ${name}`;
+  
+  let body = `Nombre: ${name}\n`;
+  body += `Email: ${email}\n`;
+  if (phone) body += `Teléfono: ${phone}\n`;
+  if (location) body += `Ubicación actual: ${location}\n`;
+  if (interest) body += `Interés principal: ${interest}\n`;
+  if (residence) body += `Tipo de residencia: ${residence}\n`;
+  body += `Presupuesto: ${budget}\n\n`;
+  if (message) body += `Mensaje:\n${message}\n\n`;
+  
+  body += `--- \nPrivacidad: Aceptada.\n`;
+
+  const mailtoLink = `mailto:info@atelahomes.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailtoLink;
 });
 
 year.textContent = new Date().getFullYear();
