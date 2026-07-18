@@ -1282,6 +1282,19 @@ h3 {
   filter: grayscale(0.15) contrast(1.05);
 }
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 90px;
+  height: auto;
+  opacity: 0.8;
+}
+
 .site-footer p {
   margin: 0;
 }
