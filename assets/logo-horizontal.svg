@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 32" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- A (Lambda style) -->
+  <path d="M 2 30 L 14 2 L 26 30" />
+  <!-- T -->
+  <path d="M 42 2 H 70 M 56 2 V 30" />
+  <!-- E (Xi style: three horizontal bars) -->
+  <path d="M 86 2 H 110 M 86 16 H 110 M 86 30 H 110" />
+  <!-- L -->
+  <path d="M 128 2 V 30 H 152" />
+  <!-- A (Lambda style) -->
+  <path d="M 170 30 L 182 2 L 194 30" />
+
+  <!-- H -->
+  <path d="M 233 2 V 30 M 233 16 H 257 M 257 2 V 30" />
+  <!-- O (Circle) -->
+  <circle cx="287" cy="16" r="13.5" />
+  <!-- M -->
+  <path d="M 317 30 V 2 L 329 30 L 341 2 V 30" />
+  <!-- E (Xi style: three horizontal bars) -->
+  <path d="M 359 2 H 383 M 359 16 H 383 M 359 30 H 383" />
+  <!-- S -->
+  <path d="M 425 6 C 425 0 401 0 401 8 C 401 16 425 14 425 22 C 425 30 401 30 401 24" />
+</svg>

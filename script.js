@@ -9,7 +9,7 @@ const translations = {
     navHomes: "Rutas",
     navContact: "Contacto",
     heroLine: "Asesoría inmobiliaria y relocation para compradores internacionales en España.",
-    heroBand: "Boutique real estate · Con base en Madrid · Compra · Venta · Relocation",
+    heroBand: "Boutique real estate · Con base en Madrid · Compra · Venta · Alquiler · Relocation",
     methodLabel: "Método",
     methodTitle: "Una búsqueda inmobiliaria guiada con criterio local y mirada internacional.",
     methodCopy:
@@ -35,11 +35,19 @@ const translations = {
     serviceTwoTitle: "Venta",
     serviceTwoCopy:
       "Preparación del activo, estrategia de presentación, interlocución con compradores y seguimiento comercial.",
-    serviceThreeTitle: "Relocation",
+    serviceThreeTitle: "Alquiler",
     serviceThreeCopy:
+      "Búsqueda adaptada de viviendas en alquiler, selección de zonas, visitas y revisión del contrato de arrendamiento.",
+    serviceFourTitle: "Relocation",
+    serviceFourCopy:
       "Orientación sobre barrios, colegios, proveedores, tiempos y primeros pasos para aterrizar en España.",
+    legalLabel: "Alianza Legal",
+    legalTitle: "Asesoría legal e inmigración para tu llegada a España.",
+    legalCopy:
+      "Trabajamos en estrecha colaboración con Gluckheim, despacho especializado en extranjería, Golden Visa y derecho inmobiliario, para que cada paso legal de tu compra o traslado esté cubierto desde el primer día.",
+    legalCta: "Conocer Gluckheim →",
     homesLabel: "Rutas",
-    homesTitle: "Tres formas de empezar, todas con atención directa de Miren.",
+    homesTitle: "Cuatro formas de empezar, todas con atención directa de Miren.",
     tableType: "Tipo",
     tableBestFor: "Perfil",
     tableIncludes: "Incluye",
@@ -50,6 +58,9 @@ const translations = {
     routeSeller: "Seller strategy",
     routeSellerProfile: "Propietario vendedor",
     routeSellerIncludes: "Valoración, presentación, seguimiento",
+    routeRental: "Rental search",
+    routeRentalProfile: "Inquilino internacional",
+    routeRentalIncludes: "Selección, visitas, contrato",
     routeRelocation: "Relocation plan",
     routeRelocationProfile: "Familia o profesional",
     routeRelocationIncludes: "Zonas, servicios, instalación",
@@ -63,7 +74,7 @@ const translations = {
       "Asociada en Estate One en Madrid, Miren combina experiencia en servicios inmobiliarios con formación de negocio en Instituto de Empresa/IE Business School y Universidad Complutense de Madrid.",
     aboutLinkedIn: "Ver perfil en LinkedIn",
     contactLabel: "Contacto",
-    contactIntro: "Consultas disponibles para compra, venta y relocation en España.",
+    contactIntro: "Consultas disponibles para compra, venta, alquiler y relocation en España.",
     formName: "Nombre",
     formEmail: "Email",
     formPhone: "Teléfono",
@@ -72,6 +83,7 @@ const translations = {
     formInterestPlaceholder: "Selecciona una opción",
     formBuy: "Comprar propiedad",
     formSell: "Vender propiedad",
+    formRent: "Alquilar propiedad",
     formRelocation: "Relocation",
     formResidenceType: "Tipo de residencia*",
     formResidencePlaceholder: "Seleccionar",
@@ -94,7 +106,7 @@ const translations = {
     navHomes: "Paths",
     navContact: "Contact",
     heroLine: "Real estate advisory and relocation for international buyers in Spain.",
-    heroBand: "Boutique real estate · Based in Madrid · Purchase · Sale · Relocation",
+    heroBand: "Boutique real estate · Based in Madrid · Purchase · Sale · Rental · Relocation",
     methodLabel: "Method",
     methodTitle: "A property search guided by local judgment and an international point of view.",
     methodCopy:
@@ -120,11 +132,19 @@ const translations = {
     serviceTwoTitle: "Sale",
     serviceTwoCopy:
       "Asset preparation, presentation strategy, buyer communication and commercial follow-up.",
-    serviceThreeTitle: "Relocation",
+    serviceThreeTitle: "Rental",
     serviceThreeCopy:
+      "Tailored rental search, area selection, viewings and lease contract review.",
+    serviceFourTitle: "Relocation",
+    serviceFourCopy:
       "Guidance on neighborhoods, schools, providers, timing and first steps for landing in Spain.",
+    legalLabel: "Legal Alliance",
+    legalTitle: "Legal and immigration advisory for your arrival in Spain.",
+    legalCopy:
+      "We work closely with Gluckheim, a firm specializing in immigration law, Golden Visa and real estate law, so that every legal step of your purchase or relocation is covered from day one.",
+    legalCta: "Discover Gluckheim →",
     homesLabel: "Paths",
-    homesTitle: "Three ways to start, all with direct support from Miren.",
+    homesTitle: "Four ways to start, all with direct support from Miren.",
     tableType: "Type",
     tableBestFor: "Profile",
     tableIncludes: "Includes",
@@ -135,6 +155,9 @@ const translations = {
     routeSeller: "Seller strategy",
     routeSellerProfile: "Property owner",
     routeSellerIncludes: "Valuation, presentation, follow-up",
+    routeRental: "Rental search",
+    routeRentalProfile: "International tenant",
+    routeRentalIncludes: "Selection, viewings, contract",
     routeRelocation: "Relocation plan",
     routeRelocationProfile: "Family or professional",
     routeRelocationIncludes: "Areas, services, settling in",
@@ -148,7 +171,7 @@ const translations = {
       "An associate at Estate One in Madrid, Miren combines real estate services experience with business training from Instituto de Empresa/IE Business School and Universidad Complutense de Madrid.",
     aboutLinkedIn: "View LinkedIn profile",
     contactLabel: "Contact",
-    contactIntro: "Consultations available for purchase, sale and relocation in Spain.",
+    contactIntro: "Consultations available for purchase, sale, rental and relocation in Spain.",
     formName: "Name",
     formEmail: "Email",
     formPhone: "Phone",
@@ -157,6 +180,7 @@ const translations = {
     formInterestPlaceholder: "Select an option",
     formBuy: "Buying property",
     formSell: "Selling property",
+    formRent: "Renting property",
     formRelocation: "Relocation",
     formResidenceType: "Residence type*",
     formResidencePlaceholder: "Select",
@@ -257,7 +281,7 @@ function updateResidenceLabel() {
 function initRevealMotion() {
   const imageMotionElements = document.querySelectorAll(".figure-card, .zone-photo-grid article, .about-image");
   const revealElements = document.querySelectorAll(
-    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .service-chapter, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .site-footer"
+    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .site-footer"
   );
 
   imageMotionElements.forEach((element) => {

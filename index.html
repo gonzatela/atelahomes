@@ -20,8 +20,18 @@
       </button>
 
       <a class="brand" href="#home" aria-label="Atela Homes home">
-        <span class="brand-kicker">Atela</span>
-        <span class="brand-name">Homes</span>
+        <svg class="brand-logo" viewBox="0 0 430 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M 2 30 L 14 2 L 26 30" />
+          <path d="M 42 2 H 70 M 56 2 V 30" />
+          <path d="M 86 2 H 110 M 86 16 H 110 M 86 30 H 110" />
+          <path d="M 128 2 V 30 H 152" />
+          <path d="M 170 30 L 182 2 L 194 30" />
+          <path d="M 233 2 V 30 M 233 16 H 257 M 257 2 V 30" />
+          <circle cx="287" cy="16" r="13.5" />
+          <path d="M 317 30 V 2 L 329 30 L 341 2 V 30" />
+          <path d="M 359 2 H 383 M 359 16 H 383 M 359 30 H 383" />
+          <path d="M 425 6 C 425 0 401 0 401 8 C 401 16 425 14 425 22 C 425 30 401 30 401 24" />
+        </svg>
       </a>
 
       <nav class="site-nav" id="site-nav" data-nav>
@@ -187,17 +197,44 @@
           <article class="service-chapter">
             <p>FIG 3.</p>
             <svg class="service-graphic" viewBox="0 0 220 120" aria-hidden="true" focusable="false">
+              <path class="graphic-soft" d="M40 45 H100 V105 H40 Z" />
+              <path class="graphic-line" d="M55 60 H85 M55 75 H85 M55 90 H85" />
+              <circle class="graphic-soft" cx="160" cy="75" r="16" />
+              <path class="graphic-line" d="M144 75 H110" />
+              <path class="graphic-line" d="M120 75 V85 M128 75 V85" />
+            </svg>
+            <h2 data-i18n="serviceThreeTitle">Alquiler</h2>
+            <p data-i18n="serviceThreeCopy">
+              Búsqueda adaptada de viviendas en alquiler, selección de zonas, visitas y revisión del contrato de arrendamiento.
+            </p>
+          </article>
+          <article class="service-chapter">
+            <p>FIG 4.</p>
+            <svg class="service-graphic" viewBox="0 0 220 120" aria-hidden="true" focusable="false">
               <path class="graphic-line graphic-dashed" d="M47 78 C78 34 116 101 170 48" />
               <path class="graphic-soft" d="M43 55 C43 43 53 34 65 34 C77 34 87 43 87 55 C87 72 65 93 65 93 C65 93 43 72 43 55Z" />
               <circle class="graphic-dot" cx="65" cy="55" r="6" />
               <path class="graphic-soft" d="M139 69 H181 V101 H139 Z" />
               <path class="graphic-line" d="M151 69 V58 H169 V69 M139 82 H181" />
             </svg>
-            <h2 data-i18n="serviceThreeTitle">Relocation</h2>
-            <p data-i18n="serviceThreeCopy">
+            <h2 data-i18n="serviceFourTitle">Relocation</h2>
+            <p data-i18n="serviceFourCopy">
               Orientación sobre barrios, colegios, proveedores, tiempos y primeros pasos para aterrizar en España.
             </p>
           </article>
+        </div>
+      </section>
+
+      <section class="legal-section editorial-section" id="legal">
+        <div class="section-label">
+          <span data-i18n="legalLabel">Alianza Legal</span>
+        </div>
+        <div class="legal-layout">
+          <h2 data-i18n="legalTitle">Asesoría legal e inmigración para tu llegada a España.</h2>
+          <p data-i18n="legalCopy">
+            Trabajamos en estrecha colaboración con Gluckheim, despacho especializado en extranjería, Golden Visa y derecho inmobiliario, para que cada paso legal de tu compra o traslado esté cubierto desde el primer día.
+          </p>
+          <a class="button legal-cta" href="https://gluckheim.es/" target="_blank" rel="noopener" data-i18n="legalCta">Conocer Gluckheim →</a>
         </div>
       </section>
 
@@ -225,6 +262,12 @@
             <span role="cell" data-i18n="routeSeller">Seller strategy</span>
             <span role="cell" data-i18n="routeSellerProfile">Propietario vendedor</span>
             <span role="cell" data-i18n="routeSellerIncludes">Valoración, presentación, seguimiento</span>
+            <span role="cell" data-i18n="routeAvailable">Disponible</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell" data-i18n="routeRental">Rental search</span>
+            <span role="cell" data-i18n="routeRentalProfile">Inquilino internacional</span>
+            <span role="cell" data-i18n="routeRentalIncludes">Selección, visitas, contrato</span>
             <span role="cell" data-i18n="routeAvailable">Disponible</span>
           </div>
           <div class="table-row" role="row">
@@ -306,6 +349,7 @@
               <option value="" data-i18n="formInterestPlaceholder">Selecciona una opción</option>
               <option value="buy" data-i18n="formBuy">Comprar propiedad</option>
               <option value="sell" data-i18n="formSell">Vender propiedad</option>
+              <option value="rent" data-i18n="formRent">Alquilar propiedad</option>
               <option value="relocation" data-i18n="formRelocation">Relocation</option>
             </select>
           </label>

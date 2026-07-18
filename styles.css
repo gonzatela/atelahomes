@@ -144,6 +144,13 @@ textarea {
   text-transform: uppercase;
 }
 
+.brand-logo {
+  width: 140px;
+  height: auto;
+  max-height: 32px;
+  margin-right: 8px;
+}
+
 .brand-kicker {
   font-size: 0.86rem;
 }
@@ -653,7 +660,7 @@ h3 {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid rgba(247, 243, 236, 0.38);
   border-left: 1px solid rgba(247, 243, 236, 0.24);
 }
@@ -1207,6 +1214,57 @@ h3 {
 .site-footer.reveal.is-visible {
   transform: translateY(0);
 }
+.legal-section {
+  padding: clamp(70px, 10vw, 128px) max(21px, calc((100vw - var(--max)) / 2));
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.legal-section .section-label {
+  color: var(--ink);
+}
+
+.legal-section p {
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+.legal-layout {
+  display: grid;
+  gap: clamp(18px, 3vw, 28px);
+  max-width: 780px;
+}
+
+.legal-layout h2 {
+  font-size: clamp(2rem, 4vw, 3.8rem);
+}
+
+.legal-layout p {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+}
+
+.legal-cta {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border: 1px solid var(--olive-dark);
+  background: var(--olive-dark);
+  color: var(--paper);
+  font-size: 0.82rem;
+  font-weight: 560;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 220ms ease, color 220ms ease;
+}
+
+.legal-cta:hover {
+  background: transparent;
+  color: var(--olive-dark);
+}
 
 .site-footer p {
   margin: 0;
@@ -1342,6 +1400,10 @@ h3 {
     font-size: 1.05rem;
   }
 
+  .brand-logo {
+    width: 110px;
+  }
+
   .editorial-section {
     width: min(var(--max), calc(100% - 30px));
   }
@@ -1427,6 +1489,10 @@ h3 {
   }
 
   .services {
+    padding: 44px 15px;
+  }
+
+  .legal-section {
     padding: 44px 15px;
   }
 
