@@ -66,7 +66,7 @@ const translations = {
     
     // Paths
     homesLabel: "Cómo podemos ayudarte",
-    homesTitle: "Tres formas de empezar, todas con atención directa de Miren.",
+    homesTitle: "Cuatro formas de empezar, todas con atención directa de Miren.",
     tableType: "Tipo",
     tableIncludes: "Incluye",
     routeBuyerTitle: "Quiero comprar una vivienda",
@@ -189,7 +189,7 @@ const translations = {
     
     // Paths
     homesLabel: "How we can help",
-    homesTitle: "Three ways to start, all with Miren’s direct attention.",
+    homesTitle: "Four ways to start, all with Miren’s direct attention.",
     tableType: "Type",
     tableIncludes: "Includes",
     routeBuyerTitle: "I want to buy a property",
