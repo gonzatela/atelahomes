@@ -1,24 +1,42 @@
 const translations = {
   es: {
     pageTitle: "Atela Homes | Inmobiliaria y Relocation",
-    pageDescription:
-      "Atela Homes tiene base en Madrid y acompaña a compradores internacionales en la compra, venta y relocation en España con un servicio boutique liderado por Miren Fernández Atela.",
+    pageDescription: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España.",
     navMethod: "Método",
     navAreas: "Zonas",
     navServices: "Servicios",
-    navHomes: "Rutas",
+    navHomes: "Cómo podemos ayudarte",
     navContact: "Contacto",
-    heroLine: "Asesoría inmobiliaria y relocation para compradores internacionales en España.",
-    heroBand: "Boutique real estate · Con base en Madrid · Compra · Venta · Alquiler · Relocation",
+    
+    // Hero
+    heroTitle: "Tu casa en España, con criterio local y acompañamiento personal.",
+    heroSubtitle: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España. Desde la primera búsqueda hasta la firma y tu llegada, Miren será tu única interlocutora.",
+    heroCtaPrimary: "Cuéntanos qué estás buscando",
+    heroCtaSecondary: "Habla con Miren",
+    
+    // Value Prop
     methodLabel: "Método",
-    methodTitle: "Una búsqueda inmobiliaria guiada con criterio local y mirada internacional.",
-    methodCopy:
-      "Atela Homes trabaja como una única interlocutora para filtrar oportunidades, interpretar zonas, coordinar visitas, acompañar la negociación y ordenar los pasos de relocation antes y después de la firma.",
+    methodTitle: "Buscar desde otro país no debería significar decidir a ciegas.",
+    methodCopy: "Filtramos propiedades, comparamos zonas, coordinamos visitas presenciales o remotas y te ayudamos a entender qué estás comprando, dónde y por qué. Menos ruido, mejores decisiones y una persona de confianza durante todo el proceso.",
+    
+    // Method 4 Steps
+    stepOneTitle: "Entendemos tu búsqueda",
+    stepOneCopy: "Definimos prioridades, presupuesto, estilo de vida y calendario.",
+    stepTwoTitle: "Filtramos el mercado",
+    stepTwoCopy: "Seleccionamos propiedades y zonas con criterio, evitando visitas y decisiones innecesarias.",
+    stepThreeTitle: "Visitamos y evaluamos",
+    stepThreeCopy: "Coordinamos visitas presenciales o remotas y analizamos cada opción contigo.",
+    stepFourTitle: "Negociamos y coordinamos",
+    stepFourCopy: "Te acompañamos en la negociación y conectamos a las partes implicadas hasta la firma y la instalación.",
+    
+    // Figures
     figOne: "Viviendas con luz, exterior y vida mediterránea.",
     figTwo: "Apartamentos urbanos cerca de servicios y colegios.",
     figThree: "Casas para instalarse con calma.",
+    
+    // Areas
     areasLabel: "Zonas",
-    areasTitle: "Cada decisión empieza por entender dónde encaja tu vida.",
+    areasTitle: "Con base en Madrid y una red de colaboradores en destinos seleccionados de España.",
     areaOneTitle: "Costa y segunda residencia",
     areaOneCopy: "Propiedades con exterior, privacidad y acceso sencillo a servicios.",
     areaTwoTitle: "Centro urbano",
@@ -28,64 +46,65 @@ const translations = {
     zonePhotoOne: "Exterior, privacidad y vida al aire libre.",
     zonePhotoTwo: "Conexión urbana y servicios cerca.",
     zonePhotoThree: "Interiores listos para una llegada cómoda.",
+    
+    // Services
     servicesLabel: "Servicios",
     serviceOneTitle: "Compra",
-    serviceOneCopy:
-      "Búsqueda curada, análisis de zona, visitas presenciales o remotas, negociación y coordinación hasta notaría.",
+    serviceOneCopy: "Búsqueda curada, análisis de zona, visitas presenciales o remotas, negociación y coordinación hasta la firma ante notario.",
     serviceTwoTitle: "Venta",
-    serviceTwoCopy:
-      "Preparación del activo, estrategia de presentación, interlocución con compradores y seguimiento comercial.",
+    serviceTwoCopy: "Preparación de la propiedad, estrategia de presentación, interlocución con compradores y seguimiento comercial.",
     serviceThreeTitle: "Alquiler",
-    serviceThreeCopy:
-      "Búsqueda adaptada de viviendas en alquiler, selección de zonas, visitas y revisión del contrato de arrendamiento.",
+    serviceThreeCopy: "Búsqueda adaptada de viviendas en alquiler, selección de zonas, visitas y revisión del contrato de arrendamiento.",
     serviceFourTitle: "Relocation",
-    serviceFourCopy:
-      "Orientación sobre barrios, colegios, proveedores, tiempos y primeros pasos para aterrizar en España.",
+    serviceFourCopy: "Orientación sobre barrios, colegios, proveedores, tiempos y primeros pasos para instalarte en España.",
+    
+    // Legal
     legalLabel: "Alianza Legal",
     legalTitle: "Asesoría legal e inmigración para tu llegada a España.",
-    legalCopy:
-      "Trabajamos en estrecha colaboración con Gluckheim, despacho especializado en extranjería, Golden Visa y derecho inmobiliario, para que cada paso legal de tu compra o traslado esté cubierto desde el primer día.",
+    legalCopy: "Trabajamos con Gluckheim, despacho especializado en extranjería y derecho inmobiliario, para coordinar y facilitar los aspectos legales de tu compra o traslado a España.",
     legalCta: "Conocer Gluckheim →",
-    homesLabel: "Rutas",
-    homesTitle: "Cuatro formas de empezar, todas con atención directa de Miren.",
+    
+    // Paths
+    homesLabel: "Cómo podemos ayudarte",
+    homesTitle: "Tres formas de empezar, todas con atención directa de Miren.",
     tableType: "Tipo",
-    tableBestFor: "Perfil",
     tableIncludes: "Incluye",
-    tableStatus: "Estado",
-    routeBuyer: "Buyer brief",
-    routeBuyerProfile: "Comprador internacional",
-    routeBuyerIncludes: "Shortlist, visitas, negociación",
-    routeSeller: "Seller strategy",
-    routeSellerProfile: "Propietario vendedor",
-    routeSellerIncludes: "Valoración, presentación, seguimiento",
-    routeRental: "Rental search",
-    routeRentalProfile: "Inquilino internacional",
-    routeRentalIncludes: "Selección, visitas, contrato",
-    routeRelocation: "Relocation plan",
-    routeRelocationProfile: "Familia o profesional",
-    routeRelocationIncludes: "Zonas, servicios, instalación",
-    routeAvailable: "Disponible",
+    routeBuyerTitle: "Quiero comprar una vivienda",
+    routeBuyerCopy: "Búsqueda, visitas, análisis, negociación y coordinación hasta la firma.",
+    routeSellerTitle: "Quiero vender mi propiedad",
+    routeSellerCopy: "Valoración, preparación, presentación y seguimiento de compradores.",
+    routeRentalTitle: "Busco una vivienda de alquiler",
+    routeRentalCopy: "Selección de zonas, búsqueda, visitas y revisión del contrato.",
+    routeRelocationTitle: "Me traslado a España",
+    routeRelocationCopy: "Vivienda, colegios, servicios y apoyo práctico para instalarte.",
+    routeCta: "Empezar mi búsqueda",
+    
+    // Trust / Confianza
+    trustLabel: "Confianza",
+    trustTitle: "Testimonios de nuestros clientes",
+    
+    // About
     aboutCaption: "Miren Fernández Atela, interlocutora única del proceso.",
     aboutLabel: "Miren Fernández Atela",
-    aboutTitle: "Una asesora cercana para decisiones importantes.",
-    aboutCopy:
-      "El valor de Atela Homes está en reducir ruido: escuchar bien, filtrar mejor y explicar cada paso con transparencia para que el cliente extranjero sepa qué está comprando, dónde y por qué.",
-    aboutBrief:
-      "Asociada en Estate One en Madrid, Miren combina experiencia en servicios inmobiliarios con formación de negocio en Instituto de Empresa/IE Business School y Universidad Complutense de Madrid.",
+    aboutTitle: "Una única interlocutora para una decisión importante.",
+    aboutCopy: "Miren Fernández Atela acompaña personalmente cada búsqueda. Su trabajo consiste en escuchar, filtrar y explicar con transparencia para que el cliente pueda decidir con seguridad, incluso cuando empieza el proceso desde fuera de España.",
+    aboutBrief: "Asociada en Estate One en Madrid, Miren combina experiencia en servicios inmobiliarios con formación de negocio en Instituto de Empresa/IE Business School y Universidad Complutense de Madrid.",
     aboutLinkedIn: "Ver perfil en LinkedIn",
+    
+    // Contact
     contactLabel: "Contacto",
     contactIntro: "Consultas disponibles para compra, venta, alquiler y relocation en España.",
     formName: "Nombre",
     formEmail: "Email",
     formPhone: "Teléfono",
     formLocation: "País o ciudad actual",
-    formInterest: "Interés principal",
+    formInterest: "Interés principal*",
     formInterestPlaceholder: "Selecciona una opción",
     formBuy: "Comprar propiedad",
     formSell: "Vender propiedad",
     formRent: "Alquilar propiedad",
     formRelocation: "Relocation",
-    formResidenceType: "Tipo de residencia*",
+    formResidenceType: "Tipo de residencia",
     formResidencePlaceholder: "Seleccionar",
     residenceOneBedroom: "1 dormitorio",
     residenceTwoBedroom: "2 dormitorios",
@@ -93,29 +112,54 @@ const translations = {
     residencePenthouse: "Penthouse",
     formBudget: "Rango de presupuesto",
     formMessage: "Qué deberíamos saber",
-    formSubmit: "Enviar consulta",
+    formPrivacy: "He leído y acepto la Política de Privacidad.",
+    formSubmit: "Enviar mi consulta",
+    formExpectation: "Miren revisará personalmente tu consulta y responderá en un plazo de 24–48 horas laborables.",
+    
+    // Footer Legal
+    footerLegal: "Aviso Legal",
+    footerPrivacy: "Política de Privacidad",
+    footerCookies: "Política de Cookies",
     footerTop: "Volver arriba"
   },
   en: {
     pageTitle: "Atela Homes | Real Estate & Relocation",
-    pageDescription:
-      "Atela Homes is based in Madrid and supports international buyers with property purchase, sale and relocation in Spain through a boutique service led by Miren Fernández Atela.",
+    pageDescription: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain.",
     navMethod: "Method",
     navAreas: "Areas",
     navServices: "Services",
-    navHomes: "Paths",
+    navHomes: "How we can help",
     navContact: "Contact",
-    heroLine: "Real estate advisory and relocation for international buyers in Spain.",
-    heroBand: "Boutique real estate · Based in Madrid · Purchase · Sale · Rental · Relocation",
+    
+    // Hero
+    heroTitle: "Your home in Spain, guided by local insight and personal support.",
+    heroSubtitle: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain. From the initial search to signing and settling in, Miren remains your single point of contact.",
+    heroCtaPrimary: "Tell us what you are looking for",
+    heroCtaSecondary: "Speak with Miren",
+    
+    // Value Prop
     methodLabel: "Method",
-    methodTitle: "A property search guided by local judgment and an international point of view.",
-    methodCopy:
-      "Atela Homes works as one dedicated point of contact to filter opportunities, interpret areas, coordinate viewings, support negotiation and organize relocation steps before and after signing.",
+    methodTitle: "Searching from abroad shouldn't mean deciding blind.",
+    methodCopy: "We filter properties, compare areas, coordinate in-person or remote viewings, and help you understand what you are buying, where and why. Less noise, better decisions and a trusted advisor throughout the process.",
+    
+    // Method 4 Steps
+    stepOneTitle: "We understand your search",
+    stepOneCopy: "We define your priorities, budget, lifestyle and timeline.",
+    stepTwoTitle: "We filter the market",
+    stepTwoCopy: "We carefully select properties and areas, avoiding unnecessary viewings and decisions.",
+    stepThreeTitle: "We visit and evaluate",
+    stepThreeCopy: "We coordinate in-person or remote viewings and analyze each option with you.",
+    stepFourTitle: "We negotiate and coordinate",
+    stepFourCopy: "We support you in negotiations and connect the involved parties up to signing and settling in.",
+    
+    // Figures
     figOne: "Homes with light, outdoor space and Mediterranean living.",
     figTwo: "Urban apartments close to services and schools.",
     figThree: "Family homes for a calmer move.",
+    
+    // Areas
     areasLabel: "Areas",
-    areasTitle: "Every decision starts by understanding where your life fits.",
+    areasTitle: "Based in Madrid with a network of partners in selected Spanish destinations.",
     areaOneTitle: "Coast and second homes",
     areaOneCopy: "Properties with outdoor space, privacy and easy access to services.",
     areaTwoTitle: "Urban center",
@@ -125,64 +169,65 @@ const translations = {
     zonePhotoOne: "Outdoor space, privacy and open-air living.",
     zonePhotoTwo: "Urban connection and services close by.",
     zonePhotoThree: "Interiors ready for a comfortable arrival.",
+    
+    // Services
     servicesLabel: "Services",
     serviceOneTitle: "Purchase",
-    serviceOneCopy:
-      "Curated search, area analysis, in-person or remote viewings, negotiation and coordination through notary.",
+    serviceOneCopy: "Curated search, area analysis, in-person or remote viewings, negotiation and coordination through notary signing.",
     serviceTwoTitle: "Sale",
-    serviceTwoCopy:
-      "Asset preparation, presentation strategy, buyer communication and commercial follow-up.",
+    serviceTwoCopy: "Property preparation, presentation strategy, buyer communication and commercial follow-up.",
     serviceThreeTitle: "Rental",
-    serviceThreeCopy:
-      "Tailored rental search, area selection, viewings and lease contract review.",
+    serviceThreeCopy: "Tailored rental search, area selection, viewings and lease contract review.",
     serviceFourTitle: "Relocation",
-    serviceFourCopy:
-      "Guidance on neighborhoods, schools, providers, timing and first steps for landing in Spain.",
+    serviceFourCopy: "Guidance on neighborhoods, schools, providers, timing and first steps for settling in Spain.",
+    
+    // Legal
     legalLabel: "Legal Alliance",
     legalTitle: "Legal and immigration advisory for your arrival in Spain.",
-    legalCopy:
-      "We work closely with Gluckheim, a firm specializing in immigration law, Golden Visa and real estate law, so that every legal step of your purchase or relocation is covered from day one.",
+    legalCopy: "We work with Gluckheim, a firm specializing in immigration and real estate law, to coordinate and facilitate the legal aspects of your purchase or relocation to Spain.",
     legalCta: "Discover Gluckheim →",
-    homesLabel: "Paths",
-    homesTitle: "Four ways to start, all with direct support from Miren.",
+    
+    // Paths
+    homesLabel: "How we can help",
+    homesTitle: "Three ways to start, all with Miren’s direct attention.",
     tableType: "Type",
-    tableBestFor: "Profile",
     tableIncludes: "Includes",
-    tableStatus: "Status",
-    routeBuyer: "Buyer brief",
-    routeBuyerProfile: "International buyer",
-    routeBuyerIncludes: "Shortlist, viewings, negotiation",
-    routeSeller: "Seller strategy",
-    routeSellerProfile: "Property owner",
-    routeSellerIncludes: "Valuation, presentation, follow-up",
-    routeRental: "Rental search",
-    routeRentalProfile: "International tenant",
-    routeRentalIncludes: "Selection, viewings, contract",
-    routeRelocation: "Relocation plan",
-    routeRelocationProfile: "Family or professional",
-    routeRelocationIncludes: "Areas, services, settling in",
-    routeAvailable: "Available",
+    routeBuyerTitle: "I want to buy a property",
+    routeBuyerCopy: "Search, viewings, analysis, negotiation, and coordination until signing.",
+    routeSellerTitle: "I want to sell my property",
+    routeSellerCopy: "Valuation, preparation, presentation, and buyer follow-up.",
+    routeRentalTitle: "I am looking for a rental",
+    routeRentalCopy: "Area selection, search, viewings, and contract review.",
+    routeRelocationTitle: "I am relocating to Spain",
+    routeRelocationCopy: "Housing, schools, services, and practical support to settle in.",
+    routeCta: "Start my search",
+    
+    // Trust / Confianza
+    trustLabel: "Trust",
+    trustTitle: "Client Testimonials",
+    
+    // About
     aboutCaption: "Miren Fernández Atela, the single point of contact for the process.",
     aboutLabel: "Miren Fernández Atela",
-    aboutTitle: "A close advisor for important decisions.",
-    aboutCopy:
-      "The value of Atela Homes is reducing noise: listening carefully, filtering better and explaining every step transparently so foreign clients know what they are buying, where and why.",
-    aboutBrief:
-      "An associate at Estate One in Madrid, Miren combines real estate services experience with business training from Instituto de Empresa/IE Business School and Universidad Complutense de Madrid.",
+    aboutTitle: "A single point of contact for an important decision.",
+    aboutCopy: "Miren Fernández Atela personally supports every search. Her work is to listen, filter and explain transparently so clients can decide with confidence, even when starting the process from outside Spain.",
+    aboutBrief: "An associate at Estate One in Madrid, Miren combines real estate services experience with business training from Instituto de Empresa/IE Business School and Universidad Complutense de Madrid.",
     aboutLinkedIn: "View LinkedIn profile",
+    
+    // Contact
     contactLabel: "Contact",
     contactIntro: "Consultations available for purchase, sale, rental and relocation in Spain.",
     formName: "Name",
     formEmail: "Email",
     formPhone: "Phone",
     formLocation: "Current country or city",
-    formInterest: "Main interest",
+    formInterest: "Main interest*",
     formInterestPlaceholder: "Select an option",
     formBuy: "Buying property",
     formSell: "Selling property",
     formRent: "Renting property",
     formRelocation: "Relocation",
-    formResidenceType: "Residence type*",
+    formResidenceType: "Residence type",
     formResidencePlaceholder: "Select",
     residenceOneBedroom: "1 Bedroom",
     residenceTwoBedroom: "2 Bedroom",
@@ -190,7 +235,14 @@ const translations = {
     residencePenthouse: "Penthouse",
     formBudget: "Budget range",
     formMessage: "What should we know?",
-    formSubmit: "Send enquiry",
+    formPrivacy: "I have read and accept the Privacy Policy.",
+    formSubmit: "Send my enquiry",
+    formExpectation: "Miren will personally review your enquiry and respond within 24–48 business hours.",
+    
+    // Footer Legal
+    footerLegal: "Legal Notice",
+    footerPrivacy: "Privacy Policy",
+    footerCookies: "Cookie Policy",
     footerTop: "Back to top"
   }
 };
