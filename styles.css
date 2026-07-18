@@ -310,8 +310,9 @@ textarea {
 .hero-subtitle {
   grid-column: 2;
   max-width: 620px;
-  margin-top: 24px;
-  color: rgba(247, 243, 236, 0.85);
+  margin-top: 16px;
+  color: var(--ink);
+  opacity: 0.85;
   font-size: clamp(1.1rem, 1.4vw, 1.25rem);
   line-height: 1.4;
   animation: revealUp 820ms ease 260ms both;
@@ -322,7 +323,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  margin-top: 36px;
+  margin-top: 24px;
   animation: revealUp 820ms ease 320ms both;
 }
 
@@ -332,6 +333,26 @@ textarea {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  background: var(--olive-dark);
+  color: var(--paper);
+  border: 1px solid var(--olive-dark);
+}
+
+.hero-actions .button.secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+.hero-actions .button:hover {
+  background: transparent;
+  color: var(--olive-dark);
+}
+
+.hero-actions .button.secondary:hover {
+  background: var(--olive-dark);
+  color: var(--paper);
+  border-color: var(--olive-dark);
 }
 
 .section-label,
