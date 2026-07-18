@@ -262,9 +262,9 @@ textarea {
 
 .hero {
   display: grid;
-  min-height: 92vh;
-  align-content: end;
-  padding: 132px 0 0;
+  min-height: 85vh;
+  align-content: center;
+  padding: 110px 0 0;
 }
 
 .hero-layout {
@@ -272,7 +272,7 @@ textarea {
   grid-template-columns: minmax(64px, 0.2fr) minmax(0, 1fr);
   gap: clamp(18px, 4vw, 56px);
   align-items: center;
-  padding-bottom: clamp(54px, 10vw, 118px);
+  padding-bottom: clamp(40px, 8vw, 80px);
 }
 
 .hero-index {
