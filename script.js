@@ -205,9 +205,7 @@ const budgetRange = document.querySelector("[data-budget-range]");
 const budgetOutput = document.querySelector("[data-budget-output]");
 const budgetValueInput = document.querySelector("[data-budget-value-input]");
 const contactForm = document.querySelector(".contact-form");
-const residenceSelect = document.querySelector("[data-residence-select]");
-const residenceCurrent = document.querySelector("[data-residence-current]");
-const residenceOptions = document.querySelectorAll("[data-residence-option]");
+const customSelects = document.querySelectorAll("[data-custom-select]");
 const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 function setHeaderState() {
@@ -261,21 +259,26 @@ function updateBudgetLabel(language = document.documentElement.lang || "en") {
   budgetValueInput.value = label;
 }
 
-function updateResidenceLabel() {
-  if (!residenceCurrent) {
-    return;
-  }
-
-  const selectedOption = Array.from(residenceOptions).find((option) => option.checked);
-
-  if (!selectedOption) {
-    const dictionary = translations[document.documentElement.lang] || translations.en;
-    residenceCurrent.textContent = dictionary.formResidencePlaceholder;
-    return;
-  }
-
-  const label = selectedOption.closest("label")?.querySelector("span");
-  residenceCurrent.textContent = label?.textContent || selectedOption.value;
+function updateCustomSelectLabels() {
+  customSelects.forEach((select) => {
+    const type = select.dataset.customSelect;
+    const current = document.querySelector(`[data-custom-current="${type}"]`);
+    const options = document.querySelectorAll(`[data-custom-option="${type}"]`);
+    
+    if (!current) return;
+    
+    const selectedOption = Array.from(options).find((opt) => opt.checked);
+    
+    if (!selectedOption) {
+      const dictionary = translations[document.documentElement.lang] || translations.en;
+      const placeholderKey = type === "interest" ? "formInterestPlaceholder" : "formResidencePlaceholder";
+      current.textContent = dictionary[placeholderKey];
+      return;
+    }
+    
+    const label = selectedOption.closest("label")?.querySelector("span");
+    current.textContent = label?.textContent || selectedOption.value;
+  });
 }
 
 function initRevealMotion() {
@@ -372,7 +375,7 @@ function setLanguage(language) {
 
   localStorage.setItem("atela-language", language);
   updateBudgetLabel(language);
-  updateResidenceLabel();
+  updateCustomSelectLabels();
 }
 
 menuToggle.addEventListener("click", () => {
@@ -396,33 +399,43 @@ if (budgetRange) {
   budgetRange.addEventListener("input", () => updateBudgetLabel());
 }
 
-residenceOptions.forEach((option) => {
-  option.addEventListener("change", () => {
-    updateResidenceLabel();
-    residenceSelect?.classList.remove("is-invalid");
-    residenceSelect?.removeAttribute("open");
+document.querySelectorAll("[data-custom-option]").forEach((option) => {
+  option.addEventListener("change", (e) => {
+    const type = e.target.dataset.customOption;
+    const select = document.querySelector(`[data-custom-select="${type}"]`);
+    updateCustomSelectLabels();
+    select?.classList.remove("is-invalid");
+    select?.removeAttribute("open");
   });
 });
 
 document.addEventListener("click", (event) => {
-  if (!residenceSelect?.open || residenceSelect.contains(event.target)) {
-    return;
-  }
-
-  residenceSelect.removeAttribute("open");
+  customSelects.forEach((select) => {
+    if (select.open && !select.contains(event.target)) {
+      select.removeAttribute("open");
+    }
+  });
 });
 
 contactForm?.addEventListener("submit", (event) => {
-  const hasResidence = Array.from(residenceOptions).some((option) => option.checked);
+  let hasError = false;
+  
+  customSelects.forEach((select) => {
+    const type = select.dataset.customSelect;
+    const options = document.querySelectorAll(`[data-custom-option="${type}"]`);
+    const hasSelection = Array.from(options).some((option) => option.checked);
+    
+    if (!hasSelection) {
+      hasError = true;
+      select.setAttribute("open", "");
+      select.classList.add("is-invalid");
+      select.querySelector("summary")?.focus();
+    }
+  });
 
-  if (hasResidence) {
-    return;
+  if (hasError) {
+    event.preventDefault();
   }
-
-  event.preventDefault();
-  residenceSelect?.setAttribute("open", "");
-  residenceSelect?.classList.add("is-invalid");
-  residenceSelect?.querySelector("summary")?.focus();
 });
 
 year.textContent = new Date().getFullYear();

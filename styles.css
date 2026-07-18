@@ -925,7 +925,7 @@ h3 {
   grid-column: 1 / -1;
 }
 
-.residence-field {
+.custom-field {
   display: block;
   width: 100%;
   min-width: 0;
@@ -940,7 +940,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.residence-field legend {
+.custom-field legend {
   display: block;
   float: left;
   width: 100%;
@@ -948,7 +948,7 @@ h3 {
   padding: 0;
 }
 
-.residence-select {
+.custom-select {
   clear: both;
   width: 100%;
   overflow: hidden;
@@ -956,7 +956,7 @@ h3 {
   background: rgba(247, 243, 236, 0.03);
 }
 
-.residence-select summary {
+.custom-select summary {
   display: flex;
   min-height: 58px;
   align-items: center;
@@ -971,7 +971,7 @@ h3 {
   list-style: none;
 }
 
-.residence-select summary::-webkit-details-marker {
+.custom-select summary::-webkit-details-marker {
   display: none;
 }
 
@@ -985,25 +985,25 @@ h3 {
   transition: transform 180ms ease;
 }
 
-.residence-select[open] .select-chevron {
+.custom-select[open] .select-chevron {
   transform: rotate(-45deg);
 }
 
-.residence-select summary:focus-visible {
+.custom-select summary:focus-visible {
   outline: 1px solid var(--paper);
   outline-offset: -5px;
 }
 
-.residence-select.is-invalid {
+.custom-select.is-invalid {
   border-color: var(--paper);
   box-shadow: 0 0 0 1px rgba(247, 243, 236, 0.38);
 }
 
-.residence-options {
+.custom-options {
   border-top: 1px solid rgba(247, 243, 236, 0.2);
 }
 
-.contact-form .residence-options label {
+.contact-form .custom-options label {
   position: relative;
   display: flex;
   min-height: 56px;
@@ -1018,16 +1018,16 @@ h3 {
   transition: background-color 160ms ease;
 }
 
-.residence-options label:last-child {
+.custom-options label:last-child {
   border-bottom: 0;
 }
 
-.residence-options label:hover,
-.residence-options label:has(input:checked) {
+.custom-options label:hover,
+.custom-options label:has(input:checked) {
   background: rgba(247, 243, 236, 0.1);
 }
 
-.contact-form .residence-options input[type="radio"] {
+.contact-form .custom-options input[type="radio"] {
   position: absolute;
   width: 1px;
   height: 1px;

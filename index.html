@@ -376,38 +376,55 @@
             <span data-i18n="formLocation">País o ciudad actual</span>
             <input type="text" name="location" autocomplete="address-level2" />
           </label>
-          <label>
-            <span data-i18n="formInterest">Interés principal</span>
-            <select name="interest" required>
-              <option value="" data-i18n="formInterestPlaceholder">Selecciona una opción</option>
-              <option value="buy" data-i18n="formBuy">Comprar propiedad</option>
-              <option value="sell" data-i18n="formSell">Vender propiedad</option>
-              <option value="rent" data-i18n="formRent">Alquilar propiedad</option>
-              <option value="relocation" data-i18n="formRelocation">Relocation</option>
-            </select>
-          </label>
-          <fieldset class="residence-field">
-            <legend data-i18n="formResidenceType">Residence type*</legend>
-            <details class="residence-select" data-residence-select aria-required="true">
+          <fieldset class="custom-field">
+            <legend data-i18n="formInterest">Interés principal</legend>
+            <details class="custom-select" data-custom-select="interest" aria-required="true">
               <summary>
-                <span data-residence-current data-i18n="formResidencePlaceholder">Select</span>
+                <span data-custom-current="interest" data-i18n="formInterestPlaceholder">Selecciona una opción</span>
                 <span class="select-chevron" aria-hidden="true"></span>
               </summary>
-              <div class="residence-options">
+              <div class="custom-options">
                 <label>
-                  <input type="radio" name="residence_type" value="1 Bedroom" data-residence-option />
+                  <input type="radio" name="interest" value="buy" data-custom-option="interest" />
+                  <span data-i18n="formBuy">Comprar propiedad</span>
+                </label>
+                <label>
+                  <input type="radio" name="interest" value="sell" data-custom-option="interest" />
+                  <span data-i18n="formSell">Vender propiedad</span>
+                </label>
+                <label>
+                  <input type="radio" name="interest" value="rent" data-custom-option="interest" />
+                  <span data-i18n="formRent">Alquilar propiedad</span>
+                </label>
+                <label>
+                  <input type="radio" name="interest" value="relocation" data-custom-option="interest" />
+                  <span data-i18n="formRelocation">Relocation</span>
+                </label>
+              </div>
+            </details>
+          </fieldset>
+          <fieldset class="custom-field">
+            <legend data-i18n="formResidenceType">Residence type*</legend>
+            <details class="custom-select" data-custom-select="residence" aria-required="true">
+              <summary>
+                <span data-custom-current="residence" data-i18n="formResidencePlaceholder">Select</span>
+                <span class="select-chevron" aria-hidden="true"></span>
+              </summary>
+              <div class="custom-options">
+                <label>
+                  <input type="radio" name="residence_type" value="1 Bedroom" data-custom-option="residence" />
                   <span data-i18n="residenceOneBedroom">1 Bedroom</span>
                 </label>
                 <label>
-                  <input type="radio" name="residence_type" value="2 Bedroom" data-residence-option />
+                  <input type="radio" name="residence_type" value="2 Bedroom" data-custom-option="residence" />
                   <span data-i18n="residenceTwoBedroom">2 Bedroom</span>
                 </label>
                 <label>
-                  <input type="radio" name="residence_type" value="3 Bedroom" data-residence-option />
+                  <input type="radio" name="residence_type" value="3 Bedroom" data-custom-option="residence" />
                   <span data-i18n="residenceThreeBedroom">3 Bedroom</span>
                 </label>
                 <label>
-                  <input type="radio" name="residence_type" value="Penthouse" data-residence-option />
+                  <input type="radio" name="residence_type" value="Penthouse" data-custom-option="residence" />
                   <span data-i18n="residencePenthouse">Penthouse</span>
                 </label>
               </div>
