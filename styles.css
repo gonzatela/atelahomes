@@ -219,12 +219,13 @@ textarea {
 }
 
 .language-switch button.active {
-  background: currentColor;
+  background: var(--paper);
   color: var(--ink);
 }
 
 .site-header.scrolled .language-switch button.active,
 .site-header.menu-active .language-switch button.active {
+  background: var(--olive-dark);
   color: var(--paper);
 }
 
