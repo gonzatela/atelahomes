@@ -378,7 +378,7 @@ textarea {
   display: grid;
   grid-template-columns: minmax(150px, 0.28fr) minmax(0, 1fr);
   gap: clamp(26px, 7vw, 92px);
-  padding: clamp(70px, 11vw, 134px) 0;
+  padding: clamp(70px, 11vw, 134px) 0 0;
 }
 
 .intro-copy {
@@ -452,7 +452,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(220px, 0.7fr);
   gap: clamp(16px, 2vw, 24px);
-  padding-bottom: clamp(70px, 11vw, 130px);
+  padding: clamp(40px, 6vw, 80px) 0 clamp(70px, 11vw, 130px);
 }
 
 .figure-card {
@@ -536,7 +536,7 @@ h3 {
 }
 
 .areas {
-  padding: clamp(70px, 11vw, 132px) 0;
+  padding: 0 0 clamp(70px, 11vw, 132px);
   border-top: 1px solid var(--line);
 }
 
@@ -792,7 +792,7 @@ h3 {
 }
 
 .homes {
-  padding: clamp(70px, 11vw, 132px) 0;
+  padding: 0 0 clamp(70px, 11vw, 132px);
 }
 
 .availability-heading {
@@ -1600,10 +1600,13 @@ h3 {
     font-size: 0.68rem;
   }
 
-  .intro,
+  .intro {
+    padding: 44px 0 0;
+  }
+
   .areas,
   .homes {
-    padding: 44px 0;
+    padding: 0 0 44px;
   }
 
   .section-label {
