@@ -119,18 +119,21 @@ textarea {
   min-height: 78px;
   align-items: center;
   padding: 18px clamp(22px, 4vw, 64px);
-  background: rgba(247, 243, 236, 0.92);
+  background: transparent;
+  color: var(--paper);
   border-bottom: 1px solid transparent;
   backdrop-filter: blur(14px);
   transition:
     border-color 180ms ease,
-    background 180ms ease;
+    background 180ms ease,
+    color 180ms ease;
 }
 
 .site-header.scrolled,
 .site-header.menu-active {
   border-color: var(--line);
   background: rgba(247, 243, 236, 0.98);
+  color: var(--ink);
 }
 
 .brand {
@@ -138,7 +141,7 @@ textarea {
   display: inline-flex;
   align-items: baseline;
   gap: 12px;
-  color: var(--ink);
+  color: inherit;
   font-weight: 520;
   line-height: 1;
   text-transform: uppercase;
@@ -182,7 +185,7 @@ textarea {
   bottom: 4px;
   left: 0;
   height: 1px;
-  background: var(--olive-dark);
+  background: currentColor;
   content: "";
   opacity: 0;
   transform: scaleX(0.4);
@@ -201,21 +204,27 @@ textarea {
   display: inline-grid;
   grid-template-columns: repeat(2, 38px);
   gap: 2px;
-  border: 1px solid var(--olive-dark);
+  border: 1px solid currentColor;
 }
 
 .language-switch button {
   min-height: 28px;
   border: 0;
   background: transparent;
-  color: var(--ink);
+  color: inherit;
   cursor: pointer;
   font-size: 0.68rem;
   font-weight: 560;
+  transition: color 180ms ease, background 180ms ease;
 }
 
 .language-switch button.active {
-  background: var(--olive-dark);
+  background: currentColor;
+  color: var(--ink);
+}
+
+.site-header.scrolled .language-switch button.active,
+.site-header.menu-active .language-switch button.active {
   color: var(--paper);
 }
 
@@ -226,7 +235,7 @@ textarea {
   height: 42px;
   border: 0;
   background: transparent;
-  color: var(--ink);
+  color: inherit;
   cursor: pointer;
 }
 
@@ -261,13 +270,29 @@ textarea {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   display: grid;
   min-height: 85vh;
   align-content: center;
   padding: 110px 0 0;
+  color: var(--paper);
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.65) contrast(1.05);
 }
 
 .hero-layout {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(64px, 0.2fr) minmax(0, 1fr);
   gap: clamp(18px, 4vw, 56px);
@@ -311,8 +336,8 @@ textarea {
   grid-column: 2;
   max-width: 620px;
   margin-top: 16px;
-  color: var(--ink);
-  opacity: 0.85;
+  color: var(--paper);
+  opacity: 0.95;
   font-size: clamp(1.1rem, 1.4vw, 1.25rem);
   line-height: 1.4;
   animation: revealUp 820ms ease 260ms both;
@@ -333,26 +358,25 @@ textarea {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background: var(--olive-dark);
-  color: var(--paper);
-  border: 1px solid var(--olive-dark);
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--paper);
 }
 
 .hero-actions .button.secondary {
   background: transparent;
-  color: var(--ink);
-  border: 1px solid var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--paper);
 }
 
 .hero-actions .button:hover {
   background: transparent;
-  color: var(--olive-dark);
+  color: var(--paper);
 }
 
 .hero-actions .button.secondary:hover {
-  background: var(--olive-dark);
-  color: var(--paper);
-  border-color: var(--olive-dark);
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .section-label,
