@@ -1765,3 +1765,34 @@ h3 {
     padding: 38px 17px 18px;
   }
 }
+.route-type-cell {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.route-type-cell span {
+  flex: 1;
+}
+.route-graphic {
+  width: 72px;
+  height: 40px;
+  color: var(--olive-dark);
+  flex-shrink: 0;
+  overflow: visible;
+}
+.route-graphic .graphic-line {
+  stroke: currentColor;
+  stroke-width: 8;
+}
+.route-graphic .graphic-soft {
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 4;
+  stroke-dasharray: 8 8;
+}
+.route-graphic .graphic-dot {
+  fill: currentColor;
+}
+.route-graphic .graphic-dashed {
+  stroke-dasharray: 8 8;
+}
