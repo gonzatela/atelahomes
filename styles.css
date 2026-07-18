@@ -1315,8 +1315,9 @@ h3 {
 
 .button {
   min-height: 56px;
-  border: 1px solid var(--paper);
-  background: var(--paper);
+  border-radius: 40px;
+  border: 1px solid var(--olive-mid);
+  background: var(--olive-mid);
   color: var(--ink);
   cursor: pointer;
   font-size: 0.82rem;
@@ -1325,25 +1326,28 @@ h3 {
   text-transform: uppercase;
   transition:
     background 180ms ease,
+    border-color 180ms ease,
     color 180ms ease;
 }
 
 .button:hover,
 .button:focus-visible {
   background: var(--olive);
-  color: var(--ink);
+  border-color: var(--olive);
+  color: var(--paper);
 }
 
 .button.secondary {
   background: transparent;
-  color: var(--paper);
+  color: var(--ink);
+  border-color: var(--olive-mid);
 }
 
 .button.secondary:hover,
 .button.secondary:focus-visible {
-  background: rgba(247, 243, 236, 0.1);
-  color: var(--paper);
-  border-color: var(--paper);
+  background: var(--olive-mid);
+  color: var(--ink);
+  border-color: var(--olive-mid);
 }
 
 .site-footer {
@@ -1798,3 +1802,15 @@ h3 {
 }
 
 
+
+.homes .button {
+  background: var(--paper);
+  border-color: var(--paper);
+  color: var(--ink);
+}
+.homes .button:hover,
+.homes .button:focus-visible {
+  background: transparent;
+  border-color: var(--ink);
+  color: var(--ink);
+}
