@@ -723,7 +723,7 @@ h3 {
 .services {
   width: 100%;
   max-width: none;
-  padding: clamp(70px, 10vw, 128px) max(21px, calc((100vw - var(--max)) / 2));
+  padding: clamp(70px, 11vw, 132px) max(21px, calc((100vw - var(--max)) / 2));
   background: var(--olive-dark);
   color: var(--paper);
 }
@@ -1381,7 +1381,7 @@ h3 {
   transform: translateY(0);
 }
 .legal-section {
-  padding: clamp(70px, 10vw, 128px) max(21px, calc((100vw - var(--max)) / 2));
+  padding: clamp(70px, 11vw, 132px) max(21px, calc((100vw - var(--max)) / 2));
   background: var(--paper);
   color: var(--ink);
 }
@@ -1740,6 +1740,7 @@ h3 {
 
   .about {
     gap: 24px;
+    padding-top: 44px;
     padding-bottom: 44px;
   }
 
