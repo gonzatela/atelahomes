@@ -403,7 +403,7 @@ textarea {
   display: grid;
   grid-template-columns: minmax(150px, 0.28fr) minmax(0, 1fr);
   gap: clamp(26px, 7vw, 92px);
-  padding: clamp(70px, 11vw, 134px) 0 0;
+  padding: clamp(56px, 9vw, 104px) 0 0;
 }
 
 .intro-copy {
@@ -477,7 +477,7 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(220px, 0.7fr);
   gap: clamp(16px, 2vw, 24px);
-  padding: clamp(40px, 6vw, 80px) 0 clamp(70px, 11vw, 130px);
+  padding: clamp(40px, 6vw, 80px) 0 clamp(56px, 9vw, 104px);
 }
 
 .figure-card {
@@ -561,7 +561,7 @@ h3 {
 }
 
 .areas {
-  padding: clamp(70px, 11vw, 132px) max(21px, calc((100vw - var(--max)) / 2));
+  padding: clamp(56px, 9vw, 104px) max(21px, calc((100vw - var(--max)) / 2));
   background: var(--olive-mid);
   color: var(--ink);
 }
@@ -723,7 +723,7 @@ h3 {
 .services {
   width: 100%;
   max-width: none;
-  padding: clamp(70px, 11vw, 132px) max(21px, calc((100vw - var(--max)) / 2));
+  padding: clamp(56px, 9vw, 104px) max(21px, calc((100vw - var(--max)) / 2));
   background: var(--olive-dark);
   color: var(--paper);
 }
@@ -818,7 +818,7 @@ h3 {
 }
 
 .homes {
-  padding: clamp(70px, 11vw, 132px) max(21px, calc((100vw - var(--max)) / 2));
+  padding: clamp(56px, 9vw, 104px) max(21px, calc((100vw - var(--max)) / 2));
   background: var(--olive-mid);
   color: var(--ink);
 }
@@ -869,8 +869,8 @@ h3 {
   grid-template-columns: minmax(280px, 0.54fr) minmax(0, 1fr);
   gap: clamp(30px, 7vw, 96px);
   align-items: center;
-  padding-top: clamp(70px, 11vw, 132px);
-  padding-bottom: clamp(70px, 11vw, 132px);
+  padding-top: clamp(56px, 9vw, 104px);
+  padding-bottom: clamp(56px, 9vw, 104px);
 }
 
 .about-image {
@@ -931,7 +931,7 @@ h3 {
   gap: clamp(32px, 7vw, 92px);
   width: 100%;
   max-width: none;
-  padding: clamp(74px, 11vw, 132px) max(21px, calc((100vw - var(--max)) / 2));
+  padding: clamp(56px, 9vw, 104px) max(21px, calc((100vw - var(--max)) / 2));
   background: var(--olive-dark);
   box-shadow: 0 36px 76px rgba(21, 26, 22, 0.2);
   color: var(--paper);
@@ -1381,7 +1381,7 @@ h3 {
   transform: translateY(0);
 }
 .legal-section {
-  padding: clamp(70px, 11vw, 132px) max(21px, calc((100vw - var(--max)) / 2));
+  padding: clamp(56px, 9vw, 104px) max(21px, calc((100vw - var(--max)) / 2));
   background: var(--paper);
   color: var(--ink);
 }
@@ -1634,10 +1634,10 @@ h3 {
   }
 
   .intro {
-    padding: 44px 0 0;
+    padding: 36px 0 0;
   }
 
-  .areas, .homes { padding: 44px 15px; }
+  .areas, .homes { padding: 36px 15px; }
 
   .section-label {
     margin-bottom: 28px;
@@ -1655,7 +1655,7 @@ h3 {
 
   .figure-gallery {
     grid-template-columns: 1fr;
-    padding-bottom: 44px;
+    padding-bottom: 36px;
   }
 
   .figure-card.large {
@@ -1688,11 +1688,11 @@ h3 {
   }
 
   .services {
-    padding: 44px 15px;
+    padding: 36px 15px;
   }
 
   .legal-section {
-    padding: 44px 15px;
+    padding: 36px 15px;
   }
 
   .services-grid {
@@ -1740,8 +1740,8 @@ h3 {
 
   .about {
     gap: 24px;
-    padding-top: 44px;
-    padding-bottom: 44px;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   .about-copy {
@@ -1750,7 +1750,7 @@ h3 {
 
   .contact {
     gap: 28px;
-    padding: 44px 15px;
+    padding: 36px 15px;
   }
 
   .contact-heading {
