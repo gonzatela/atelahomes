@@ -532,7 +532,7 @@ contactForm?.addEventListener("submit", (event) => {
     submitGroup.appendChild(fallback);
   }
   
-  fallback.innerHTML = currentLang === 'es' 
+  fallback.innerHTML = document.documentElement.lang === 'es' 
     ? "Si tu aplicación de correo no se abre automáticamente, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>haz clic aquí</a> o escribe a <b>info@atelahomes.com</b>."
     : "If your mail app doesn't open automatically, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>click here</a> or email <b>info@atelahomes.com</b>.";
 });

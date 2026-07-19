@@ -1281,9 +1281,9 @@ h3 {
   content: "";
   position: absolute;
   left: 6px;
-  top: 2px;
+  top: 3px;
   width: 4px;
-  height: 9px;
+  height: 8px;
   border: solid var(--olive-dark);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
@@ -1889,4 +1889,11 @@ h3 {
   background: var(--paper);
   border-color: var(--paper);
   color: var(--olive-dark);
+}
+
+/* Required fields asterisks */
+.contact-form label:has([required]) > span::after,
+.contact-form fieldset:has([aria-required="true"]) > legend::after {
+  content: " *";
+  color: #d9534f;
 }
