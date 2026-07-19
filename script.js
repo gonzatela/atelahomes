@@ -514,6 +514,25 @@ contactForm?.addEventListener("submit", (event) => {
 
   const mailtoLink = `mailto:info@atelahomes.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailtoLink;
+
+  // Fallback UI for desktop users without a default mail client
+  const submitGroup = contactForm.querySelector('.form-submit-group');
+  let fallback = document.getElementById('mailto-fallback');
+  if (!fallback) {
+    fallback = document.createElement('div');
+    fallback.id = 'mailto-fallback';
+    fallback.style.marginTop = '16px';
+    fallback.style.padding = '14px 18px';
+    fallback.style.background = 'rgba(247, 243, 236, 0.1)';
+    fallback.style.border = '1px solid rgba(247, 243, 236, 0.3)';
+    fallback.style.borderRadius = '8px';
+    fallback.style.fontSize = '0.9rem';
+    submitGroup.appendChild(fallback);
+  }
+  
+  fallback.innerHTML = currentLang === 'es' 
+    ? 'Si tu aplicación de correo no se abre automáticamente, <a href="' + mailtoLink + '" style="text-decoration:underline; font-weight:560;">haz clic aquí</a> o escribe a <b>info@atelahomes.com</b>.'
+    : 'If your mail app doesn\\'t open automatically, <a href="' + mailtoLink + '" style="text-decoration:underline; font-weight:560;">click here</a> or email <b>info@atelahomes.com</b>.';
 });
 
 year.textContent = new Date().getFullYear();
