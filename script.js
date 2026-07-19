@@ -527,6 +527,7 @@ contactForm?.addEventListener("submit", (event) => {
     fallback.style.background = 'rgba(247, 243, 236, 0.1)';
     fallback.style.border = '1px solid rgba(247, 243, 236, 0.3)';
     fallback.style.borderRadius = '8px';
+    fallback.style.color = 'var(--paper)';
     fallback.style.fontSize = '0.9rem';
     submitGroup.appendChild(fallback);
   }
