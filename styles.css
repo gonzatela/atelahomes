@@ -869,6 +869,7 @@ h3 {
   grid-template-columns: minmax(280px, 0.54fr) minmax(0, 1fr);
   gap: clamp(30px, 7vw, 96px);
   align-items: center;
+  padding-top: clamp(70px, 11vw, 132px);
   padding-bottom: clamp(70px, 11vw, 132px);
 }
 
@@ -1803,14 +1804,24 @@ h3 {
 
 
 
-.homes .button {
-  background: var(--paper);
-  border-color: var(--paper);
-  color: var(--ink);
-}
+
 .homes .button:hover,
 .homes .button:focus-visible {
   background: transparent;
   border-color: var(--ink);
   color: var(--ink);
+}
+
+.route-link {
+  font-weight: 560;
+  text-decoration: underline;
+  text-decoration-color: rgba(21, 26, 22, 0.3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 160ms ease;
+  white-space: nowrap;
+}
+.route-link:hover,
+.route-link:focus-visible {
+  text-decoration-color: var(--ink);
 }
