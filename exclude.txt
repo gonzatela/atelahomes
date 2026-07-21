@@ -1,0 +1,9 @@
+\.git\
+\.gitignore
+\.gitattributes
+node_modules\
+deploy.js
+bundle.bat
+bundle.ps1
+update_
+fix_
