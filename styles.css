@@ -1931,3 +1931,8 @@ h3 {
     gap: 40px;
   }
 }
+
+/* Fix anchor scrolling behind fixed header */
+section[id], div[id] {
+  scroll-margin-top: 88px;
+}
