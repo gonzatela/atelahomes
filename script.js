@@ -496,7 +496,7 @@ contactForm?.addEventListener("submit", (event) => {
   
   body += `--- \nPrivacidad: Aceptada.\n`;
 
-  const mailtoLink = `mailto:info@atelahomes.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailtoLink = `mailto:miren@atelahomes.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailtoLink;
 
   // Fallback UI for desktop users without a default mail client
@@ -516,8 +516,8 @@ contactForm?.addEventListener("submit", (event) => {
   }
   
   fallback.innerHTML = document.documentElement.lang === 'es' 
-    ? "Si tu aplicación de correo no se abre automáticamente, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>haz clic aquí</a> o escribe a <b>info@atelahomes.com</b>."
-    : "If your mail app doesn't open automatically, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>click here</a> or email <b>info@atelahomes.com</b>.";
+    ? "Si tu aplicación de correo no se abre automáticamente, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>haz clic aquí</a> o escribe a <b>miren@atelahomes.com</b>."
+    : "If your mail app doesn't open automatically, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>click here</a> or email <b>miren@atelahomes.com</b>.";
 });
 
 year.textContent = new Date().getFullYear();
