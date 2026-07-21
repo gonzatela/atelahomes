@@ -4,7 +4,7 @@ const translations = {
     pageDescription: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España.",
     navMethod: "Método",
     navAreas: "Zonas",
-    navServices: "Servicios",
+
     navHomes: "Cómo podemos ayudarte",
     navContact: "Contacto",
     
@@ -127,7 +127,7 @@ const translations = {
     pageDescription: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain.",
     navMethod: "Method",
     navAreas: "Areas",
-    navServices: "Services",
+
     navHomes: "How we can help",
     navContact: "Contact",
     
