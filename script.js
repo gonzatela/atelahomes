@@ -12,7 +12,7 @@ const translations = {
     heroTitle: "Tu casa en España, con criterio local y acompañamiento personal.",
     heroSubtitle: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España. Desde la primera búsqueda hasta la firma y tu llegada, Miren será tu única interlocutora.",
     heroCtaPrimary: "Cuéntanos qué estás buscando",
-    heroCtaSecondary: "Habla con Miren",
+    heroCtaSecondary: "Ver servicios",
     
     // Value Prop
     methodLabel: "Método",
@@ -135,7 +135,7 @@ const translations = {
     heroTitle: "Your home in Spain, guided by local insight and personal support.",
     heroSubtitle: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain. From the initial search to signing and settling in, Miren remains your single point of contact.",
     heroCtaPrimary: "Tell us what you are looking for",
-    heroCtaSecondary: "Speak with Miren",
+    heroCtaSecondary: "View services",
     
     // Value Prop
     methodLabel: "Method",
