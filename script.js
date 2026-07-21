@@ -272,25 +272,8 @@ function closeMenu() {
 }
 
 function initSmoothScroll() {
-  const supportsFinePointer = window.matchMedia("(pointer: fine)").matches;
-  if (window.innerWidth <= 760) return; // Disable Lenis on mobile devices
-
-  if (reduceMotionQuery.matches || !supportsFinePointer || typeof window.Lenis !== "function") {
-    return;
-  }
-
-  window.atelaScroll = new window.Lenis({
-    anchors: {
-      duration: 0.8
-    },
-    autoRaf: true,
-    duration: 0.72,
-    easing: (progress) => 1 - Math.pow(1 - progress, 4),
-    smoothWheel: true,
-    stopInertiaOnNavigate: true,
-    syncTouch: false,
-    wheelMultiplier: 0.95
-  });
+  // Disabled by user request for normal scrolling
+  return;
 }
 
 function updateBudgetLabel(language = document.documentElement.lang || "en") {

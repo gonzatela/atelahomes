@@ -1357,9 +1357,6 @@ h3 {
 }
 
 .site-footer {
-  position: sticky;
-  bottom: 0;
-  z-index: 1;
   display: flex;
   justify-content: space-between;
   gap: clamp(22px, 5vw, 76px);
