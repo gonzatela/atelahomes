@@ -1450,7 +1450,15 @@ h3 {
 .legal-partner-logo {
   width: 100%;
   height: auto;
-  filter: grayscale(0.15) contrast(1.05);
+  filter: grayscale(1) contrast(1.2);
+}
+
+.route-legal-logo {
+  display: block;
+  height: 22px;
+  margin-top: 14px;
+  filter: grayscale(1) contrast(1.2);
+  opacity: 0.85;
 }
 
 .footer-brand {
