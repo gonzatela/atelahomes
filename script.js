@@ -380,7 +380,6 @@ function setLanguage(language) {
     button.setAttribute("aria-pressed", String(isActive));
   });
 
-  localStorage.setItem("atela-language", language);
   updateBudgetLabel(language);
   updateCustomSelectLabels();
 }
@@ -495,4 +494,4 @@ year.textContent = new Date().getFullYear();
 setHeaderState();
 initSmoothScroll();
 initRevealMotion();
-setLanguage(localStorage.getItem("atela-language") || "en");
+setLanguage("en");
