@@ -20,13 +20,13 @@ const translations = {
     methodCopy: "Filtramos propiedades, comparamos zonas, coordinamos visitas presenciales o remotas y te ayudamos a entender qué estás comprando, dónde y por qué. Menos ruido, mejores decisiones y una persona de confianza durante todo el proceso.",
     
     // Method 4 Steps
-    stepOneTitle: "Entendemos tu búsqueda",
+    stepOneTitle: "Entendemos tu búsqueda:",
     stepOneCopy: "Definimos prioridades, presupuesto, estilo de vida y calendario.",
-    stepTwoTitle: "Filtramos el mercado",
+    stepTwoTitle: "Filtramos el mercado:",
     stepTwoCopy: "Seleccionamos propiedades y zonas con criterio, evitando visitas y decisiones innecesarias.",
-    stepThreeTitle: "Visitamos y evaluamos",
+    stepThreeTitle: "Visitamos y evaluamos:",
     stepThreeCopy: "Coordinamos visitas presenciales o remotas y analizamos cada opción contigo.",
-    stepFourTitle: "Negociamos y coordinamos",
+    stepFourTitle: "Negociamos y coordinamos:",
     stepFourCopy: "Te acompañamos en la negociación y conectamos a las partes implicadas hasta la firma y la instalación.",
     
     // Figures
@@ -60,7 +60,7 @@ const translations = {
     
     // Legal
     legalLabel: "Alianza Legal",
-    legalTitle: "Asesoría legal e inmigración para tu llegada a España.",
+    legalTitle: "Servicios de asesoría legal y de inmigración para tu llegada a España.",
     legalCopy: "Trabajamos con Gluckheim, despacho especializado en extranjería y derecho inmobiliario, para coordinar y facilitar los aspectos legales de tu compra o traslado a España.",
     legalCta: "Conocer Gluckheim →",
     
@@ -87,7 +87,7 @@ const translations = {
     aboutCaption: "Miren Fernández Atela, interlocutora única del proceso.",
     aboutLabel: "Miren Fernández Atela",
     aboutTitle: "Una única interlocutora para una decisión importante.",
-    aboutCopy: "Miren Fernández Atela acompaña personalmente cada búsqueda. Su trabajo consiste en escuchar, filtrar y explicar con transparencia para que el cliente pueda decidir con seguridad, incluso cuando empieza el proceso desde fuera de España.",
+    aboutCopy: "Miren Fernández Atela cuenta con una sólida trayectoria internacional en gestión de clientes, relaciones institucionales, relocation y servicios inmobiliarios. A lo largo de más de tres décadas ha desarrollado su carrera en organizaciones de prestigio como el Banco Mundial, IFEMA, Publiespaña y Casa Decor, ocupando posiciones de responsabilidad y construyendo una amplia experiencia en atención al cliente, desarrollo de negocio y coordinación de proyectos internacionales.<br><br>Su experiencia profesional, unida al hecho de haber vivido en varios países del mundo, le permite comprender de primera mano los desafíos, inquietudes y necesidades de las personas y familias que afrontan un proceso de traslado internacional. Gracias a esta visión global y a su profundo conocimiento del mercado español, ofrece un acompañamiento cercano, eficaz y altamente personalizado en cada etapa de la reubicación.<br><br>Reconocida por su discreción, capacidad de organización y vocación de servicio, Miren transforma procesos complejos en experiencias sencillas y seguras, ayudando a sus clientes a integrarse con éxito en su nuevo entorno y proporcionándoles la tranquilidad de contar con una profesional que entiende tanto el aspecto práctico como el humano de cada cambio de vida.",
     aboutBrief: "Asociada en Estate One en Madrid, Miren combina experiencia en servicios inmobiliarios con formación de negocio en Instituto de Empresa/IE Business School y Universidad Complutense de Madrid.",
     aboutLinkedIn: "Ver perfil en LinkedIn",
     
@@ -143,14 +143,14 @@ const translations = {
     methodCopy: "We filter properties, compare areas, coordinate in-person or remote viewings, and help you understand what you are buying, where and why. Less noise, better decisions and a trusted advisor throughout the process.",
     
     // Method 4 Steps
-    stepOneTitle: "We understand your search",
-    stepOneCopy: "We define your priorities, budget, lifestyle and timeline.",
-    stepTwoTitle: "We filter the market",
-    stepTwoCopy: "We carefully select properties and areas, avoiding unnecessary viewings and decisions.",
-    stepThreeTitle: "We visit and evaluate",
-    stepThreeCopy: "We coordinate in-person or remote viewings and analyze each option with you.",
-    stepFourTitle: "We negotiate and coordinate",
-    stepFourCopy: "We support you in negotiations and connect the involved parties up to signing and settling in.",
+    stepOneTitle: "We understand your search:",
+    stepOneCopy: "We define priorities, budget, lifestyle, and timeline.",
+    stepTwoTitle: "We filter the market:",
+    stepTwoCopy: "We select properties and areas with criteria, avoiding unnecessary visits and decisions.",
+    stepThreeTitle: "We visit and evaluate:",
+    stepThreeCopy: "We coordinate in-person or remote visits and analyze each option with you.",
+    stepFourTitle: "We negotiate and coordinate:",
+    stepFourCopy: "We accompany you in the negotiation and connect the involved parties until signing and settling in.",
     
     // Figures
     figOne: "Homes with light, outdoor space and Mediterranean living.",
@@ -186,6 +186,7 @@ const translations = {
     legalTitle: "Legal and immigration advisory for your arrival in Spain.",
     legalCopy: "We work with Gluckheim, a firm specializing in immigration and real estate law, to coordinate and facilitate the legal aspects of your purchase or relocation to Spain.",
     legalCta: "Discover Gluckheim →",
+    homesLegalCopy: "During the purchase, we provide specialized legal advisory through Gluckheim, to ensure a safe and smooth transaction.",
     
     // Paths
     homesLabel: "How we can help",
@@ -207,11 +208,11 @@ const translations = {
     trustTitle: "Client Testimonials",
     
     // About
-    aboutCaption: "Miren Fernández Atela, the single point of contact for the process.",
+    aboutCaption: "Miren Fernández Atela, your single point of contact.",
     aboutLabel: "Miren Fernández Atela",
     aboutTitle: "A single point of contact for an important decision.",
-    aboutCopy: "Miren Fernández Atela personally supports every search. Her work is to listen, filter and explain transparently so clients can decide with confidence, even when starting the process from outside Spain.",
-    aboutBrief: "An associate at Estate One in Madrid, Miren combines real estate services experience with business training from Instituto de Empresa/IE Business School and Universidad Complutense de Madrid.",
+    aboutCopy: "Miren Fernández Atela has a solid international track record in client management, institutional relations, relocation, and real estate services. Over more than three decades, she has developed her career in prestigious organizations such as the World Bank, IFEMA, Publiespaña, and Casa Decor, holding positions of responsibility and building extensive experience in customer service, business development, and the coordination of international projects.<br><br>Her professional experience, coupled with having lived in several countries around the world, allows her to understand firsthand the challenges, concerns, and needs of individuals and families facing an international relocation process. Thanks to this global vision and her deep knowledge of the Spanish market, she offers close, efficient, and highly personalized support at every stage of the relocation.<br><br>Recognized for her discretion, organizational skills, and service vocation, Miren transforms complex processes into simple and secure experiences, helping her clients successfully integrate into their new environment and providing them with the peace of mind of having a professional who understands both the practical and human aspects of every life change.",
+    aboutBrief: "As an associate at Estate One in Madrid, Miren combines real estate expertise with business education from Instituto de Empresa/IE Business School and Universidad Complutense de Madrid.",
     aboutLinkedIn: "View LinkedIn profile",
     
     // Contact
@@ -399,7 +400,9 @@ function setLanguage(language) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
     if (dictionary[key]) {
-      element.textContent = dictionary[key];
+      let text = dictionary[key];
+      text = text.replace(/ ([yYoOeEaA]) /g, ' $1&nbsp;');
+      element.innerHTML = text;
     }
   });
 
@@ -496,7 +499,7 @@ contactForm?.addEventListener("submit", (event) => {
   
   body += `--- \nPrivacidad: Aceptada.\n`;
 
-  const mailtoLink = `mailto:miren@atelahomes.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailtoLink = `mailto:info@atelahomes.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailtoLink;
 
   // Fallback UI for desktop users without a default mail client
@@ -516,8 +519,8 @@ contactForm?.addEventListener("submit", (event) => {
   }
   
   fallback.innerHTML = document.documentElement.lang === 'es' 
-    ? "Si tu aplicación de correo no se abre automáticamente, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>haz clic aquí</a> o escribe a <b>miren@atelahomes.com</b>."
-    : "If your mail app doesn't open automatically, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>click here</a> or email <b>miren@atelahomes.com</b>.";
+    ? "Si tu aplicación de correo no se abre automáticamente, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>haz clic aquí</a> o escribe a <b>info@atelahomes.com</b>."
+    : "If your mail app doesn't open automatically, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>click here</a> or email <b>info@atelahomes.com</b>.";
 });
 
 year.textContent = new Date().getFullYear();
