@@ -356,38 +356,6 @@ function initRevealMotion() {
   );
 
   revealElements.forEach((element) => revealObserver.observe(element));
-
-  const driftElements = Array.from(imageMotionElements);
-  let driftFrame = null;
-
-  function updateImageDrift() {
-    driftFrame = null;
-
-    driftElements.forEach((element) => {
-      const image = element.querySelector("img");
-      if (!image) {
-        return;
-      }
-
-      const rect = element.getBoundingClientRect();
-      const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
-      const clampedProgress = Math.min(1, Math.max(0, progress));
-      const shift = (clampedProgress - 0.5) * 18;
-      image.style.setProperty("--image-shift", `${shift.toFixed(2)}px`);
-    });
-  }
-
-  function requestImageDrift() {
-    if (driftFrame !== null) {
-      return;
-    }
-
-    driftFrame = window.requestAnimationFrame(updateImageDrift);
-  }
-
-  updateImageDrift();
-  window.addEventListener("scroll", requestImageDrift, { passive: true });
-  window.addEventListener("resize", requestImageDrift);
 }
 
 function setLanguage(language) {
