@@ -10,7 +10,7 @@ const translations = {
     
     // Hero
     heroTitle: "Tu casa en España, con criterio local y acompañamiento personal.",
-    heroSubtitle: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España. Desde la primera búsqueda hasta la firma y tu llegada, Miren será tu única interlocutora.",
+    heroSubtitle: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España. Desde la primera búsqueda hasta la firma y tu llegada, nuestro sello personalizado te hará contar con una única interlocutora en todo el proceso.",
     heroCtaPrimary: "Cuéntanos qué estás buscando",
     heroCtaSecondary: "Ver servicios",
     
@@ -84,11 +84,11 @@ const translations = {
     trustTitle: "Testimonios de nuestros clientes",
     
     // About
-    aboutCaption: "Miren Fernández Atela, interlocutora única del proceso.",
-    aboutLabel: "Miren Fernández Atela",
+    aboutCaption: "Miren Fernández Atela, CEO de Atela Homes.",
+    aboutLabel: "CEO de Atela Homes",
     aboutTitle: "Una única interlocutora para una decisión importante.",
     aboutCopy: "Miren Fernández Atela cuenta con una sólida trayectoria internacional en gestión de clientes, relaciones institucionales, relocation y servicios inmobiliarios. A lo largo de más de tres décadas ha desarrollado su carrera en organizaciones de prestigio como el Banco Mundial, IFEMA, Publiespaña y Casa Decor, ocupando posiciones de responsabilidad y construyendo una amplia experiencia en atención al cliente, desarrollo de negocio y coordinación de proyectos internacionales.<br><br>Su experiencia profesional, unida al hecho de haber vivido en varios países del mundo, le permite comprender de primera mano los desafíos, inquietudes y necesidades de las personas y familias que afrontan un proceso de traslado internacional. Gracias a esta visión global y a su profundo conocimiento del mercado español, ofrece un acompañamiento cercano, eficaz y altamente personalizado en cada etapa de la reubicación.<br><br>Reconocida por su discreción, capacidad de organización y vocación de servicio, Miren transforma procesos complejos en experiencias sencillas y seguras, ayudando a sus clientes a integrarse con éxito en su nuevo entorno y proporcionándoles la tranquilidad de contar con una profesional que entiende tanto el aspecto práctico como el humano de cada cambio de vida.",
-    aboutBrief: "Asociada en Estate One en Madrid, Miren combina experiencia en servicios inmobiliarios con formación de negocio en Instituto de Empresa/IE Business School y Universidad Complutense de Madrid.",
+    aboutBrief: "",
     aboutLinkedIn: "Ver perfil en LinkedIn",
     
     // Contact
@@ -114,7 +114,7 @@ const translations = {
     formMessage: "Qué deberíamos saber",
     formPrivacy: "He leído y acepto la Política de Privacidad.",
     formSubmit: "Enviar mi consulta",
-    formExpectation: "Miren revisará personalmente tu consulta y responderá en un plazo de 24–48 horas laborables.",
+    formExpectation: "Tu consulta se responderá en un plazo de 24-48 horas laborables.",
     
     // Footer Legal
     footerLegal: "Aviso Legal",
@@ -133,7 +133,7 @@ const translations = {
     
     // Hero
     heroTitle: "Your home in Spain, guided by local insight and personal support.",
-    heroSubtitle: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain. From the initial search to signing and settling in, Miren remains your single point of contact.",
+    heroSubtitle: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain. From the initial search to signing and settling in, our personalized approach ensures you have a single point of contact throughout the entire process.",
     heroCtaPrimary: "Tell us what you are looking for",
     heroCtaSecondary: "View services",
     
@@ -208,11 +208,10 @@ const translations = {
     trustTitle: "Client Testimonials",
     
     // About
-    aboutCaption: "Miren Fernández Atela, your single point of contact.",
-    aboutLabel: "Miren Fernández Atela",
+    aboutCaption: "Miren Fernández Atela, CEO of Atela Homes.",
+    aboutLabel: "CEO of Atela Homes",
     aboutTitle: "A single point of contact for an important decision.",
     aboutCopy: "Miren Fernández Atela has a solid international track record in client management, institutional relations, relocation, and real estate services. Over more than three decades, she has developed her career in prestigious organizations such as the World Bank, IFEMA, Publiespaña, and Casa Decor, holding positions of responsibility and building extensive experience in customer service, business development, and the coordination of international projects.<br><br>Her professional experience, coupled with having lived in several countries around the world, allows her to understand firsthand the challenges, concerns, and needs of individuals and families facing an international relocation process. Thanks to this global vision and her deep knowledge of the Spanish market, she offers close, efficient, and highly personalized support at every stage of the relocation.<br><br>Recognized for her discretion, organizational skills, and service vocation, Miren transforms complex processes into simple and secure experiences, helping her clients successfully integrate into their new environment and providing them with the peace of mind of having a professional who understands both the practical and human aspects of every life change.",
-    aboutBrief: "As an associate at Estate One in Madrid, Miren combines real estate expertise with business education from Instituto de Empresa/IE Business School and Universidad Complutense de Madrid.",
     aboutLinkedIn: "View LinkedIn profile",
     
     // Contact
@@ -238,7 +237,7 @@ const translations = {
     formMessage: "What should we know?",
     formPrivacy: "I have read and accept the Privacy Policy.",
     formSubmit: "Send my enquiry",
-    formExpectation: "Miren will personally review your enquiry and respond within 24–48 business hours.",
+    formExpectation: "Your enquiry will be answered within 24-48 business hours.",
     
     // Footer Legal
     footerLegal: "Legal Notice",
