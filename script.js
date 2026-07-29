@@ -10,14 +10,15 @@ const translations = {
     
     // Hero
     heroTitle: "Tu casa en España, con criterio local y acompañamiento personal.",
-    heroSubtitle: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España. Desde la primera búsqueda hasta la firma y tu llegada, nuestro sello personalizado te hará contar con una única interlocutora en todo el proceso.",
+    heroSubtitle: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España. Desde la primera búsqueda hasta la firma y la llegada, tendrás atención personalizada y una red de colaboradores coordinada.",
+    heroLegalNote: "Nuestro equipo también puede ayudarte con tus documentos legales de residencia.",
     heroCtaPrimary: "Cuéntanos qué estás buscando",
     heroCtaSecondary: "Ver servicios",
     
     // Value Prop
     methodLabel: "Método",
     methodTitle: "Buscar desde otro país no debería significar decidir a ciegas.",
-    methodCopy: "Filtramos propiedades, comparamos zonas, coordinamos visitas presenciales o remotas y te ayudamos a entender qué estás comprando, dónde y por qué. Menos ruido, mejores decisiones y una persona de confianza durante todo el proceso.",
+    methodCopy: "Filtramos propiedades, comparamos zonas, coordinamos visitas presenciales o remotas y te ayudamos a entender qué estás comprando, dónde y por qué. Menos ruido, mejores decisiones y un equipo de confianza durante todo el proceso.",
     
     // Method 4 Steps
     stepOneTitle: "Entendemos tu búsqueda:",
@@ -63,10 +64,14 @@ const translations = {
     legalTitle: "Servicios de asesoría legal y de inmigración para tu llegada a España.",
     legalCopy: "Trabajamos con Gluckheim, despacho especializado en extranjería y derecho inmobiliario, para coordinar y facilitar los aspectos legales de tu compra o traslado a España.",
     legalCta: "Conocer Gluckheim →",
+    homesLegalCopy: "También coordinamos asesoramiento legal especializado con Gluckheim para la compraventa y los documentos de residencia que puedas necesitar.",
+    legalPartnerRole: "Colaboradora legal",
+    legalPartnerName: "Alicia Gorospe",
+    legalPartnerCopy: "Apoyo especializado en documentación de residencia y coordinación jurídica.",
     
     // Paths
     homesLabel: "Cómo podemos ayudarte",
-    homesTitle: "Cuatro formas de empezar, todas con atención directa de Miren.",
+    homesTitle: "Cuatro formas de empezar, todas con atención personalizada.",
     tableType: "Tipo",
     tableIncludes: "Incluye",
     routeBuyerTitle: "Quiero comprar una vivienda",
@@ -84,12 +89,11 @@ const translations = {
     trustTitle: "Testimonios de nuestros clientes",
     
     // About
-    aboutCaption: "Miren Fernández Atela, CEO de Atela Homes.",
-    aboutLabel: "CEO de Atela Homes",
-    aboutTitle: "Una única interlocutora para una decisión importante.",
+    aboutCaption: "Miren Fernández Atela, coordinación cercana para cada proceso.",
+    aboutLabel: "Miren Fernández Atela",
+    aboutTitle: "Experiencia personal con una red de apoyo.",
     aboutCopy: "Miren Fernández Atela cuenta con una sólida trayectoria internacional en gestión de clientes, relaciones institucionales, relocation y servicios inmobiliarios. A lo largo de más de tres décadas ha desarrollado su carrera en organizaciones de prestigio como el Banco Mundial, IFEMA, Publiespaña y Casa Decor, ocupando posiciones de responsabilidad y construyendo una amplia experiencia en atención al cliente, desarrollo de negocio y coordinación de proyectos internacionales.<br><br>Su experiencia profesional, unida al hecho de haber vivido en varios países del mundo, le permite comprender de primera mano los desafíos, inquietudes y necesidades de las personas y familias que afrontan un proceso de traslado internacional. Gracias a esta visión global y a su profundo conocimiento del mercado español, ofrece un acompañamiento cercano, eficaz y altamente personalizado en cada etapa de la reubicación.<br><br>Reconocida por su discreción, capacidad de organización y vocación de servicio, Miren transforma procesos complejos en experiencias sencillas y seguras, ayudando a sus clientes a integrarse con éxito en su nuevo entorno y proporcionándoles la tranquilidad de contar con una profesional que entiende tanto el aspecto práctico como el humano de cada cambio de vida.",
-    aboutBrief: "",
-    aboutLinkedIn: "Ver perfil en LinkedIn",
+    aboutBrief: "Desde Atela Homes coordina cada proyecto con criterio propio y con colaboradores especializados cuando la compra, el traslado o la documentación lo requieren.",
     
     // Contact
     contactLabel: "Contacto",
@@ -114,7 +118,7 @@ const translations = {
     formMessage: "Qué deberíamos saber",
     formPrivacy: "He leído y acepto la Política de Privacidad.",
     formSubmit: "Enviar mi consulta",
-    formExpectation: "Tu consulta se responderá en un plazo de 24-48 horas laborables.",
+    formExpectation: "El equipo de Atela Homes revisará tu consulta y responderá en un plazo de 24–48 horas laborables.",
     
     // Footer Legal
     footerLegal: "Aviso Legal",
@@ -133,14 +137,15 @@ const translations = {
     
     // Hero
     heroTitle: "Your home in Spain, guided by local insight and personal support.",
-    heroSubtitle: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain. From the initial search to signing and settling in, our personalized approach ensures you have a single point of contact throughout the entire process.",
+    heroSubtitle: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain. From the initial search to signing and settling in, you receive personalized attention and a coordinated network of collaborators.",
+    heroLegalNote: "Our team can also help with your legal residency documents.",
     heroCtaPrimary: "Tell us what you are looking for",
     heroCtaSecondary: "View services",
     
     // Value Prop
     methodLabel: "Method",
     methodTitle: "Searching from abroad shouldn't mean deciding blind.",
-    methodCopy: "We filter properties, compare areas, coordinate in-person or remote viewings, and help you understand what you are buying, where and why. Less noise, better decisions and a trusted advisor throughout the process.",
+    methodCopy: "We filter properties, compare areas, coordinate in-person or remote viewings, and help you understand what you are buying, where and why. Less noise, better decisions and a trusted team throughout the process.",
     
     // Method 4 Steps
     stepOneTitle: "We understand your search:",
@@ -186,11 +191,14 @@ const translations = {
     legalTitle: "Legal and immigration advisory for your arrival in Spain.",
     legalCopy: "We work with Gluckheim, a firm specializing in immigration and real estate law, to coordinate and facilitate the legal aspects of your purchase or relocation to Spain.",
     legalCta: "Discover Gluckheim →",
-    homesLegalCopy: "During the purchase, we provide specialized legal advisory through Gluckheim, to ensure a safe and smooth transaction.",
+    homesLegalCopy: "We also coordinate specialized legal advisory with Gluckheim for the purchase and any residency documents you may need.",
+    legalPartnerRole: "Legal collaborator",
+    legalPartnerName: "Alicia Gorospe",
+    legalPartnerCopy: "Specialized support for residency documentation and legal coordination.",
     
     // Paths
     homesLabel: "How we can help",
-    homesTitle: "Four ways to start, all with Miren’s direct attention.",
+    homesTitle: "Four ways to start, all with personalized attention.",
     tableType: "Type",
     tableIncludes: "Includes",
     routeBuyerTitle: "I want to buy a property",
@@ -208,11 +216,11 @@ const translations = {
     trustTitle: "Client Testimonials",
     
     // About
-    aboutCaption: "Miren Fernández Atela, CEO of Atela Homes.",
-    aboutLabel: "CEO of Atela Homes",
-    aboutTitle: "A single point of contact for an important decision.",
+    aboutCaption: "Miren Fernández Atela, close coordination for each process.",
+    aboutLabel: "Miren Fernández Atela",
+    aboutTitle: "Personal experience with a trusted support network.",
     aboutCopy: "Miren Fernández Atela has a solid international track record in client management, institutional relations, relocation, and real estate services. Over more than three decades, she has developed her career in prestigious organizations such as the World Bank, IFEMA, Publiespaña, and Casa Decor, holding positions of responsibility and building extensive experience in customer service, business development, and the coordination of international projects.<br><br>Her professional experience, coupled with having lived in several countries around the world, allows her to understand firsthand the challenges, concerns, and needs of individuals and families facing an international relocation process. Thanks to this global vision and her deep knowledge of the Spanish market, she offers close, efficient, and highly personalized support at every stage of the relocation.<br><br>Recognized for her discretion, organizational skills, and service vocation, Miren transforms complex processes into simple and secure experiences, helping her clients successfully integrate into their new environment and providing them with the peace of mind of having a professional who understands both the practical and human aspects of every life change.",
-    aboutLinkedIn: "View LinkedIn profile",
+    aboutBrief: "Through Atela Homes, she coordinates each project with her own judgement and with specialized collaborators when the purchase, relocation or documentation requires it.",
     
     // Contact
     contactLabel: "Contact",
@@ -237,7 +245,7 @@ const translations = {
     formMessage: "What should we know?",
     formPrivacy: "I have read and accept the Privacy Policy.",
     formSubmit: "Send my enquiry",
-    formExpectation: "Your enquiry will be answered within 24-48 business hours.",
+    formExpectation: "The Atela Homes team will review your enquiry and respond within 24–48 business hours.",
     
     // Footer Legal
     footerLegal: "Legal Notice",
@@ -259,7 +267,6 @@ const budgetValueInput = document.querySelector("[data-budget-value-input]");
 const contactForm = document.querySelector(".contact-form");
 const customSelects = document.querySelectorAll("[data-custom-select]");
 const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-
 function setHeaderState() {
   header.classList.toggle("scrolled", window.scrollY > 8);
 }
