@@ -67,11 +67,6 @@ const translations = {
     legalTitle: "Servicios de asesoría legal y de inmigración para tu llegada a España.",
     legalCopy: "Trabajamos con Gluckheim, despacho especializado en extranjería y derecho inmobiliario, para coordinar y facilitar los aspectos legales de tu compra o traslado a España.",
     legalCta: "Conocer Gluckheim →",
-    homesLegalCopy: "También coordinamos asesoramiento legal especializado con Gluckheim para la compraventa y los documentos de residencia que puedas necesitar.",
-    legalPartnerRole: "Colaboradora legal",
-    legalPartnerName: "Alicia Gorospe",
-    legalPartnerCopy: "Apoyo especializado en documentación de residencia y coordinación jurídica.",
-    legalTeamLink: "Ver equipo",
     
     // Paths
     homesLabel: "Cómo podemos ayudarte",
@@ -93,11 +88,11 @@ const translations = {
     trustTitle: "Testimonios de nuestros clientes",
     
     // About
-    aboutCaption: "Miren Fernández Atela, coordinación cercana para cada proceso.",
-    aboutLabel: "Miren Fernández Atela",
-    aboutTitle: "Experiencia personal con una red de apoyo.",
-    aboutCopy: "Miren Fernández Atela cuenta con una sólida trayectoria internacional en gestión de clientes, relaciones institucionales, relocation y servicios inmobiliarios. A lo largo de más de tres décadas ha desarrollado su carrera en organizaciones de prestigio como el Banco Mundial, IFEMA, Publiespaña y Casa Decor, ocupando posiciones de responsabilidad y construyendo una amplia experiencia en atención al cliente, desarrollo de negocio y coordinación de proyectos internacionales.<br><br>Su experiencia profesional, unida al hecho de haber vivido en varios países del mundo, le permite comprender de primera mano los desafíos, inquietudes y necesidades de las personas y familias que afrontan un proceso de traslado internacional. Gracias a esta visión global y a su profundo conocimiento del mercado español, ofrece un acompañamiento cercano, eficaz y altamente personalizado en cada etapa de la reubicación.<br><br>Reconocida por su discreción, capacidad de organización y vocación de servicio, Miren transforma procesos complejos en experiencias sencillas y seguras, ayudando a sus clientes a integrarse con éxito en su nuevo entorno y proporcionándoles la tranquilidad de contar con una profesional que entiende tanto el aspecto práctico como el humano de cada cambio de vida.",
-    aboutBrief: "Desde Atela Homes coordina cada proyecto con criterio propio y con colaboradores especializados cuando la compra, el traslado o la documentación lo requieren.",
+    aboutLabel: "Atela Homes",
+    aboutTitle: "Un punto de contacto, un equipo detrás.",
+    aboutCopy: "Miren Fernández Atela lidera cada proceso y coordina a colaboradoras especializadas según lo que cada cliente necesita: búsqueda, compra, documentación legal o relocation.",
+    aboutBrief: "Perfiles completos y colaboradores en Equipo.",
+    aboutTeamCta: "Ver equipo",
     
     // Team
     teamLabel: "Equipo",
@@ -214,11 +209,6 @@ const translations = {
     legalTitle: "Legal and immigration advisory for your arrival in Spain.",
     legalCopy: "We work with Gluckheim, a firm specializing in immigration and real estate law, to coordinate and facilitate the legal aspects of your purchase or relocation to Spain.",
     legalCta: "Discover Gluckheim →",
-    homesLegalCopy: "We also coordinate specialized legal advisory with Gluckheim for the purchase and any residency documents you may need.",
-    legalPartnerRole: "Legal collaborator",
-    legalPartnerName: "Alicia Gorospe",
-    legalPartnerCopy: "Specialized support for residency documentation and legal coordination.",
-    legalTeamLink: "View team",
     
     // Paths
     homesLabel: "How we can help",
@@ -240,11 +230,11 @@ const translations = {
     trustTitle: "Client Testimonials",
     
     // About
-    aboutCaption: "Miren Fernández Atela, close coordination for each process.",
-    aboutLabel: "Miren Fernández Atela",
-    aboutTitle: "Personal experience with a trusted support network.",
-    aboutCopy: "Miren Fernández Atela has a solid international track record in client management, institutional relations, relocation, and real estate services. Over more than three decades, she has developed her career in prestigious organizations such as the World Bank, IFEMA, Publiespaña, and Casa Decor, holding positions of responsibility and building extensive experience in customer service, business development, and the coordination of international projects.<br><br>Her professional experience, coupled with having lived in several countries around the world, allows her to understand firsthand the challenges, concerns, and needs of individuals and families facing an international relocation process. Thanks to this global vision and her deep knowledge of the Spanish market, she offers close, efficient, and highly personalized support at every stage of the relocation.<br><br>Recognized for her discretion, organizational skills, and service vocation, Miren transforms complex processes into simple and secure experiences, helping her clients successfully integrate into their new environment and providing them with the peace of mind of having a professional who understands both the practical and human aspects of every life change.",
-    aboutBrief: "Through Atela Homes, she coordinates each project with her own judgement and with specialized collaborators when the purchase, relocation or documentation requires it.",
+    aboutLabel: "Atela Homes",
+    aboutTitle: "One point of contact, a team behind it.",
+    aboutCopy: "Miren Fernández Atela leads each process and coordinates specialist collaborators depending on what each client needs: search, purchase, legal documentation or relocation.",
+    aboutBrief: "Full profiles and collaborators are on the Team page.",
+    aboutTeamCta: "View team",
     
     // Team
     teamLabel: "Team",
