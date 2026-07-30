@@ -309,11 +309,6 @@ function closeMenu() {
   menuToggle.setAttribute("aria-expanded", "false");
 }
 
-function initSmoothScroll() {
-  // Disabled by user request for normal scrolling
-  return;
-}
-
 function updateBudgetLabel(language = document.documentElement.lang || "en") {
   if (!budgetRange || !budgetOutput || !budgetValueInput) {
     return;
@@ -531,6 +526,5 @@ contactForm?.addEventListener("submit", (event) => {
 
 year.textContent = new Date().getFullYear();
 setHeaderState();
-initSmoothScroll();
 initRevealMotion();
 setLanguage("en");
