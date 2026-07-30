@@ -6,7 +6,10 @@ const translations = {
     navAreas: "Zonas",
 
     navHomes: "Cómo podemos ayudarte",
+    navTeam: "Equipo",
     navContact: "Contacto",
+    teamPageTitleMeta: "Atela Homes | Equipo",
+    teamPageDescription: "Conoce al equipo y a las colaboradoras especializadas que coordinan compra, asesoría legal y relocation en España.",
     
     // Hero
     heroTitle: "Tu casa en España, con criterio local y acompañamiento personal.",
@@ -68,6 +71,7 @@ const translations = {
     legalPartnerRole: "Colaboradora legal",
     legalPartnerName: "Alicia Gorospe",
     legalPartnerCopy: "Apoyo especializado en documentación de residencia y coordinación jurídica.",
+    legalTeamLink: "Ver equipo",
     
     // Paths
     homesLabel: "Cómo podemos ayudarte",
@@ -95,6 +99,22 @@ const translations = {
     aboutCopy: "Miren Fernández Atela cuenta con una sólida trayectoria internacional en gestión de clientes, relaciones institucionales, relocation y servicios inmobiliarios. A lo largo de más de tres décadas ha desarrollado su carrera en organizaciones de prestigio como el Banco Mundial, IFEMA, Publiespaña y Casa Decor, ocupando posiciones de responsabilidad y construyendo una amplia experiencia en atención al cliente, desarrollo de negocio y coordinación de proyectos internacionales.<br><br>Su experiencia profesional, unida al hecho de haber vivido en varios países del mundo, le permite comprender de primera mano los desafíos, inquietudes y necesidades de las personas y familias que afrontan un proceso de traslado internacional. Gracias a esta visión global y a su profundo conocimiento del mercado español, ofrece un acompañamiento cercano, eficaz y altamente personalizado en cada etapa de la reubicación.<br><br>Reconocida por su discreción, capacidad de organización y vocación de servicio, Miren transforma procesos complejos en experiencias sencillas y seguras, ayudando a sus clientes a integrarse con éxito en su nuevo entorno y proporcionándoles la tranquilidad de contar con una profesional que entiende tanto el aspecto práctico como el humano de cada cambio de vida.",
     aboutBrief: "Desde Atela Homes coordina cada proyecto con criterio propio y con colaboradores especializados cuando la compra, el traslado o la documentación lo requieren.",
     
+    // Team
+    teamLabel: "Equipo",
+    teamTitle: "Un equipo especializado y coordinado.",
+    teamIntro: "Miren Fernández Atela lidera cada proceso y coordina a colaboradoras especializadas cuando la compra, el traslado o la documentación requieren apoyo experto.",
+    teamLeadRole: "Fundadora y coordinación",
+    teamLeadCopy: "Miren acompaña al cliente desde la primera conversación hasta la instalación en España, filtrando opciones, ordenando prioridades y coordinando a cada profesional implicada.",
+    teamLegalRole: "Colaboradora legal",
+    teamLegalCopy: "Alicia Gorospe aporta apoyo legal especializado desde Gluckheim para documentación de residencia, extranjería y coordinación jurídica vinculada a la compra o traslado.",
+    teamRelocationRole: "Relocation",
+    teamRelocationName: "Gema Mandri",
+    teamRelocationCopy: "Colaboradora de relocation vinculada a UbiKT Spain para acompañar procesos de llegada, vivienda, trámites prácticos y adaptación diaria en España.",
+    teamRelocationStatus: "En coordinación",
+    teamExternalLink: "Ver web",
+    teamNoteTitle: "Un equipo flexible, sin perder el trato directo.",
+    teamNoteCopy: "Atela Homes mantiene una relación cercana con cada cliente y suma perfiles especializados cuando aportan valor real al proceso.",
+
     // Contact
     contactLabel: "Contacto",
     contactIntro: "Consultas disponibles para compra, venta, alquiler y relocation en España.",
@@ -133,7 +153,10 @@ const translations = {
     navAreas: "Areas",
 
     navHomes: "How we can help",
+    navTeam: "Team",
     navContact: "Contact",
+    teamPageTitleMeta: "Atela Homes | Team",
+    teamPageDescription: "Meet the team and specialist collaborators coordinating property search, legal advisory and relocation in Spain.",
     
     // Hero
     heroTitle: "Your home in Spain, guided by local insight and personal support.",
@@ -195,6 +218,7 @@ const translations = {
     legalPartnerRole: "Legal collaborator",
     legalPartnerName: "Alicia Gorospe",
     legalPartnerCopy: "Specialized support for residency documentation and legal coordination.",
+    legalTeamLink: "View team",
     
     // Paths
     homesLabel: "How we can help",
@@ -222,6 +246,22 @@ const translations = {
     aboutCopy: "Miren Fernández Atela has a solid international track record in client management, institutional relations, relocation, and real estate services. Over more than three decades, she has developed her career in prestigious organizations such as the World Bank, IFEMA, Publiespaña, and Casa Decor, holding positions of responsibility and building extensive experience in customer service, business development, and the coordination of international projects.<br><br>Her professional experience, coupled with having lived in several countries around the world, allows her to understand firsthand the challenges, concerns, and needs of individuals and families facing an international relocation process. Thanks to this global vision and her deep knowledge of the Spanish market, she offers close, efficient, and highly personalized support at every stage of the relocation.<br><br>Recognized for her discretion, organizational skills, and service vocation, Miren transforms complex processes into simple and secure experiences, helping her clients successfully integrate into their new environment and providing them with the peace of mind of having a professional who understands both the practical and human aspects of every life change.",
     aboutBrief: "Through Atela Homes, she coordinates each project with her own judgement and with specialized collaborators when the purchase, relocation or documentation requires it.",
     
+    // Team
+    teamLabel: "Team",
+    teamTitle: "A coordinated specialist team.",
+    teamIntro: "Miren Fernández Atela leads each process and coordinates specialist collaborators when the purchase, relocation or documentation requires expert support.",
+    teamLeadRole: "Founder and coordination",
+    teamLeadCopy: "Miren supports each client from the first conversation through settling in Spain, filtering options, clarifying priorities and coordinating each professional involved.",
+    teamLegalRole: "Legal collaborator",
+    teamLegalCopy: "Alicia Gorospe provides specialist legal support through Gluckheim for residency documentation, immigration matters and legal coordination linked to a purchase or relocation.",
+    teamRelocationRole: "Relocation",
+    teamRelocationName: "Gema Mandri",
+    teamRelocationCopy: "Relocation collaborator connected to UbiKT Spain, supporting arrival processes, housing, practical paperwork and day-to-day adaptation in Spain.",
+    teamRelocationStatus: "In coordination",
+    teamExternalLink: "Visit website",
+    teamNoteTitle: "A flexible team, with direct attention intact.",
+    teamNoteCopy: "Atela Homes keeps a close relationship with each client and brings in specialist profiles when they add real value to the process.",
+
     // Contact
     contactLabel: "Contact",
     contactIntro: "Consultations available for purchase, sale, rental and relocation in Spain.",
@@ -267,6 +307,7 @@ const budgetValueInput = document.querySelector("[data-budget-value-input]");
 const contactForm = document.querySelector(".contact-form");
 const customSelects = document.querySelectorAll("[data-custom-select]");
 const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+const pageName = document.body.dataset.page || "home";
 function setHeaderState() {
   header.classList.toggle("scrolled", window.scrollY > 8);
 }
@@ -327,7 +368,7 @@ function updateCustomSelectLabels() {
 function initRevealMotion() {
   const imageMotionElements = document.querySelectorAll(".figure-card, .zone-photo-grid article, .about-image");
   const revealElements = document.querySelectorAll(
-    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .site-footer"
+    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-note, .site-footer"
   );
 
   imageMotionElements.forEach((element) => {
@@ -366,10 +407,12 @@ function initRevealMotion() {
 
 function setLanguage(language) {
   const dictionary = translations[language] || translations.es;
+  const titleKey = pageName === "team" ? "teamPageTitleMeta" : "pageTitle";
+  const descriptionKey = pageName === "team" ? "teamPageDescription" : "pageDescription";
 
   document.documentElement.lang = language;
-  document.title = dictionary.pageTitle;
-  metaDescription.setAttribute("content", dictionary.pageDescription);
+  document.title = dictionary[titleKey] || dictionary.pageTitle;
+  metaDescription?.setAttribute("content", dictionary[descriptionKey] || dictionary.pageDescription);
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
