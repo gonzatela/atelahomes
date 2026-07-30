@@ -1704,6 +1704,18 @@ h3 {
   line-height: 1.55;
 }
 
+.team-note .button {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  padding: 0 28px;
+  text-align: center;
+  line-height: 1.1;
+}
+
 .route-legal-logo {
   display: block;
   height: 22px;
@@ -2022,6 +2034,10 @@ h3 {
     grid-template-columns: 1fr;
     padding-top: 32px;
     padding-bottom: 42px;
+  }
+
+  .team-note .button {
+    justify-self: start;
   }
 
   .services-grid {
