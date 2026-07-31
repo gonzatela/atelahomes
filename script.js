@@ -6,18 +6,22 @@ const translations = {
     navAreas: "Zonas",
 
     navHomes: "Cómo podemos ayudarte",
+    navTeam: "Equipo",
     navContact: "Contacto",
+    teamPageTitleMeta: "Atela Homes | Equipo",
+    teamPageDescription: "Conoce al equipo y a las colaboradoras especializadas que coordinan compra, asesoría legal y relocation en España.",
     
     // Hero
     heroTitle: "Tu casa en España, con criterio local y acompañamiento personal.",
-    heroSubtitle: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España. Desde la primera búsqueda hasta la firma y tu llegada, nuestro sello personalizado te hará contar con una única interlocutora en todo el proceso.",
+    heroSubtitle: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España. Desde la primera búsqueda hasta la firma y la llegada, tendrás atención personalizada y una red de colaboradores coordinada.",
+    heroLegalNote: "Nuestro equipo también puede ayudarte con tus documentos legales de residencia.",
     heroCtaPrimary: "Cuéntanos qué estás buscando",
     heroCtaSecondary: "Ver servicios",
     
     // Value Prop
     methodLabel: "Método",
     methodTitle: "Buscar desde otro país no debería significar decidir a ciegas.",
-    methodCopy: "Filtramos propiedades, comparamos zonas, coordinamos visitas presenciales o remotas y te ayudamos a entender qué estás comprando, dónde y por qué. Menos ruido, mejores decisiones y una persona de confianza durante todo el proceso.",
+    methodCopy: "Filtramos propiedades, comparamos zonas, coordinamos visitas presenciales o remotas y te ayudamos a entender qué estás comprando, dónde y por qué. Menos ruido, mejores decisiones y un equipo de confianza durante todo el proceso.",
     
     // Method 4 Steps
     stepOneTitle: "Entendemos tus necesidades:",
@@ -66,7 +70,7 @@ const translations = {
     
     // Paths
     homesLabel: "Cómo podemos ayudarte",
-    homesTitle: "Cuatro formas de empezar, todas con atención directa de Miren.",
+    homesTitle: "Cuatro formas de empezar, todas con atención personalizada.",
     tableType: "Tipo",
     tableIncludes: "Incluye",
     routeBuyerTitle: "Quiero comprar una vivienda",
@@ -99,6 +103,21 @@ const translations = {
     viewDossier: "Ver Dossier completo (PDF)",
     gemaRole: "Asesoría Legal & Inmobiliaria — Gluckheim",
     
+    // Team
+    teamLabel: "Equipo",
+    teamTitle: "Un equipo especializado y coordinado.",
+    teamIntro: "Miren Fernández Atela lidera cada proceso y coordina a colaboradoras especializadas cuando la compra, el traslado o la documentación requieren apoyo experto.",
+    teamLeadRole: "Fundadora y coordinación",
+    teamLeadCopy: "Miren acompaña al cliente desde la primera conversación hasta la instalación en España, filtrando opciones, ordenando prioridades y coordinando a cada profesional implicada.",
+    teamLegalRole: "Colaboradora legal",
+    teamLegalCopy: "Alicia Gorospe aporta apoyo legal especializado desde Gluckheim para documentación de residencia, extranjería y coordinación jurídica vinculada a la compra o traslado.",
+    teamRelocationRole: "Relocation",
+    teamRelocationName: "Gema Mandri",
+    teamRelocationCopy: "Colaboradora de relocation vinculada a UbiKT Spain para acompañar procesos de llegada, vivienda, trámites prácticos y adaptación diaria en España.",
+    teamRelocationStatus: "En coordinación",
+    teamExternalLink: "Ver web",
+    teamNoteTitle: "Un equipo flexible, sin perder el trato directo.",
+    teamNoteCopy: "Atela Homes mantiene una relación cercana con cada cliente y suma perfiles especializados cuando aportan valor real al proceso.",
     // Contact
     contactLabel: "Contacto",
     contactIntro: "Consultas disponibles para compra, venta, alquiler y relocation en España.",
@@ -122,7 +141,7 @@ const translations = {
     formMessage: "Qué deberíamos saber",
     formPrivacy: "He leído y acepto la Política de Privacidad.",
     formSubmit: "Enviar mi consulta",
-    formExpectation: "Tu consulta se responderá en un plazo de 24-48 horas laborables.",
+    formExpectation: "El equipo de Atela Homes revisará tu consulta y responderá en un plazo de 24–48 horas laborables.",
     
     // Footer Legal
     footerLegal: "Aviso Legal",
@@ -137,18 +156,22 @@ const translations = {
     navAreas: "Areas",
 
     navHomes: "How we can help",
+    navTeam: "Team",
     navContact: "Contact",
+    teamPageTitleMeta: "Atela Homes | Team",
+    teamPageDescription: "Meet the team and specialist collaborators coordinating property search, legal advisory and relocation in Spain.",
     
     // Hero
     heroTitle: "Your home in Spain, guided by local insight and personal support.",
-    heroSubtitle: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain. From the initial search to signing and settling in, our personalized approach ensures you have a single point of contact throughout the entire process.",
+    heroSubtitle: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain. From the initial search to signing and settling in, you receive personalized attention and a coordinated network of collaborators.",
+    heroLegalNote: "Our team can also help with your legal residency documents.",
     heroCtaPrimary: "Tell us what you are looking for",
     heroCtaSecondary: "View services",
     
     // Value Prop
     methodLabel: "Method",
     methodTitle: "Searching from abroad shouldn't mean deciding blind.",
-    methodCopy: "We filter properties, compare areas, coordinate in-person or remote viewings, and help you understand what you are buying, where and why. Less noise, better decisions and a trusted advisor throughout the process.",
+    methodCopy: "We filter properties, compare areas, coordinate in-person or remote viewings, and help you understand what you are buying, where and why. Less noise, better decisions and a trusted team throughout the process.",
     
     // Method 4 Steps
     stepOneTitle: "We understand your needs:",
@@ -193,12 +216,11 @@ const translations = {
     legalLabel: "Legal Alliance",
     legalTitle: "Legal and immigration advisory for your arrival in Spain.",
     legalCopy: "We work with Gluckheim, a firm specializing in immigration and real estate law, to coordinate and facilitate the legal aspects of your purchase or relocation to Spain.",
-    legalCta: "Discover Gluckheim →",
     homesLegalCopy: "During the process, Atela Homes brings in specialists when needed through Gluckheim, to ensure a safe and smooth transaction.",
     
     // Paths
     homesLabel: "How we can help",
-    homesTitle: "Four ways to start, all with Miren’s direct attention.",
+    homesTitle: "Four ways to start, all with personalized attention.",
     tableType: "Type",
     tableIncludes: "Includes",
     routeBuyerTitle: "I want to buy a property",
@@ -231,6 +253,20 @@ const translations = {
     viewDossier: "View Dossier (PDF)",
     gemaRole: "Legal & Real Estate Advisory — Gluckheim",
     
+    // Team
+    teamLabel: "Team",
+    teamTitle: "A coordinated specialist team.",
+    teamIntro: "Miren Fernández Atela leads each process and coordinates specialist collaborators when purchase, relocation, or legal documentation requires expert support.",
+    teamLeadRole: "Founder & Coordination",
+    teamLeadCopy: "Miren accompanies clients from the initial conversation through settling in Spain, filtering options, clarifying priorities, and coordinating every professional involved.",
+    teamLegalRole: "Legal Partner",
+    teamLegalCopy: "Alicia Gorospe provides specialized legal support from Gluckheim for residency documentation, immigration, and legal coordination linked to purchase or relocation.",
+    teamRelocationRole: "Relocation",
+    teamRelocationName: "Gema Mandri",
+    teamRelocationCopy: "Relocation partner associated with UbiKT Spain to accompany arrival processes, housing, practical procedures, and daily settling in Spain.",
+    teamRelocationStatus: "In coordination",
+    teamExternalLink: "View website",
+    teamNoteCopy: "Atela Homes maintains a close relationship with each client and brings in specialist profiles when they add real value to the process.",
     // Contact
     contactLabel: "Contact",
     contactIntro: "Consultations available for purchase, sale, rental and relocation in Spain.",
@@ -254,7 +290,7 @@ const translations = {
     formMessage: "What should we know?",
     formPrivacy: "I have read and accept the Privacy Policy.",
     formSubmit: "Send my enquiry",
-    formExpectation: "Your enquiry will be answered within 24-48 business hours.",
+    formExpectation: "The Atela Homes team will review your enquiry and respond within 24–48 business hours.",
     
     // Footer Legal
     footerLegal: "Legal Notice",
@@ -276,7 +312,7 @@ const budgetValueInput = document.querySelector("[data-budget-value-input]");
 const contactForm = document.querySelector(".contact-form");
 const customSelects = document.querySelectorAll("[data-custom-select]");
 const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-
+const pageName = document.body.dataset.page || "home";
 function setHeaderState() {
   header.classList.toggle("scrolled", window.scrollY > 8);
 }
@@ -286,11 +322,6 @@ function closeMenu() {
   nav.classList.remove("open");
   header.classList.remove("menu-active");
   menuToggle.setAttribute("aria-expanded", "false");
-}
-
-function initSmoothScroll() {
-  // Disabled by user request for normal scrolling
-  return;
 }
 
 function updateBudgetLabel(language = document.documentElement.lang || "en") {
@@ -337,7 +368,7 @@ function updateCustomSelectLabels() {
 function initRevealMotion() {
   const imageMotionElements = document.querySelectorAll(".figure-card, .zone-photo-grid article, .about-image");
   const revealElements = document.querySelectorAll(
-    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .site-footer"
+    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-note, .site-footer"
   );
 
   imageMotionElements.forEach((element) => {
@@ -376,10 +407,12 @@ function initRevealMotion() {
 
 function setLanguage(language) {
   const dictionary = translations[language] || translations.es;
+  const titleKey = pageName === "team" ? "teamPageTitleMeta" : "pageTitle";
+  const descriptionKey = pageName === "team" ? "teamPageDescription" : "pageDescription";
 
   document.documentElement.lang = language;
-  document.title = dictionary.pageTitle;
-  metaDescription.setAttribute("content", dictionary.pageDescription);
+  document.title = dictionary[titleKey] || dictionary.pageTitle;
+  metaDescription?.setAttribute("content", dictionary[descriptionKey] || dictionary.pageDescription);
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
@@ -508,6 +541,5 @@ contactForm?.addEventListener("submit", (event) => {
 
 year.textContent = new Date().getFullYear();
 setHeaderState();
-initSmoothScroll();
 initRevealMotion();
 setLanguage("en");
