@@ -11,6 +11,8 @@ const translations = {
     navContact: "Contacto",
     teamPageTitleMeta: "Atela Homes | Equipo",
     teamPageDescription: "Conoce al equipo y a las colaboradoras especializadas que coordinan compra, asesoría legal y relocation en España.",
+    propertiesPageTitleMeta: "Propiedades | Atela Homes",
+    propertiesPageDescription: "Propiedades disponibles en Madrid seleccionadas por Atela Homes para venta y alquiler.",
     
     // Hero
     heroTitle: "Tu casa en España, con criterio local y acompañamiento personal.",
@@ -169,6 +171,8 @@ const translations = {
     navContact: "Contact",
     teamPageTitleMeta: "Atela Homes | Team",
     teamPageDescription: "Meet the team and specialist collaborators coordinating property search, legal advisory and relocation in Spain.",
+    propertiesPageTitleMeta: "Properties | Atela Homes",
+    propertiesPageDescription: "Available properties in Madrid selected by Atela Homes for sale and rent.",
     
     // Hero
     heroTitle: "Your home in Spain, guided by local insight and personal support.",
@@ -424,8 +428,11 @@ function initRevealMotion() {
 
 function setLanguage(language) {
   const dictionary = translations[language] || translations.es;
-  const titleKey = pageName === "team" ? "teamPageTitleMeta" : "pageTitle";
-  const descriptionKey = pageName === "team" ? "teamPageDescription" : "pageDescription";
+  const pageMeta = {
+    team: ["teamPageTitleMeta", "teamPageDescription"],
+    properties: ["propertiesPageTitleMeta", "propertiesPageDescription"]
+  };
+  const [titleKey, descriptionKey] = pageMeta[pageName] || ["pageTitle", "pageDescription"];
 
   document.documentElement.lang = language;
   document.title = dictionary[titleKey] || dictionary.pageTitle;
