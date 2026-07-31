@@ -387,7 +387,7 @@ function updateCustomSelectLabels() {
 function initRevealMotion() {
   const imageMotionElements = document.querySelectorAll(".figure-card, .zone-photo-grid article, .about-image, .property-card");
   const revealElements = document.querySelectorAll(
-    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .properties-heading, .property-card, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-note, .site-footer"
+    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .properties-heading, .property-card, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-note"
   );
 
   imageMotionElements.forEach((element) => {
