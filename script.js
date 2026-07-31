@@ -4,6 +4,7 @@ const translations = {
     pageDescription: "Ayudamos a compradores internacionales a encontrar, evaluar y adquirir una vivienda en Madrid y destinos seleccionados de España.",
     navMethod: "Método",
     navAreas: "Zonas",
+    navProperties: "Propiedades",
 
     navHomes: "Cómo podemos ayudarte",
     navTeam: "Equipo",
@@ -24,17 +25,17 @@ const translations = {
     methodCopy: "Filtramos propiedades, comparamos zonas, coordinamos visitas presenciales o remotas y te ayudamos a entender qué estás comprando, dónde y por qué. Menos ruido, mejores decisiones y un equipo de confianza durante todo el proceso.",
     
     // Method 4 Steps
-    stepOneTitle: "Entendemos tu búsqueda:",
-    stepOneCopy: "Definimos prioridades, presupuesto, estilo de vida y calendario.",
+    stepOneTitle: "Entendemos tus necesidades:",
+    stepOneCopy: "Te ayudamos a aclarar prioridades, presupuesto, estilo de vida y calendario.",
     stepTwoTitle: "Filtramos el mercado:",
-    stepTwoCopy: "Seleccionamos propiedades y zonas con criterio, evitando visitas y decisiones innecesarias.",
+    stepTwoCopy: "Filtramos propiedades y las evaluamos según tus criterios, evitando visitas y decisiones innecesarias.",
     stepThreeTitle: "Visitamos y evaluamos:",
-    stepThreeCopy: "Coordinamos visitas presenciales o remotas y analizamos cada opción contigo.",
+    stepThreeCopy: "Coordinamos visitas presenciales o remotas y analizamos cada opción por ti.",
     stepFourTitle: "Negociamos y coordinamos:",
-    stepFourCopy: "Te acompañamos en la negociación y conectamos a las partes implicadas hasta la firma y la instalación.",
+    stepFourCopy: "Te asesoramos sobre las condiciones, presentamos la oferta y coordinamos a los profesionales necesarios hasta la firma.",
     
     // Figures
-    figOne: "Viviendas con luz, exterior y vida mediterránea.",
+    figOne: "Viviendas para una vida mediterránea, con mucha luz y espacio exterior.",
     figTwo: "Apartamentos urbanos cerca de servicios y colegios.",
     figThree: "Casas para instalarse con calma.",
     
@@ -50,6 +51,21 @@ const translations = {
     zonePhotoOne: "Exterior, privacidad y vida al aire libre.",
     zonePhotoTwo: "Conexión urbana y servicios cerca.",
     zonePhotoThree: "Interiores listos para una llegada cómoda.",
+    mapTitle: "España, con base en Madrid",
+
+    // Properties
+    propertiesLabel: "Propiedades",
+    propertiesTitle: "Una selección de propiedades disponibles.",
+    propertiesIntro: "Consulta los datos principales y abre la ficha completa para ver todas las imágenes y condiciones.",
+    propertyRent: "Alquiler",
+    propertySale: "Venta",
+    propertyMaragallTitle: "Vivienda amueblada con vistas",
+    propertyMaragallFeatures: "1 dormitorio · 1 baño · planta 19 · portero",
+    propertyMaragallPrice: "1.700 €/mes",
+    propertyBoschTitle: "Vivienda reformada junto al Retiro",
+    propertyBoschFeatures: "100 m² · 2 dormitorios · 2 baños · planta 1ª",
+    propertyBoschPrice: "1.225.000 €",
+    propertyViewFile: "Ver ficha completa",
     
     // Services
     servicesLabel: "Servicios",
@@ -91,7 +107,7 @@ const translations = {
     aboutLabel: "Atela Homes",
     aboutTitle: "Un punto de contacto, un equipo detrás.",
     aboutCopy: "Miren Fernández Atela lidera cada proceso y coordina a colaboradoras especializadas según lo que cada cliente necesita: búsqueda, compra, documentación legal o relocation.",
-    aboutBrief: "Perfiles completos y colaboradores en Equipo.",
+    aboutBrief: "Conoce al equipo. Incorporamos especialistas cuando es necesario.",
     aboutTeamCta: "Ver equipo",
     
     // Team
@@ -99,7 +115,7 @@ const translations = {
     teamTitle: "Un equipo especializado y coordinado.",
     teamIntro: "Miren Fernández Atela lidera cada proceso y coordina a colaboradoras especializadas cuando la compra, el traslado o la documentación requieren apoyo experto.",
     teamLeadRole: "Fundadora y coordinación",
-    teamLeadCopy: "Miren acompaña al cliente desde la primera conversación hasta la instalación en España, filtrando opciones, ordenando prioridades y coordinando a cada profesional implicada.",
+    teamLeadCopy: "Miren Fernández Atela cuenta con una sólida trayectoria internacional en gestión de clientes, relaciones institucionales, relocation y servicios inmobiliarios. Con experiencia vital en México, España y Estados Unidos, ha desarrollado su carrera a lo largo de más de tres décadas en organizaciones de prestigio como el Banco Mundial, IFEMA, Publiespaña o Casa Decor. Destaca por ayudar a sus clientes a integrarse con éxito en su nuevo entorno, proporcionándoles la tranquilidad de contar con una profesional que entiende tanto el aspecto práctico como el humano de cada cambio de vida.",
     teamLegalRole: "Colaboradora legal",
     teamLegalCopy: "Alicia Gorospe aporta apoyo legal especializado desde Gluckheim para documentación de residencia, extranjería y coordinación jurídica vinculada a la compra o traslado.",
     teamRelocationRole: "Relocation",
@@ -108,7 +124,7 @@ const translations = {
     teamRelocationStatus: "En coordinación",
     teamExternalLink: "Ver web",
     teamNoteTitle: "Un equipo flexible, sin perder el trato directo.",
-    teamNoteCopy: "Atela Homes mantiene una relación cercana con cada cliente y suma perfiles especializados cuando aportan valor real al proceso.",
+    teamNoteCopy: "Atela Homes mantiene una relación cercana con cada cliente e incorpora especialistas cuando es necesario.",
 
     // Contact
     contactLabel: "Contacto",
@@ -146,6 +162,7 @@ const translations = {
     pageDescription: "We help international buyers find, evaluate and purchase homes in Madrid and selected destinations across Spain.",
     navMethod: "Method",
     navAreas: "Areas",
+    navProperties: "Properties",
 
     navHomes: "How we can help",
     navTeam: "Team",
@@ -166,17 +183,17 @@ const translations = {
     methodCopy: "We filter properties, compare areas, coordinate in-person or remote viewings, and help you understand what you are buying, where and why. Less noise, better decisions and a trusted team throughout the process.",
     
     // Method 4 Steps
-    stepOneTitle: "We understand your search:",
-    stepOneCopy: "We define priorities, budget, lifestyle, and timeline.",
+    stepOneTitle: "We understand your needs:",
+    stepOneCopy: "We help you clarify your priorities, budget, lifestyle and timeline.",
     stepTwoTitle: "We filter the market:",
-    stepTwoCopy: "We select properties and areas with criteria, avoiding unnecessary visits and decisions.",
+    stepTwoCopy: "We screen properties and assess them against your criteria, avoiding unnecessary viewings and decisions.",
     stepThreeTitle: "We visit and evaluate:",
-    stepThreeCopy: "We coordinate in-person or remote visits and analyze each option with you.",
+    stepThreeCopy: "We coordinate in-person or remote viewings and analyze each option for you.",
     stepFourTitle: "We negotiate and coordinate:",
-    stepFourCopy: "We accompany you in the negotiation and connect the involved parties until signing and settling in.",
+    stepFourCopy: "We advise on terms, present the offer and coordinate the professionals needed through to signing.",
     
     // Figures
-    figOne: "Homes with light, outdoor space and Mediterranean living.",
+    figOne: "Homes for Mediterranean living with abundant light and outdoor space.",
     figTwo: "Urban apartments close to services and schools.",
     figThree: "Family homes for a calmer move.",
     
@@ -192,6 +209,21 @@ const translations = {
     zonePhotoOne: "Outdoor space, privacy and open-air living.",
     zonePhotoTwo: "Urban connection and services close by.",
     zonePhotoThree: "Interiors ready for a comfortable arrival.",
+    mapTitle: "Spain, with our base in Madrid",
+
+    // Properties
+    propertiesLabel: "Properties",
+    propertiesTitle: "A selection of available properties.",
+    propertiesIntro: "Review the essentials and open the full brochure for all images and terms.",
+    propertyRent: "For rent",
+    propertySale: "For sale",
+    propertyMaragallTitle: "Furnished home with panoramic views",
+    propertyMaragallFeatures: "1 bedroom · 1 bathroom · 19th floor · concierge",
+    propertyMaragallPrice: "€1,700/month",
+    propertyBoschTitle: "Renovated home by El Retiro",
+    propertyBoschFeatures: "100 m² · 2 bedrooms · 2 bathrooms · 1st floor",
+    propertyBoschPrice: "€1,225,000",
+    propertyViewFile: "View full brochure",
     
     // Services
     servicesLabel: "Services",
@@ -233,7 +265,7 @@ const translations = {
     aboutLabel: "Atela Homes",
     aboutTitle: "One point of contact, a team behind it.",
     aboutCopy: "Miren Fernández Atela leads each process and coordinates specialist collaborators depending on what each client needs: search, purchase, legal documentation or relocation.",
-    aboutBrief: "Full profiles and collaborators are on the Team page.",
+    aboutBrief: "Meet the team. We bring in specialists when needed.",
     aboutTeamCta: "View team",
     
     // Team
@@ -241,7 +273,7 @@ const translations = {
     teamTitle: "A coordinated specialist team.",
     teamIntro: "Miren Fernández Atela leads each process and coordinates specialist collaborators when the purchase, relocation or documentation requires expert support.",
     teamLeadRole: "Founder and coordination",
-    teamLeadCopy: "Miren supports each client from the first conversation through settling in Spain, filtering options, clarifying priorities and coordinating each professional involved.",
+    teamLeadCopy: "Miren Fernández Atela has a strong international track record in client management, institutional relations, relocation and real estate services. Having lived in Mexico, Spain and the United States, she has built a career spanning more than three decades at prestigious organizations including the World Bank, IFEMA, Publiespaña and Casa Decor. She helps clients settle successfully into their new environment, giving them the reassurance of working with a professional who understands both the practical and human sides of every life transition.",
     teamLegalRole: "Legal collaborator",
     teamLegalCopy: "Alicia Gorospe provides specialist legal support through Gluckheim for residency documentation, immigration matters and legal coordination linked to a purchase or relocation.",
     teamRelocationRole: "Relocation",
@@ -250,7 +282,7 @@ const translations = {
     teamRelocationStatus: "In coordination",
     teamExternalLink: "Visit website",
     teamNoteTitle: "A flexible team, with direct attention intact.",
-    teamNoteCopy: "Atela Homes keeps a close relationship with each client and brings in specialist profiles when they add real value to the process.",
+    teamNoteCopy: "Atela Homes keeps a close relationship with each client and brings in specialists when needed.",
 
     // Contact
     contactLabel: "Contact",
@@ -351,9 +383,9 @@ function updateCustomSelectLabels() {
 }
 
 function initRevealMotion() {
-  const imageMotionElements = document.querySelectorAll(".figure-card, .zone-photo-grid article, .about-image");
+  const imageMotionElements = document.querySelectorAll(".figure-card, .zone-photo-grid article, .about-image, .property-card");
   const revealElements = document.querySelectorAll(
-    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-note, .site-footer"
+    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .properties-heading, .property-card, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-note, .site-footer"
   );
 
   imageMotionElements.forEach((element) => {
