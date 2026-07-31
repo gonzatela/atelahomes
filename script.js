@@ -20,19 +20,19 @@ const translations = {
     methodCopy: "Filtramos propiedades, comparamos zonas, coordinamos visitas presenciales o remotas y te ayudamos a entender qué estás comprando, dónde y por qué. Menos ruido, mejores decisiones y una persona de confianza durante todo el proceso.",
     
     // Method 4 Steps
-    stepOneTitle: "Entendemos tus necesidades:",
-    stepOneCopy: "Te ayudamos a aclarar tus prioridades, presupuesto, estilo de vida y calendario.",
+    stepOneTitle: "Entendemos tu búsqueda:",
+    stepOneCopy: "Definimos prioridades, presupuesto, estilo de vida y calendario.",
     stepTwoTitle: "Filtramos el mercado:",
-    stepTwoCopy: "Filtramos propiedades y evaluamos según tus criterios, evitando visitas y decisiones innecesarias.",
+    stepTwoCopy: "Seleccionamos propiedades y zonas con criterio, evitando visitas y decisiones innecesarias.",
     stepThreeTitle: "Visitamos y evaluamos:",
-    stepThreeCopy: "Coordinamos visitas presenciales o remotas y analizamos cada opción para ti.",
+    stepThreeCopy: "Coordinamos visitas presenciales o remotas y analizamos cada opción contigo.",
     stepFourTitle: "Negociamos y coordinamos:",
     stepFourCopy: "Te acompañamos en la negociación y conectamos a las partes implicadas hasta la firma y la instalación.",
     
     // Figures
-    figOne: "Viviendas para vivir el estilo mediterráneo, con luz abundante y espacio exterior.",
-    figTwo: "Pisos urbanos cerca de servicios y colegios.",
-    figThree: "Casas familiares para una mudanza más tranquila.",
+    figOne: "Viviendas con luz, exterior y vida mediterránea.",
+    figTwo: "Apartamentos urbanos cerca de servicios y colegios.",
+    figThree: "Casas para instalarse con calma.",
     
     // Areas
     areasLabel: "Zonas",
@@ -87,17 +87,9 @@ const translations = {
     aboutCaption: "Miren Fernández Atela, CEO de Atela Homes.",
     aboutLabel: "CEO de Atela Homes",
     aboutTitle: "Una única interlocutora para una decisión importante.",
-    aboutCopy: "Miren Fernández Atela cuenta con una sólida trayectoria internacional en gestión de clientes, relaciones institucionales, relocation y servicios inmobiliarios. Con experiencia vital en México, España y Estados Unidos, ha desarrollado su carrera a lo largo de más de tres décadas, en organizaciones de prestigio como el Banco Mundial, IFEMA, Publiespaña o Casa Decor. Destaca por ayudar a sus clientes a integrarse con éxito en su nuevo entorno, proporcionándoles la tranquilidad de contar con una profesional que entiende tanto el aspecto práctico como el humano de cada cambio de vida.",
+    aboutCopy: "Miren Fernández Atela cuenta con una sólida trayectoria internacional en gestión de clientes, relaciones institucionales, relocation y servicios inmobiliarios. A lo largo de más de tres décadas ha desarrollado su carrera en organizaciones de prestigio como el Banco Mundial, IFEMA, Publiespaña y Casa Decor, ocupando posiciones de responsabilidad y construyendo una amplia experiencia en atención al cliente, desarrollo de negocio y coordinación de proyectos internacionales.<br><br>Su experiencia profesional, unida al hecho de haber vivido en varios países del mundo, le permite comprender de primera mano los desafíos, inquietudes y necesidades de las personas y familias que afrontan un proceso de traslado internacional. Gracias a esta visión global y a su profundo conocimiento del mercado español, ofrece un acompañamiento cercano, eficaz y altamente personalizado en cada etapa de la reubicación.<br><br>Reconocida por su discreción, capacidad de organización y vocación de servicio, Miren transforma procesos complejos en experiencias sencillas y seguras, ayudando a sus clientes a integrarse con éxito en su nuevo entorno y proporcionándoles la tranquilidad de contar con una profesional que entiende tanto el aspecto práctico como el humano de cada cambio de vida.",
     aboutBrief: "",
     aboutLinkedIn: "Ver perfil en LinkedIn",
-    
-    // Properties
-    propertiesLabel: "Propiedades Destacadas",
-    propertiesTitle: "Oportunidades seleccionadas en venta y alquiler.",
-    badgeSale: "En Venta",
-    badgeRent: "En Alquiler",
-    viewDossier: "Ver Dossier completo (PDF)",
-    gemaRole: "Asesoría Legal & Inmobiliaria — Gluckheim",
     
     // Contact
     contactLabel: "Contacto",
@@ -151,17 +143,17 @@ const translations = {
     methodCopy: "We filter properties, compare areas, coordinate in-person or remote viewings, and help you understand what you are buying, where and why. Less noise, better decisions and a trusted advisor throughout the process.",
     
     // Method 4 Steps
-    stepOneTitle: "We understand your needs:",
-    stepOneCopy: "We help you clarify your priorities, budget, lifestyle, and timeline.",
+    stepOneTitle: "We understand your search:",
+    stepOneCopy: "We define priorities, budget, lifestyle, and timeline.",
     stepTwoTitle: "We filter the market:",
-    stepTwoCopy: "We screen properties and assess against your criteria, avoiding unnecessary visits and decisions.",
+    stepTwoCopy: "We select properties and areas with criteria, avoiding unnecessary visits and decisions.",
     stepThreeTitle: "We visit and evaluate:",
-    stepThreeCopy: "We coordinate in-person or remote visits and analyze each option for you.",
+    stepThreeCopy: "We coordinate in-person or remote visits and analyze each option with you.",
     stepFourTitle: "We negotiate and coordinate:",
     stepFourCopy: "We accompany you in the negotiation and connect the involved parties until signing and settling in.",
     
     // Figures
-    figOne: "Homes for Mediterranean living with abundant light and outdoor space.",
+    figOne: "Homes with light, outdoor space and Mediterranean living.",
     figTwo: "Urban apartments close to services and schools.",
     figThree: "Family homes for a calmer move.",
     
@@ -194,7 +186,7 @@ const translations = {
     legalTitle: "Legal and immigration advisory for your arrival in Spain.",
     legalCopy: "We work with Gluckheim, a firm specializing in immigration and real estate law, to coordinate and facilitate the legal aspects of your purchase or relocation to Spain.",
     legalCta: "Discover Gluckheim →",
-    homesLegalCopy: "During the process, Atela Homes brings in specialists when needed through Gluckheim, to ensure a safe and smooth transaction.",
+    homesLegalCopy: "During the purchase, we provide specialized legal advisory through Gluckheim, to ensure a safe and smooth transaction.",
     
     // Paths
     homesLabel: "How we can help",
@@ -219,17 +211,8 @@ const translations = {
     aboutCaption: "Miren Fernández Atela, CEO of Atela Homes.",
     aboutLabel: "CEO of Atela Homes",
     aboutTitle: "A single point of contact for an important decision.",
-    aboutCopy: "Miren Fernández Atela has a solid international track record in client management, institutional relations, relocation, and real estate services. With living experience in Mexico, Spain, and the United States, she has developed her career over more than three decades in prestigious organizations such as the World Bank, IFEMA, Publiespaña, and Casa Decor. She excels at helping her clients successfully integrate into their new environment, providing them with the peace of mind of having a professional who understands both the practical and human aspects of every life change.",
-    aboutBrief: "",
+    aboutCopy: "Miren Fernández Atela has a solid international track record in client management, institutional relations, relocation, and real estate services. Over more than three decades, she has developed her career in prestigious organizations such as the World Bank, IFEMA, Publiespaña, and Casa Decor, holding positions of responsibility and building extensive experience in customer service, business development, and the coordination of international projects.<br><br>Her professional experience, coupled with having lived in several countries around the world, allows her to understand firsthand the challenges, concerns, and needs of individuals and families facing an international relocation process. Thanks to this global vision and her deep knowledge of the Spanish market, she offers close, efficient, and highly personalized support at every stage of the relocation.<br><br>Recognized for her discretion, organizational skills, and service vocation, Miren transforms complex processes into simple and secure experiences, helping her clients successfully integrate into their new environment and providing them with the peace of mind of having a professional who understands both the practical and human aspects of every life change.",
     aboutLinkedIn: "View LinkedIn profile",
-    
-    // Properties
-    propertiesLabel: "Featured Properties",
-    propertiesTitle: "Handpicked purchase and rental opportunities.",
-    badgeSale: "For Sale",
-    badgeRent: "For Rent",
-    viewDossier: "View Dossier (PDF)",
-    gemaRole: "Legal & Real Estate Advisory — Gluckheim",
     
     // Contact
     contactLabel: "Contact",
