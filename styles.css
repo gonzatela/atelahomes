@@ -2048,8 +2048,8 @@ h3 {
 
 .property-detail-cta {
   display: grid;
-  grid-template-columns: minmax(180px, 0.45fr) minmax(300px, 1fr) auto;
-  gap: 28px 60px;
+  grid-template-columns: minmax(150px, 0.38fr) minmax(320px, 1fr) max-content;
+  gap: 28px clamp(40px, 5vw, 76px);
   align-items: center;
   width: 100%;
   padding: 64px max(22px, calc((100vw - var(--max)) / 2));
@@ -2070,9 +2070,18 @@ h3 {
 }
 
 .property-detail-cta .button {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  padding: 0 28px;
   white-space: nowrap;
   border-color: var(--paper);
   color: var(--paper);
+  line-height: 1.1;
+  text-align: center;
 }
 
 .property-detail-cta .button:hover,
@@ -2082,10 +2091,17 @@ h3 {
 }
 
 .property-detail-cta .section-label-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: start;
   color: var(--paper);
 }
 
 .property-detail-cta .section-label-inline::after {
+  width: 28px;
+  height: 1px;
+  content: "";
   background: rgba(247, 243, 236, 0.7);
 }
 
