@@ -58,7 +58,7 @@ const translations = {
     // Properties
     propertiesLabel: "Propiedades",
     propertiesTitle: "Una selección de propiedades disponibles.",
-    propertiesIntro: "Consulta los datos principales y abre la ficha completa para ver todas las imágenes y condiciones.",
+    propertiesIntro: "Explora cada propiedad y consulta sus detalles, galería y disponibilidad.",
     propertyRent: "Alquiler",
     propertySale: "Venta",
     propertyMaragallTitle: "Vivienda amueblada con vistas",
@@ -67,7 +67,7 @@ const translations = {
     propertyBoschTitle: "Vivienda reformada junto al Retiro",
     propertyBoschFeatures: "100 m² · 2 dormitorios · 2 baños · planta 1ª",
     propertyBoschPrice: "1.225.000 €",
-    propertyViewFile: "Ver ficha completa",
+    propertyViewFile: "Ver propiedad",
     
     // Services
     servicesLabel: "Servicios",
@@ -217,7 +217,7 @@ const translations = {
     // Properties
     propertiesLabel: "Properties",
     propertiesTitle: "A selection of available properties.",
-    propertiesIntro: "Review the essentials and open the full brochure for all images and terms.",
+    propertiesIntro: "Explore each property and review its details, gallery and availability.",
     propertyRent: "For rent",
     propertySale: "For sale",
     propertyMaragallTitle: "Furnished home with panoramic views",
@@ -226,7 +226,7 @@ const translations = {
     propertyBoschTitle: "Renovated home by El Retiro",
     propertyBoschFeatures: "100 m² · 2 bedrooms · 2 bathrooms · 1st floor",
     propertyBoschPrice: "€1,225,000",
-    propertyViewFile: "View full brochure",
+    propertyViewFile: "View property",
     
     // Services
     servicesLabel: "Services",
