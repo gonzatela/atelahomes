@@ -182,31 +182,13 @@ textarea {
 }
 
 .site-nav a.nav-page {
-  border: 1px solid currentColor;
-  padding: 8px 10px;
-  font-weight: 700;
-  transition: background 180ms ease, color 180ms ease;
+  padding: 10px 0;
+  font-weight: 650;
 }
 
 .site-nav a.nav-page::before {
   margin-right: 6px;
   content: "↗";
-}
-
-.site-nav a.nav-page:hover,
-.site-nav a.nav-page:focus-visible,
-.site-nav a.nav-page[aria-current="page"] {
-  background: rgba(247, 243, 236, 0.14);
-}
-
-.site-header.scrolled .site-nav a.nav-page:hover,
-.site-header.scrolled .site-nav a.nav-page:focus-visible,
-.site-header.scrolled .site-nav a.nav-page[aria-current="page"],
-.site-header.menu-active .site-nav a.nav-page:hover,
-.site-header.menu-active .site-nav a.nav-page:focus-visible,
-.site-header.menu-active .site-nav a.nav-page[aria-current="page"] {
-  background: var(--ink);
-  color: var(--paper);
 }
 
 .site-nav a::after {
@@ -232,7 +214,16 @@ textarea {
 }
 
 .site-nav a.nav-page::after {
-  display: none;
+  display: block;
+  height: 1px;
+  opacity: 0.58;
+  transform: scaleX(1);
+}
+
+.site-nav a.nav-page:hover::after,
+.site-nav a.nav-page:focus-visible::after,
+.site-nav a.nav-page[aria-current="page"]::after {
+  opacity: 1;
 }
 
 .language-switch {
@@ -2770,9 +2761,8 @@ section[id], div[id] {
 
 @media (max-width: 760px) {
   .site-nav a.nav-page {
-    min-height: 48px;
-    margin: 6px 0;
-    padding: 0 12px;
+    margin: 0;
+    padding: 0;
   }
 
   .property-grid {
@@ -2876,5 +2866,11 @@ section[id], div[id] {
   .property-detail-cta .button {
     justify-self: start;
     white-space: normal;
+  }
+}
+
+@media (max-width: 1060px) {
+  .site-nav a.nav-page {
+    border-bottom: 0;
   }
 }
