@@ -2281,19 +2281,8 @@ h3 {
   color: var(--paper);
 }
 
-.team-why-home .team-why-statement {
-  border-top: 1px solid var(--line);
+.team-why-home {
   background: var(--paper);
-  color: var(--ink);
-}
-
-.team-why-home .team-why-signature {
-  border-top-color: var(--line);
-  color: var(--muted);
-}
-
-.team-why-home .team-why-signature strong {
-  color: var(--ink);
 }
 
 .team-why-statement .editorial-section {
