@@ -1498,9 +1498,9 @@ h3 {
   border-color: var(--paper);
 }
 
-.checkbox-label {
+.contact-form .checkbox-label {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   cursor: pointer;
   color: rgba(247, 243, 236, 0.75);
@@ -1510,26 +1510,27 @@ h3 {
   letter-spacing: normal;
 }
 
-.checkbox-label input[type="checkbox"] {
+.contact-form .checkbox-label input[type="checkbox"] {
+  position: relative;
+  flex: 0 0 18px;
   appearance: none;
   width: 18px;
   height: 18px;
   min-width: 18px;
+  margin: 0;
+  padding: 0;
   border: 1px solid rgba(247, 243, 236, 0.4);
+  border-radius: 0;
   background: transparent;
   cursor: pointer;
-  position: relative;
-  border-radius: 2px;
-  margin: 0;
-  margin-top: 2px;
 }
 
-.checkbox-label input[type="checkbox"]:checked {
+.contact-form .checkbox-label input[type="checkbox"]:checked {
   background: var(--paper);
   border-color: var(--paper);
 }
 
-.checkbox-label input[type="checkbox"]:checked::after {
+.contact-form .checkbox-label input[type="checkbox"]:checked::after {
   content: "";
   position: absolute;
   left: 6px;
@@ -1539,6 +1540,10 @@ h3 {
   border: solid var(--olive-dark);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+.contact-form .checkbox-label span {
+  line-height: 1.35;
 }
 
 .form-submit-group {
