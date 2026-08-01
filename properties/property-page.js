@@ -149,27 +149,30 @@ function updateLightboxCopy(copy) {
 }
 
 function updateLightboxImage() {
-  const images = property.images.slice(1);
-  const language = document.documentElement.lang === "es" ? "es" : "en";
-  lightboxIndex = (lightboxIndex + images.length) % images.length;
+  const galleryItems = [...document.querySelectorAll("[data-gallery-index]")];
+  lightboxIndex = (lightboxIndex + galleryItems.length) % galleryItems.length;
+  const thumbnail = galleryItems[lightboxIndex].querySelector("img");
   const image = lightbox.querySelector("[data-lightbox-image]");
-  image.src = images[lightboxIndex];
-  image.alt = `${property.title[language]} - ${lightboxIndex + 1}`;
-  lightbox.querySelector("[data-lightbox-counter]").textContent = `${lightboxIndex + 1} / ${images.length}`;
+  image.src = thumbnail.currentSrc || thumbnail.src;
+  image.alt = thumbnail.alt;
+  lightbox.querySelector("[data-lightbox-counter]").textContent = `${lightboxIndex + 1} / ${galleryItems.length}`;
 }
 
-function openLightbox(index, trigger) {
-  lightboxIndex = index;
+function openLightbox(trigger) {
+  const galleryItems = [...document.querySelectorAll("[data-gallery-index]")];
+  lightboxIndex = galleryItems.indexOf(trigger);
   lightboxTrigger = trigger;
   updateLightboxImage();
   lightbox.hidden = false;
   document.body.classList.add("lightbox-open");
+  document.documentElement.classList.add("lightbox-open");
   lightbox.querySelector("[data-lightbox-close]").focus();
 }
 
 function closeLightbox() {
   lightbox.hidden = true;
   document.body.classList.remove("lightbox-open");
+  document.documentElement.classList.remove("lightbox-open");
   lightboxTrigger?.focus();
   lightboxTrigger = null;
 }
@@ -177,7 +180,7 @@ function closeLightbox() {
 document.querySelector("[data-property-gallery]").addEventListener("click", (event) => {
   const trigger = event.target.closest("[data-gallery-index]");
   if (!trigger) return;
-  openLightbox(Number(trigger.dataset.galleryIndex), trigger);
+  openLightbox(trigger);
 });
 
 lightbox.querySelector("[data-lightbox-close]").addEventListener("click", closeLightbox);
