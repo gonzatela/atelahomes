@@ -1974,7 +1974,7 @@ h3 {
 }
 
 .property-layout,
-.property-location {
+.property-detail-page .property-location {
   border-top: 1px solid var(--ink);
 }
 
@@ -1992,7 +1992,7 @@ h3 {
 }
 
 .property-detail-section-heading h2,
-.property-location h2 {
+.property-detail-page .property-location h2 {
   margin: 0;
   font-family: var(--serif);
   font-size: 3rem;
@@ -2015,7 +2015,7 @@ h3 {
   object-fit: contain;
 }
 
-.property-location {
+.property-detail-page .property-location {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
@@ -2050,7 +2050,7 @@ h3 {
   line-height: 1.55;
 }
 
-.property-location .button {
+.property-detail-page .property-location .button {
   display: inline-flex;
   width: fit-content;
   max-width: 100%;
@@ -3024,7 +3024,7 @@ section[id], div[id] {
   .property-detail-overview,
   .property-gallery-heading,
   .property-detail-section-heading,
-  .property-location,
+  .property-detail-page .property-location,
   .property-detail-cta {
     grid-template-columns: 1fr;
   }
@@ -3076,7 +3076,7 @@ section[id], div[id] {
   }
 
   .property-detail-section-heading h2,
-  .property-location h2 {
+  .property-detail-page .property-location h2 {
     font-size: 2.35rem;
   }
 
@@ -3084,7 +3084,7 @@ section[id], div[id] {
     min-height: 0;
   }
 
-  .property-location {
+  .property-detail-page .property-location {
     gap: 0;
     padding: 0;
   }
