@@ -52,120 +52,37 @@ window.propertyCatalog = [
     images: Array.from({ length: 13 }, (_, index) => `/assets/properties/alberto-bosch/${String(index + 1).padStart(2, "0")}.webp`)
   },
   {
-    slug: "serrano-castellana-604ec",
+    slug: "juan-de-la-cierva-el-viso",
     status: "sale",
-    location: "Serrano · Castellana · Madrid",
-    title: { es: "Una dirección excepcional en Serrano", en: "An exceptional address on Serrano" },
+    location: "Juan de la Cierva · El Viso · Madrid",
+    title: { es: "Rubí, amplitud y luz en El Viso", en: "Rubí, space and light in El Viso" },
     price: { es: "Precio a consultar", en: "Price on request" },
     priceValue: null,
-    facts: { es: ["191 m²", "3 dormitorios", "3 baños", "A reformar"], en: ["191 m²", "3 bedrooms", "3 bathrooms", "To renovate"] },
+    facts: { es: ["245 m²", "3 dormitorios", "4 baños", "A reformar"], en: ["245 m²", "3 bedrooms", "4 bathrooms", "To renovate"] },
     description: {
-      es: "Una propiedad de gran potencial en una de las direcciones más prestigiosas del barrio de Salamanca, concebida como base para un proyecto a medida.",
-      en: "A property with significant potential in one of Salamanca's most prestigious addresses, ready to become a tailored renovation project."
+      es: "Rubí representa la esencia del lujo atemporal. Esta propiedad exterior de 245 m² ofrece amplitud y versatilidad, con terraza, plaza de garaje, trastero, portero físico, ascensor y zonas verdes.",
+      en: "Rubí embodies timeless luxury. This 245 m² exterior home offers generous, versatile spaces, a terrace, parking, storage, concierge service, lift and landscaped communal areas."
     },
     locationDescription: {
-      es: "En Castellana, dentro del barrio de Salamanca y muy cerca de la Milla de Oro, con boutiques, restaurantes y servicios prime en el entorno inmediato.",
-      en: "In Castellana, within the Salamanca district and close to the Golden Mile, with boutiques, restaurants and prime services nearby."
+      es: "En El Viso, uno de los barrios residenciales más exclusivos de Madrid, cerca del eje de Castellana y rodeada de servicios, colegios y zonas verdes.",
+      en: "In El Viso, one of Madrid's most exclusive residential neighbourhoods, close to Castellana and surrounded by services, schools and green spaces."
     },
-    mapQuery: "Calle Serrano, Castellana, Madrid",
-    areaMapId: "1PqdtY8oj8Wh6tSaJPrC_0L38XZ_cUYM",
-    layout: "/assets/properties/serrano-castellana-604ec/layout.png",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-castellana-604ec/0${number}.avif`)
-  },
-  {
-    slug: "menendez-pelayo-recoletos",
-    status: "sale",
-    location: "Menéndez Pelayo · Recoletos · Madrid",
-    title: { es: "Ático con terraza junto al Retiro", en: "Penthouse with a terrace by El Retiro" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
-    facts: { es: ["171 m²", "3 dormitorios", "3 baños", "Terraza de 20 m²"], en: ["171 m²", "3 bedrooms", "3 bathrooms", "20 m² terrace"] },
-    description: {
-      es: "Ático en una finca clásica de 1936 junto al Retiro, con vistas despejadas, techos altos, terraza privada, ascensor y servicio de conserjería.",
-      en: "A penthouse in a classical 1936 building by El Retiro, with open views, high ceilings, a private terrace, lift and concierge service."
-    },
-    locationDescription: {
-      es: "Frente al eje verde del Retiro y junto a Recoletos, una zona residencial consolidada con comercio, restauración y conexiones directas por todo Madrid.",
-      en: "By El Retiro's green edge and Recoletos, an established residential area with shopping, dining and direct connections across Madrid."
-    },
-    mapQuery: "Menendez Pelayo, Recoletos, Madrid",
-    areaMapId: "1ffKwQtSiOVRXUWW5GgI50XPKFYcsUsE",
-    layout: "/assets/properties/menendez-pelayo-recoletos/layout.png",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/menendez-pelayo-recoletos/0${number}.avif`)
-  },
-  {
-    slug: "conde-de-penalver-goya",
-    status: "sale",
-    location: "Conde de Peñalver · Goya · Madrid",
-    title: { es: "Un interior luminoso en Goya", en: "A bright interior home in Goya" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
-    facts: { es: ["68 m²", "2 dormitorios", "2 baños", "A reformar"], en: ["68 m²", "2 bedrooms", "2 bathrooms", "To renovate"] },
-    description: {
-      es: "Piso interior luminoso y de techos altos en una finca clásica rehabilitada, con una distribución flexible y excelente conexión urbana.",
-      en: "A bright interior apartment with high ceilings in a restored classical building, offering a flexible layout and excellent city connections."
-    },
-    locationDescription: {
-      es: "En pleno Goya, una de las zonas más dinámicas del barrio de Salamanca, con mercados, comercio, restauración y transporte a pocos pasos.",
-      en: "In the heart of Goya, one of Salamanca's most dynamic areas, with markets, shops, dining and transport all within easy reach."
-    },
-    mapQuery: "Calle Conde de Penalver, Goya, Madrid",
-    areaMapId: "1veYZKIxGwgONX5H_TH-_u3k9I0lgmHg",
-    layout: "/assets/properties/conde-de-penalver-goya/layout.png",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/conde-de-penalver-goya/0${number}.avif`)
-  },
-  {
-    slug: "rios-rosas",
-    status: "sale",
-    location: "Ríos Rosas · Chamberí · Madrid",
-    title: { es: "Vivienda señorial con ocho balcones", en: "A stately home with eight balconies" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
-    facts: { es: ["167 m²", "3 dormitorios", "3 baños", "8 balcones"], en: ["167 m²", "3 bedrooms", "3 bathrooms", "8 balconies"] },
-    description: {
-      es: "Vivienda exterior en una finca clásica de Chamberí, con techos altos y ocho balcones que aportan luz y amplitud a sus estancias.",
-      en: "An exterior home in a classical Chamberí building, with high ceilings and eight balconies bringing light and openness to its rooms."
-    },
-    locationDescription: {
-      es: "En Ríos Rosas, un enclave residencial de Chamberí que combina arquitectura clásica, vida de barrio y acceso cómodo al centro financiero.",
-      en: "In Ríos Rosas, a residential corner of Chamberí combining classical architecture, neighbourhood life and easy access to the financial centre."
-    },
-    mapQuery: "Rios Rosas, Chamberi, Madrid",
-    mapAreaQuery: "Rios Rosas, Madrid",
-    layout: "/assets/properties/rios-rosas/layout.png",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/rios-rosas/0${number}.avif`)
-  },
-  {
-    slug: "garcia-de-paredes-almagro",
-    status: "sale",
-    location: "García de Paredes · Almagro · Madrid",
-    title: { es: "Calma y luz en Almagro", en: "Calm and light in Almagro" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
-    facts: { es: ["93 m²", "3 dormitorios", "2 baños", "A reformar"], en: ["93 m²", "3 bedrooms", "2 bathrooms", "To renovate"] },
-    description: {
-      es: "Vivienda interior con orientación sur y techos de tres metros, tranquila y luminosa, con potencial para crear hasta tres dormitorios.",
-      en: "A quiet, bright interior home with south-facing orientation and three-metre ceilings, with potential for up to three bedrooms."
-    },
-    locationDescription: {
-      es: "En Almagro, una de las áreas más elegantes de Chamberí, entre palacetes, galerías, embajadas y una cuidada oferta gastronómica.",
-      en: "In Almagro, one of Chamberí's most elegant areas, among historic residences, galleries, embassies and a refined dining scene."
-    },
-    mapQuery: "Calle Garcia de Paredes, Almagro, Madrid",
-    areaMapId: "1_uC_VS4g1KLxb18tqe8bmKU9htp25p8",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/garcia-de-paredes-almagro/0${number}.avif`)
+    mapQuery: "Calle Juan de la Cierva, El Viso, Madrid",
+    areaMapId: "13DQeY_9Co3wY7zYozHO1AwvMr4uNKxg",
+    layout: "/assets/properties/juan-de-la-cierva-el-viso/layout.png",
+    images: ["01.jpeg", ...Array.from({ length: 11 }, (_, index) => `${String(index + 2).padStart(2, "0")}.avif`)].map((file) => `/assets/properties/juan-de-la-cierva-el-viso/${file}`)
   },
   {
     slug: "castello-castellana",
     status: "sale",
     location: "Castelló · Castellana · Madrid",
-    title: { es: "Vivienda reformada y amueblada en Castellana", en: "Renovated and furnished home in Castellana" },
+    title: { es: "Luna, vivienda reformada en Castellana", en: "Luna, renovated home in Castellana" },
     price: { es: "Precio a consultar", en: "Price on request" },
     priceValue: null,
-    facts: { es: ["276 m²", "3 dormitorios", "5 baños", "Parking y trastero"], en: ["276 m²", "3 bedrooms", "5 bathrooms", "Parking and storage"] },
+    facts: { es: ["276 m²", "4 dormitorios", "4 baños", "Reformada y amueblada"], en: ["276 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"] },
     description: {
-      es: "Amplia vivienda exterior reformada y amueblada, con una distribución equilibrada, parking y trastero en el barrio de Castellana.",
-      en: "A spacious renovated and furnished exterior home, with a balanced layout, parking and storage in the Castellana neighbourhood."
+      es: "Amplia vivienda exterior reformada y amueblada, con una distribución equilibrada en el barrio de Castellana.",
+      en: "A spacious renovated and furnished exterior home with a balanced layout in the Castellana neighbourhood."
     },
     locationDescription: {
       es: "Una dirección tranquila en Castellana, dentro del barrio de Salamanca, próxima a Serrano y bien conectada con los principales ejes de la ciudad.",
@@ -180,10 +97,10 @@ window.propertyCatalog = [
     slug: "serrano-con-hermanos-becquer",
     status: "sale",
     location: "Serrano · Hermanos Bécquer · Madrid",
-    title: { es: "Arquitectura clásica junto a Serrano", en: "Classical architecture by Serrano" },
+    title: { es: "Arsis, arquitectura clásica junto a Serrano", en: "Arsis, classical architecture by Serrano" },
     price: { es: "Precio a consultar", en: "Price on request" },
     priceValue: null,
-    facts: { es: ["241 m²", "3 dormitorios", "4 baños", "2 balcones"], en: ["241 m²", "3 bedrooms", "4 bathrooms", "2 balconies"] },
+    facts: { es: ["241 m²", "3 dormitorios", "3 baños", "A reformar"], en: ["241 m²", "3 bedrooms", "3 bathrooms", "To renovate"] },
     description: {
       es: "Propiedad a reformar en una finca clásica, con techos altos y una ubicación privilegiada cerca del Museo Lázaro Galdiano y la calle Serrano.",
       en: "A renovation opportunity in a classical building, with high ceilings and a privileged location near the Lázaro Galdiano Museum and Serrano."
@@ -198,13 +115,55 @@ window.propertyCatalog = [
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-con-hermanos-becquer/0${number}.avif`)
   },
   {
+    slug: "goya-recoletos",
+    status: "sale",
+    location: "Goya · Recoletos · Madrid",
+    title: { es: "Tándem, tradición e innovación en Recoletos", en: "Tándem, tradition and innovation in Recoletos" },
+    price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
+    facts: { es: ["292 m²", "3 dormitorios", "3 baños", "A reformar"], en: ["292 m²", "3 bedrooms", "3 bathrooms", "To renovate"] },
+    description: {
+      es: "Tándem combina elementos clásicos preexistentes con materiales contemporáneos. Sus 292 m² han sido planteados para crear una vivienda elegante, equilibrada y llena de carácter.",
+      en: "Tándem combines original classical details with contemporary materials. Its 292 m² are conceived as an elegant, balanced home full of character."
+    },
+    locationDescription: {
+      es: "En Recoletos, dentro del barrio de Salamanca, cerca del Retiro, la calle Goya y una cuidada selección de comercios, restaurantes y servicios.",
+      en: "In Recoletos, within the Salamanca district, close to El Retiro, Calle Goya and a refined selection of shops, restaurants and services."
+    },
+    mapQuery: "Goya, Recoletos, Madrid",
+    areaMapId: "1ffKwQtSiOVRXUWW5GgI50XPKFYcsUsE",
+    layout: "/assets/properties/goya-recoletos/layout.png",
+    images: ["01.avif", "02.avif", "03.avif", "04.avif", "05.jpeg", "06.avif", "07.avif", "08.avif", "09.avif", "10.avif", "11.avif"].map((file) => `/assets/properties/goya-recoletos/${file}`)
+  },
+  {
+    slug: "general-pardinas-ii-goya",
+    status: "sale",
+    location: "General Pardiñas II · Goya · Madrid",
+    title: { es: "Libre, un refugio luminoso en Goya", en: "Libre, a bright retreat in Goya" },
+    price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
+    facts: { es: ["139 m²", "3 dormitorios", "3 baños", "Terraza de 17 m²"], en: ["139 m²", "3 bedrooms", "3 bathrooms", "17 m² terrace"] },
+    description: {
+      es: "Libre encarna amplitud y ligereza. Situada en una finca clásica, esta vivienda exterior de 139 m² cuenta con tres dormitorios y una terraza de 17 m² con vistas despejadas.",
+      en: "Libre is defined by openness and lightness. Set in a classical building, this 139 m² exterior home offers three bedrooms and a 17 m² terrace with open views."
+    },
+    locationDescription: {
+      es: "En Goya, una de las zonas más dinámicas del barrio de Salamanca, cerca del Retiro y rodeada de comercio, restauración y excelentes conexiones.",
+      en: "In Goya, one of the Salamanca district's most dynamic areas, close to El Retiro and surrounded by shopping, dining and excellent connections."
+    },
+    mapQuery: "General Pardinas, Goya, Madrid",
+    areaMapId: "1veYZKIxGwgONX5H_TH-_u3k9I0lgmHg",
+    layout: "/assets/properties/general-pardinas-ii-goya/layout.jpeg",
+    images: Array.from({ length: 13 }, (_, index) => `/assets/properties/general-pardinas-ii-goya/${String(index + 1).padStart(2, "0")}.avif`)
+  },
+  {
     slug: "lombia-goya",
     status: "sale",
     location: "Lombia · Goya · Madrid",
-    title: { es: "Ático con terraza en Goya", en: "Penthouse with a terrace in Goya" },
+    title: { es: "Lumbre, ático con terraza en Goya", en: "Lumbre, penthouse with a terrace in Goya" },
     price: { es: "Precio a consultar", en: "Price on request" },
     priceValue: null,
-    facts: { es: ["119 m²", "3 dormitorios", "2 baños", "Terraza de 13 m²"], en: ["119 m²", "3 bedrooms", "2 bathrooms", "13 m² terrace"] },
+    facts: { es: ["119 m²", "3 dormitorios", "3 baños", "A reformar"], en: ["119 m²", "3 bedrooms", "3 bathrooms", "To renovate"] },
     description: {
       es: "Ático exterior en una finca clásica, con una amplia terraza y estancias luminosas en pleno barrio de Goya.",
       en: "An exterior penthouse in a classical building, with a generous terrace and bright rooms in the heart of Goya."
