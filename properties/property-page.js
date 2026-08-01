@@ -19,6 +19,11 @@ function renderPropertyPage() {
         layoutTitle: "Propuesta de distribución",
         location: "Ubicación",
         locationIntro: "La dirección en contexto",
+        galleryDialog: "Galería de la propiedad",
+        openImage: "Ampliar imagen",
+        closeGallery: "Cerrar galería",
+        previousImage: "Imagen anterior",
+        nextImage: "Imagen siguiente",
         ctaLabel: "Consulta",
         ctaTitle: "¿Quieres visitar esta propiedad?",
         ctaCopy: "Cuéntanos tus fechas y necesidades. Te responderemos con disponibilidad y próximos pasos.",
@@ -34,6 +39,11 @@ function renderPropertyPage() {
         layoutTitle: "Proposed layout",
         location: "Location",
         locationIntro: "The address in context",
+        galleryDialog: "Property gallery",
+        openImage: "Enlarge image",
+        closeGallery: "Close gallery",
+        previousImage: "Previous image",
+        nextImage: "Next image",
         ctaLabel: "Enquiry",
         ctaTitle: "Would you like to view this property?",
         ctaCopy: "Tell us your preferred dates and requirements. We will reply with availability and next steps.",
@@ -54,8 +64,16 @@ function renderPropertyPage() {
     .join("");
   document.querySelector("[data-property-gallery]").innerHTML = property.images
     .slice(1)
-    .map((image, index) => `<figure><img src="${image}" alt="${property.title[language]} - ${index + 1}" ${index ? 'loading="lazy"' : ""} /></figure>`)
+    .map((image, index) => `
+      <figure>
+        <button class="property-gallery-open" type="button" data-gallery-index="${index}" aria-label="${copy.openImage}: ${index + 1}">
+          <img src="${image}" alt="${property.title[language]} - ${index + 1}" ${index ? 'loading="lazy"' : ""} />
+        </button>
+      </figure>
+    `)
     .join("");
+
+  updateLightboxCopy(copy);
 
   const layoutSection = document.querySelector("[data-property-layout-section]");
   layoutSection.hidden = !property.layout;
@@ -95,6 +113,97 @@ function renderPropertyPage() {
   locationContactLink.textContent = copy.ctaButton;
   locationContactLink.href = contactLink.href;
 }
+
+let lightboxIndex = 0;
+let lightboxTrigger = null;
+
+const lightbox = document.createElement("div");
+lightbox.className = "property-lightbox";
+lightbox.hidden = true;
+lightbox.setAttribute("role", "dialog");
+lightbox.setAttribute("aria-modal", "true");
+lightbox.innerHTML = `
+  <div class="property-lightbox-toolbar">
+    <span data-lightbox-counter></span>
+    <button type="button" class="property-lightbox-close" data-lightbox-close>×</button>
+  </div>
+  <button type="button" class="property-lightbox-nav property-lightbox-prev" data-lightbox-prev>‹</button>
+  <figure class="property-lightbox-figure">
+    <img data-lightbox-image alt="" />
+  </figure>
+  <button type="button" class="property-lightbox-nav property-lightbox-next" data-lightbox-next>›</button>
+`;
+document.body.append(lightbox);
+
+function updateLightboxCopy(copy) {
+  lightbox.setAttribute("aria-label", copy.galleryDialog);
+  const closeButton = lightbox.querySelector("[data-lightbox-close]");
+  const previousButton = lightbox.querySelector("[data-lightbox-prev]");
+  const nextButton = lightbox.querySelector("[data-lightbox-next]");
+  closeButton.setAttribute("aria-label", copy.closeGallery);
+  closeButton.title = copy.closeGallery;
+  previousButton.setAttribute("aria-label", copy.previousImage);
+  previousButton.title = copy.previousImage;
+  nextButton.setAttribute("aria-label", copy.nextImage);
+  nextButton.title = copy.nextImage;
+}
+
+function updateLightboxImage() {
+  const images = property.images.slice(1);
+  const language = document.documentElement.lang === "es" ? "es" : "en";
+  lightboxIndex = (lightboxIndex + images.length) % images.length;
+  const image = lightbox.querySelector("[data-lightbox-image]");
+  image.src = images[lightboxIndex];
+  image.alt = `${property.title[language]} - ${lightboxIndex + 1}`;
+  lightbox.querySelector("[data-lightbox-counter]").textContent = `${lightboxIndex + 1} / ${images.length}`;
+}
+
+function openLightbox(index, trigger) {
+  lightboxIndex = index;
+  lightboxTrigger = trigger;
+  updateLightboxImage();
+  lightbox.hidden = false;
+  document.body.classList.add("lightbox-open");
+  lightbox.querySelector("[data-lightbox-close]").focus();
+}
+
+function closeLightbox() {
+  lightbox.hidden = true;
+  document.body.classList.remove("lightbox-open");
+  lightboxTrigger?.focus();
+  lightboxTrigger = null;
+}
+
+document.querySelector("[data-property-gallery]").addEventListener("click", (event) => {
+  const trigger = event.target.closest("[data-gallery-index]");
+  if (!trigger) return;
+  openLightbox(Number(trigger.dataset.galleryIndex), trigger);
+});
+
+lightbox.querySelector("[data-lightbox-close]").addEventListener("click", closeLightbox);
+lightbox.querySelector("[data-lightbox-prev]").addEventListener("click", () => {
+  lightboxIndex -= 1;
+  updateLightboxImage();
+});
+lightbox.querySelector("[data-lightbox-next]").addEventListener("click", () => {
+  lightboxIndex += 1;
+  updateLightboxImage();
+});
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) closeLightbox();
+});
+document.addEventListener("keydown", (event) => {
+  if (lightbox.hidden) return;
+  if (event.key === "Escape") closeLightbox();
+  if (event.key === "ArrowLeft") {
+    lightboxIndex -= 1;
+    updateLightboxImage();
+  }
+  if (event.key === "ArrowRight") {
+    lightboxIndex += 1;
+    updateLightboxImage();
+  }
+});
 
 const propertyLanguageObserver = new MutationObserver(renderPropertyPage);
 propertyLanguageObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });

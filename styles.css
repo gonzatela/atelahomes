@@ -1977,6 +1977,108 @@ h3 {
   transform: scale(1.015);
 }
 
+.property-gallery-open {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.property-gallery-open:focus-visible {
+  outline: 2px solid var(--olive-dark);
+  outline-offset: -4px;
+}
+
+.lightbox-open {
+  overflow: hidden;
+}
+
+.property-lightbox[hidden] {
+  display: none;
+}
+
+.property-lightbox {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) 72px;
+  grid-template-rows: 64px minmax(0, 1fr);
+  align-items: center;
+  background: rgba(21, 26, 22, 0.96);
+  color: var(--paper);
+}
+
+.property-lightbox-toolbar {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+  padding: 0 22px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.property-lightbox-close,
+.property-lightbox-nav {
+  display: grid;
+  padding: 0;
+  border: 1px solid rgba(247, 243, 236, 0.45);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  place-items: center;
+}
+
+.property-lightbox-close {
+  width: 40px;
+  height: 40px;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.property-lightbox-nav {
+  width: 48px;
+  height: 48px;
+  justify-self: center;
+  font-family: var(--serif);
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.property-lightbox-close:hover,
+.property-lightbox-nav:hover,
+.property-lightbox-close:focus-visible,
+.property-lightbox-nav:focus-visible {
+  border-color: var(--paper);
+  background: var(--paper);
+  color: var(--ink);
+  outline: none;
+}
+
+.property-lightbox-figure {
+  display: grid;
+  width: 100%;
+  height: calc(100vh - 88px);
+  margin: 0;
+  padding: 0 12px 24px;
+  place-items: center;
+}
+
+.property-lightbox-figure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 .property-layout,
 .property-detail-page .property-location {
   border-top: 1px solid var(--ink);
@@ -3078,6 +3180,30 @@ section[id], div[id] {
   .property-gallery-grid figure:nth-child(5n + 6) {
     grid-column: auto;
     aspect-ratio: 4 / 3;
+  }
+
+  .property-lightbox {
+    grid-template-columns: 54px minmax(0, 1fr) 54px;
+    grid-template-rows: 58px minmax(0, 1fr);
+  }
+
+  .property-lightbox-toolbar {
+    padding: 0 12px;
+  }
+
+  .property-lightbox-close {
+    width: 38px;
+    height: 38px;
+  }
+
+  .property-lightbox-nav {
+    width: 42px;
+    height: 42px;
+  }
+
+  .property-lightbox-figure {
+    height: calc(100vh - 72px);
+    padding: 0 4px 14px;
   }
 
   .property-layout {
