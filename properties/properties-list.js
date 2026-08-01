@@ -79,8 +79,8 @@ function renderPropertyList() {
             <p class="property-location">${property.location}</p>
             <h2><a href="./${property.slug}/">${property.title[language]}</a></h2>
             <p class="property-features">${property.facts[language].join(" · ")}</p>
-            <div class="property-footer">
-              <strong>${property.price[language]}</strong>
+            <div class="property-footer ${property.priceValue == null ? "property-footer-without-price" : ""}">
+              ${property.priceValue == null ? "" : `<strong>${property.price[language]}</strong>`}
               <a href="./${property.slug}/">${copy.view} <span aria-hidden="true">→</span></a>
             </div>
           </div>

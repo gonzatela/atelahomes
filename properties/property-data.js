@@ -22,6 +22,7 @@ window.propertyCatalog = [
       en: "A practical location by the Castellana axis, with quick connections, everyday services and Madrid's financial district only minutes away."
     },
     mapQuery: "Poeta Joan Maragall, Madrid",
+    mapAreaQuery: "Castillejos, Madrid",
     images: Array.from({ length: 11 }, (_, index) => `/assets/properties/poeta-joan-maragall/${String(index + 1).padStart(2, "0")}.webp`)
   },
   {
@@ -47,6 +48,7 @@ window.propertyCatalog = [
       en: "In Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
     mapQuery: "Calle Alberto Bosch, Madrid",
+    mapAreaQuery: "Los Jeronimos, Madrid",
     images: Array.from({ length: 13 }, (_, index) => `/assets/properties/alberto-bosch/${String(index + 1).padStart(2, "0")}.webp`)
   },
   {
@@ -66,6 +68,7 @@ window.propertyCatalog = [
       en: "In Castellana, within the Salamanca district and close to the Golden Mile, with boutiques, restaurants and prime services nearby."
     },
     mapQuery: "Calle Serrano, Castellana, Madrid",
+    areaMapId: "1PqdtY8oj8Wh6tSaJPrC_0L38XZ_cUYM",
     layout: "/assets/properties/serrano-castellana-604ec/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-castellana-604ec/0${number}.avif`)
   },
@@ -86,6 +89,7 @@ window.propertyCatalog = [
       en: "By El Retiro's green edge and Recoletos, an established residential area with shopping, dining and direct connections across Madrid."
     },
     mapQuery: "Menendez Pelayo, Recoletos, Madrid",
+    areaMapId: "1ffKwQtSiOVRXUWW5GgI50XPKFYcsUsE",
     layout: "/assets/properties/menendez-pelayo-recoletos/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/menendez-pelayo-recoletos/0${number}.avif`)
   },
@@ -106,6 +110,7 @@ window.propertyCatalog = [
       en: "In the heart of Goya, one of Salamanca's most dynamic areas, with markets, shops, dining and transport all within easy reach."
     },
     mapQuery: "Calle Conde de Penalver, Goya, Madrid",
+    areaMapId: "1veYZKIxGwgONX5H_TH-_u3k9I0lgmHg",
     layout: "/assets/properties/conde-de-penalver-goya/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/conde-de-penalver-goya/0${number}.avif`)
   },
@@ -126,6 +131,7 @@ window.propertyCatalog = [
       en: "In Ríos Rosas, a residential corner of Chamberí combining classical architecture, neighbourhood life and easy access to the financial centre."
     },
     mapQuery: "Rios Rosas, Chamberi, Madrid",
+    mapAreaQuery: "Rios Rosas, Madrid",
     layout: "/assets/properties/rios-rosas/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/rios-rosas/0${number}.avif`)
   },
@@ -146,6 +152,7 @@ window.propertyCatalog = [
       en: "In Almagro, one of Chamberí's most elegant areas, among historic residences, galleries, embassies and a refined dining scene."
     },
     mapQuery: "Calle Garcia de Paredes, Almagro, Madrid",
+    areaMapId: "1_uC_VS4g1KLxb18tqe8bmKU9htp25p8",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/garcia-de-paredes-almagro/0${number}.avif`)
   },
   {
@@ -165,6 +172,7 @@ window.propertyCatalog = [
       en: "A quiet Castellana address in the Salamanca district, close to Serrano and well connected to Madrid's principal avenues."
     },
     mapQuery: "Calle Castello, Castellana, Madrid",
+    areaMapId: "1PqdtY8oj8Wh6tSaJPrC_0L38XZ_cUYM",
     layout: "/assets/properties/castello-castellana/layout.jpg",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/castello-castellana/0${number}.avif`)
   },
@@ -185,6 +193,7 @@ window.propertyCatalog = [
       en: "By Serrano and Hermanos Bécquer, in a distinguished Castellana setting close to the Lázaro Galdiano Museum and the Golden Mile."
     },
     mapQuery: "Serrano con Hermanos Becquer, Madrid",
+    areaMapId: "1PqdtY8oj8Wh6tSaJPrC_0L38XZ_cUYM",
     layout: "/assets/properties/serrano-con-hermanos-becquer/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-con-hermanos-becquer/0${number}.avif`)
   },
@@ -205,6 +214,7 @@ window.propertyCatalog = [
       en: "On a residential Goya street, close to El Retiro and Salamanca's main shopping avenues, with services and transport nearby."
     },
     mapQuery: "Calle Lombia, Goya, Madrid",
+    areaMapId: "1veYZKIxGwgONX5H_TH-_u3k9I0lgmHg",
     layout: "/assets/properties/lombia-goya/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/lombia-goya/0${number}.avif`)
   }
