@@ -8,6 +8,7 @@ window.propertyCatalog = [
       en: "Furnished home with panoramic views"
     },
     price: { es: "1.700 €/mes", en: "€1,700/month" },
+    priceValue: 1700,
     facts: {
       es: ["1 dormitorio", "1 baño", "Planta 19", "Portero"],
       en: ["1 bedroom", "1 bathroom", "19th floor", "Concierge"]
@@ -27,6 +28,7 @@ window.propertyCatalog = [
       en: "Renovated home by El Retiro"
     },
     price: { es: "1.225.000 €", en: "€1,225,000" },
+    priceValue: 1225000,
     facts: {
       es: ["100 m²", "2 dormitorios", "2 baños", "Planta 1ª"],
       en: ["100 m²", "2 bedrooms", "2 bathrooms", "1st floor"]
@@ -43,6 +45,7 @@ window.propertyCatalog = [
     location: "Serrano · Castellana · Madrid",
     title: { es: "Una dirección excepcional en Serrano", en: "An exceptional address on Serrano" },
     price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
     facts: { es: ["191 m²", "3 dormitorios", "3 baños", "A reformar"], en: ["191 m²", "3 bedrooms", "3 bathrooms", "To renovate"] },
     description: {
       es: "Una propiedad de gran potencial en una de las direcciones más prestigiosas del barrio de Salamanca, concebida como base para un proyecto a medida.",
@@ -56,6 +59,7 @@ window.propertyCatalog = [
     location: "Menéndez Pelayo · Recoletos · Madrid",
     title: { es: "Ático con terraza junto al Retiro", en: "Penthouse with a terrace by El Retiro" },
     price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
     facts: { es: ["171 m²", "3 dormitorios", "3 baños", "Terraza de 20 m²"], en: ["171 m²", "3 bedrooms", "3 bathrooms", "20 m² terrace"] },
     description: {
       es: "Ático en una finca clásica de 1936 junto al Retiro, con vistas despejadas, techos altos, terraza privada, ascensor y servicio de conserjería.",
@@ -69,6 +73,7 @@ window.propertyCatalog = [
     location: "Conde de Peñalver · Goya · Madrid",
     title: { es: "Un interior luminoso en Goya", en: "A bright interior home in Goya" },
     price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
     facts: { es: ["68 m²", "2 dormitorios", "2 baños", "A reformar"], en: ["68 m²", "2 bedrooms", "2 bathrooms", "To renovate"] },
     description: {
       es: "Piso interior luminoso y de techos altos en una finca clásica rehabilitada, con una distribución flexible y excelente conexión urbana.",
@@ -82,6 +87,7 @@ window.propertyCatalog = [
     location: "Ríos Rosas · Chamberí · Madrid",
     title: { es: "Vivienda señorial con ocho balcones", en: "A stately home with eight balconies" },
     price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
     facts: { es: ["167 m²", "3 dormitorios", "3 baños", "8 balcones"], en: ["167 m²", "3 bedrooms", "3 bathrooms", "8 balconies"] },
     description: {
       es: "Vivienda exterior en una finca clásica de Chamberí, con techos altos y ocho balcones que aportan luz y amplitud a sus estancias.",
@@ -95,6 +101,7 @@ window.propertyCatalog = [
     location: "García de Paredes · Almagro · Madrid",
     title: { es: "Calma y luz en Almagro", en: "Calm and light in Almagro" },
     price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
     facts: { es: ["93 m²", "3 dormitorios", "2 baños", "A reformar"], en: ["93 m²", "3 bedrooms", "2 bathrooms", "To renovate"] },
     description: {
       es: "Vivienda interior con orientación sur y techos de tres metros, tranquila y luminosa, con potencial para crear hasta tres dormitorios.",
@@ -108,6 +115,7 @@ window.propertyCatalog = [
     location: "Castelló · Castellana · Madrid",
     title: { es: "Vivienda reformada y amueblada en Castellana", en: "Renovated and furnished home in Castellana" },
     price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
     facts: { es: ["276 m²", "3 dormitorios", "5 baños", "Parking y trastero"], en: ["276 m²", "3 bedrooms", "5 bathrooms", "Parking and storage"] },
     description: {
       es: "Amplia vivienda exterior reformada y amueblada, con una distribución equilibrada, parking y trastero en el barrio de Castellana.",
@@ -121,6 +129,7 @@ window.propertyCatalog = [
     location: "Serrano · Hermanos Bécquer · Madrid",
     title: { es: "Arquitectura clásica junto a Serrano", en: "Classical architecture by Serrano" },
     price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
     facts: { es: ["241 m²", "3 dormitorios", "4 baños", "2 balcones"], en: ["241 m²", "3 bedrooms", "4 bathrooms", "2 balconies"] },
     description: {
       es: "Propiedad a reformar en una finca clásica, con techos altos y una ubicación privilegiada cerca del Museo Lázaro Galdiano y la calle Serrano.",
@@ -134,6 +143,7 @@ window.propertyCatalog = [
     location: "Lombia · Goya · Madrid",
     title: { es: "Ático con terraza en Goya", en: "Penthouse with a terrace in Goya" },
     price: { es: "Precio a consultar", en: "Price on request" },
+    priceValue: null,
     facts: { es: ["119 m²", "3 dormitorios", "2 baños", "Terraza de 13 m²"], en: ["119 m²", "3 bedrooms", "2 bathrooms", "13 m² terrace"] },
     description: {
       es: "Ático exterior en una finca clásica, con una amplia terraza y estancias luminosas en pleno barrio de Goya.",

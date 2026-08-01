@@ -9,7 +9,7 @@
       content="Available properties in Madrid selected by Atela Homes for sale and rent."
     />
     <link rel="icon" type="image/svg+xml" href="../assets/logo-favicon.svg" />
-    <link rel="stylesheet" href="../styles.css?v=48" />
+    <link rel="stylesheet" href="../styles.css?v=49" />
   </head>
   <body class="subpage properties-page" data-page="properties">
     <header class="site-header" data-header>
@@ -46,6 +46,28 @@
           <h1 data-i18n="propertiesTitle">Una selección de propiedades disponibles.</h1>
           <p data-i18n="propertiesIntro">Explora cada propiedad y consulta sus detalles, galería y disponibilidad.</p>
         </div>
+        <section class="property-filters" aria-label="Filtros de propiedades" data-property-filters>
+          <div class="property-filter-group">
+            <p class="property-filter-label" data-filter-operation-label>Tipo de operación</p>
+            <div class="property-filter-modes" role="group" aria-label="Tipo de operación">
+              <button class="active" type="button" data-filter-status="all" aria-pressed="true">Todas</button>
+              <button type="button" data-filter-status="sale" aria-pressed="false">En venta</button>
+              <button type="button" data-filter-status="rent" aria-pressed="false">En alquiler</button>
+            </div>
+          </div>
+          <div class="property-price-filter">
+            <div class="property-price-heading">
+              <label class="property-filter-label" for="property-price-range" data-filter-price-label>Precio máximo</label>
+              <output for="property-price-range" data-price-output>Sin máximo</output>
+            </div>
+            <input id="property-price-range" type="range" data-price-filter />
+            <div class="property-price-scale" aria-hidden="true">
+              <span data-price-min></span>
+              <span data-price-max></span>
+            </div>
+          </div>
+          <p class="property-result-count" aria-live="polite" data-property-count></p>
+        </section>
         <div class="property-grid" data-property-grid></div>
       </section>
     </main>
@@ -63,8 +85,8 @@
       <a href="#home" class="footer-top" data-i18n="footerTop">Volver arriba</a>
     </footer>
 
-    <script src="./property-data.js?v=48"></script>
+    <script src="./property-data.js?v=49"></script>
     <script src="../script.js?v=48"></script>
-    <script src="./properties-list.js?v=48"></script>
+    <script src="./properties-list.js?v=49"></script>
   </body>
 </html>
