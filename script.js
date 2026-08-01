@@ -124,6 +124,16 @@ const translations = {
     teamRelocationName: "Gema Mandri",
     teamRelocationCopy: "Colaboradora de relocation vinculada a UbiKT Spain para acompañar procesos de llegada, vivienda, trámites prácticos y adaptación diaria en España.",
     teamExternalLink: "Ver web",
+    teamWhyLabel: "Por qué nosotros",
+    teamWhyTitle: "Experiencia internacional, atención personal.",
+    teamWhyCopy: "Unimos conocimiento inmobiliario, relocation y una red legal especializada para que cada decisión avance con claridad y un único punto de contacto.",
+    teamWhyCta: "Quiero más información",
+    teamWhyStatExperience: "Años de trayectoria internacional",
+    teamWhyStatCountries: "Países que han marcado nuestra experiencia",
+    teamWhyStatScope: "Coordinación inmobiliaria, legal y relocation",
+    teamWhyStatContact: "Punto de contacto dedicado",
+    teamWhyStatement: "Combinamos atención directa con una red de especialistas de confianza para cuidar tanto los aspectos prácticos como el lado humano de cada cambio de vida.",
+    teamWhySignature: "Un punto de contacto. Un equipo detrás.",
     teamNoteTitle: "Un equipo flexible, sin perder el trato directo.",
     teamNoteCopy: "Atela Homes mantiene una relación cercana con cada cliente e incorpora especialistas cuando es necesario.",
 
@@ -283,6 +293,16 @@ const translations = {
     teamRelocationName: "Gema Mandri",
     teamRelocationCopy: "Relocation collaborator connected to UbiKT Spain, supporting arrival processes, housing, practical paperwork and day-to-day adaptation in Spain.",
     teamExternalLink: "Visit website",
+    teamWhyLabel: "Why us",
+    teamWhyTitle: "International experience, personal attention.",
+    teamWhyCopy: "We bring together real estate expertise, relocation and a specialist legal network so that every decision moves forward clearly through one point of contact.",
+    teamWhyCta: "I want more information",
+    teamWhyStatExperience: "Years of international experience",
+    teamWhyStatCountries: "Countries that have shaped our perspective",
+    teamWhyStatScope: "Real estate, legal and relocation coordination",
+    teamWhyStatContact: "Dedicated point of contact",
+    teamWhyStatement: "We combine direct attention with a trusted specialist network to care for both the practical details and the human side of every life transition.",
+    teamWhySignature: "One point of contact. A team behind it.",
     teamNoteTitle: "A flexible team, with direct attention intact.",
     teamNoteCopy: "Atela Homes keeps a close relationship with each client and brings in specialists when needed.",
 
@@ -387,7 +407,7 @@ function updateCustomSelectLabels() {
 function initRevealMotion() {
   const imageMotionElements = document.querySelectorAll(".figure-card, .zone-photo-grid article, .about-image, .property-card");
   const revealElements = document.querySelectorAll(
-    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .properties-heading, .property-card, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-note"
+    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .properties-heading, .property-card, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-why-overview, .team-why-statement, .team-note"
   );
 
   imageMotionElements.forEach((element) => {
