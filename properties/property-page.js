@@ -15,6 +15,10 @@ function renderPropertyPage() {
         back: "Todas las propiedades",
         gallery: "Galería",
         galleryIntro: "Recorre los espacios y detalles de la propiedad.",
+        distribution: "Distribución",
+        layoutTitle: "Propuesta de distribución",
+        location: "Ubicación",
+        locationIntro: "La dirección en contexto",
         ctaLabel: "Consulta",
         ctaTitle: "¿Quieres visitar esta propiedad?",
         ctaCopy: "Cuéntanos tus fechas y necesidades. Te responderemos con disponibilidad y próximos pasos.",
@@ -26,6 +30,10 @@ function renderPropertyPage() {
         back: "All properties",
         gallery: "Gallery",
         galleryIntro: "Explore the property's spaces and details.",
+        distribution: "Distribution",
+        layoutTitle: "Proposed layout",
+        location: "Location",
+        locationIntro: "The address in context",
         ctaLabel: "Enquiry",
         ctaTitle: "Would you like to view this property?",
         ctaCopy: "Tell us your preferred dates and requirements. We will reply with availability and next steps.",
@@ -49,9 +57,27 @@ function renderPropertyPage() {
     .map((image, index) => `<figure><img src="${image}" alt="${property.title[language]} - ${index + 1}" ${index ? 'loading="lazy"' : ""} /></figure>`)
     .join("");
 
+  const layoutSection = document.querySelector("[data-property-layout-section]");
+  layoutSection.hidden = !property.layout;
+  if (property.layout) {
+    const layoutImage = document.querySelector("[data-property-layout-image]");
+    layoutImage.src = property.layout;
+    layoutImage.alt = `${copy.layoutTitle} - ${property.location}`;
+  }
+
+  const map = document.querySelector("[data-property-map]");
+  map.src = `https://www.google.com/maps?q=${encodeURIComponent(property.mapQuery)}&output=embed&z=15`;
+  map.title = `${copy.location}: ${property.location}`;
+
   document.querySelector("[data-property-back]").textContent = `← ${copy.back}`;
   document.querySelector("[data-property-gallery-label]").textContent = copy.gallery;
   document.querySelector("[data-property-gallery-intro]").textContent = copy.galleryIntro;
+  document.querySelector("[data-property-distribution-label]").textContent = copy.distribution;
+  document.querySelector("[data-property-layout-title]").textContent = copy.layoutTitle;
+  document.querySelector("[data-property-location-label]").textContent = copy.location;
+  document.querySelector("[data-property-location-intro]").textContent = copy.locationIntro;
+  document.querySelector("[data-property-location-title]").textContent = property.location;
+  document.querySelector("[data-property-location-copy]").textContent = property.locationDescription[language];
   document.querySelector("[data-property-cta-label]").textContent = copy.ctaLabel;
   document.querySelector("[data-property-cta-title]").textContent = copy.ctaTitle;
   document.querySelector("[data-property-cta-copy]").textContent = copy.ctaCopy;
@@ -60,6 +86,9 @@ function renderPropertyPage() {
   const contactLink = document.querySelector("[data-property-cta-button]");
   const subject = language === "es" ? `Consulta sobre ${property.location}` : `Enquiry about ${property.location}`;
   contactLink.href = `mailto:info@atelahomes.com?subject=${encodeURIComponent(subject)}`;
+  const locationContactLink = document.querySelector("[data-property-location-button]");
+  locationContactLink.textContent = copy.ctaButton;
+  locationContactLink.href = contactLink.href;
 }
 
 const propertyLanguageObserver = new MutationObserver(renderPropertyPage);
