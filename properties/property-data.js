@@ -36,12 +36,12 @@ window.propertyCatalog = [
     price: { es: "1.225.000 €", en: "€1,225,000" },
     priceValue: 1225000,
     facts: {
-      es: ["100 m²", "2 dormitorios", "2 baños", "Planta 1ª"],
-      en: ["100 m²", "2 bedrooms", "2 bathrooms", "1st floor"]
+      es: ["97 m² construidos", "2 dormitorios", "1 baño", "Planta 1ª"],
+      en: ["97 m² built", "2 bedrooms", "1 bathroom", "1st floor"]
     },
     description: {
-      es: "Vivienda reformada a 50 metros del Parque del Retiro, con salón luminoso, cocina equipada, dos dormitorios y dos baños completos.",
-      en: "A renovated home 50 metres from El Retiro Park, with a bright living room, equipped kitchen, two bedrooms and two full bathrooms."
+      es: "Vivienda interior reformada e impecable, con 97 m² construidos y 86 m² útiles. Dispone de un amplio salón luminoso, cocina completamente equipada, dos dormitorios, un baño completo, calefacción y agua caliente individuales y servicio de conserjería por la mañana. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual. Existe la posibilidad de alquilar una plaza de garaje en las proximidades.",
+      en: "An impeccably renovated interior home with 97 m² built and 86 m² usable. It offers a spacious bright living room, fully equipped kitchen, two bedrooms, one full bathroom, individual heating and hot water, and morning concierge service. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106. A parking space may be rented nearby."
     },
     locationDescription: {
       es: "En Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
@@ -50,6 +50,32 @@ window.propertyCatalog = [
     mapQuery: "Calle Alberto Bosch, Madrid",
     mapAreaQuery: "Los Jeronimos, Madrid",
     images: Array.from({ length: 13 }, (_, index) => `/assets/properties/alberto-bosch/${String(index + 1).padStart(2, "0")}.webp`)
+  },
+  {
+    slug: "manuel-lafuente-trafalgar",
+    status: "sale",
+    location: "Manuel Lafuente · Trafalgar · Madrid",
+    title: {
+      es: "Vivienda reformada y luminosa en Trafalgar",
+      en: "Bright renovated home in Trafalgar"
+    },
+    price: { es: "587.000 €", en: "€587,000" },
+    priceValue: 587000,
+    facts: {
+      es: ["61 m² construidos", "2 dormitorios", "1 baño", "Planta 1ª"],
+      en: ["61 m² built", "2 bedrooms", "1 bathroom", "1st floor"]
+    },
+    description: {
+      es: "Vivienda interior en buen estado que aprovecha al máximo cada metro cuadrado. Cuenta con salón-cocina de concepto abierto, dos dormitorios, un baño completo y una zona independiente para lavadora y secadora. Todas las estancias tienen ventana a patio y disfrutan de buena luz natural en un entorno tranquilo. La finca data de 1927 y cuenta con certificado energético E, 160 € mensuales de comunidad y 300 € de IBI anual.",
+      en: "A well-kept interior home designed to make the most of every square metre. It features an open-plan living room and kitchen, two bedrooms, one full bathroom and a separate laundry area. Every room has a window onto a courtyard and enjoys good natural light in a quiet setting. The building dates from 1927 and has an E energy rating, monthly community fees of €160 and annual property tax of €300."
+    },
+    locationDescription: {
+      es: "En Trafalgar, dentro de Chamberí, una zona residencial con auténtica vida de barrio, mercados, restauración y conexiones rápidas con el centro de Madrid.",
+      en: "In Trafalgar, within Chamberí, a residential area with authentic neighbourhood life, markets, dining and quick connections to central Madrid."
+    },
+    mapQuery: "Calle Manuel Lafuente, Madrid",
+    mapAreaQuery: "Trafalgar, Chamberi, Madrid",
+    images: Array.from({ length: 8 }, (_, index) => `/assets/properties/manuel-lafuente-trafalgar/${String(index + 1).padStart(2, "0")}.jpeg`)
   },
   {
     slug: "juan-de-la-cierva-el-viso",
