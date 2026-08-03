@@ -2397,88 +2397,166 @@ h3 {
   line-height: 1.35;
 }
 
-.team-why-statement {
-  padding: 64px 0 58px;
-  background: var(--ink);
-  color: var(--paper);
-}
-
-.team-why-home {
+.team-process {
+  display: grid;
+  gap: clamp(48px, 7vw, 84px);
+  padding-top: clamp(64px, 8vw, 96px);
+  padding-bottom: clamp(64px, 8vw, 96px);
+  border-top: 1px solid var(--line);
   background: var(--paper);
 }
 
-.team-why-statement .editorial-section {
+.team-process-heading {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
-  gap: 22px 28px;
-}
-
-.team-why-quote {
-  grid-row: 1 / span 2;
-  font-family: var(--serif);
-  font-size: 5rem;
-  line-height: 0.8;
-}
-
-.team-why-statement blockquote {
-  max-width: 1040px;
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 2.15rem;
-  font-weight: 400;
-  line-height: 1.28;
-}
-
-.team-why-signature {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 28px;
-  justify-content: space-between;
-  padding-top: 28px;
-  border-top: 1px solid rgba(247, 243, 236, 0.28);
-  color: rgba(247, 243, 236, 0.72);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.team-why-signature strong {
-  color: var(--paper);
-  font-weight: 650;
-}
-
-.team-note {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: clamp(24px, 5vw, 70px);
+  grid-template-columns: minmax(280px, 0.8fr) minmax(440px, 1.2fr);
+  gap: 18px clamp(48px, 8vw, 120px);
   align-items: end;
-  padding-top: clamp(30px, 5vw, 54px);
-  padding-bottom: clamp(56px, 9vw, 108px);
+}
+
+.team-process-heading .section-label-inline {
+  grid-column: 1 / -1;
+}
+
+.team-process-heading h2 {
+  max-width: 600px;
+  font-family: var(--serif);
+  font-size: clamp(2.65rem, 4.6vw, 4.7rem);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.team-process-heading > p:last-child {
+  max-width: 600px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.team-process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(26px, 4vw, 52px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-process-steps li {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  min-width: 0;
+  padding-top: 18px;
   border-top: 1px solid var(--line);
 }
 
-.team-note div {
-  display: grid;
-  gap: 16px;
-  max-width: 760px;
+.team-process-steps span {
+  color: var(--olive-mid);
+  font-size: 0.75rem;
+  font-weight: 650;
 }
 
-.team-note div > p:last-child {
+.team-process-steps h3 {
+  max-width: 300px;
+  font-family: var(--serif);
+  font-size: clamp(1.65rem, 2.5vw, 2.35rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.team-process-steps p {
+  max-width: 330px;
   color: var(--muted);
-  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
-  line-height: 1.55;
+  line-height: 1.58;
 }
 
-.team-note .button {
+.team-partner-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.team-partner-strip > p {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 560;
+  text-transform: uppercase;
+}
+
+.team-partner-strip > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 34px;
+}
+
+.team-partner-strip a {
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+  color: var(--olive-dark);
+  font-size: 0.78rem;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+.team-contact-band {
+  padding: clamp(66px, 9vw, 112px) 0;
+  background: var(--olive-dark);
+  color: var(--paper);
+}
+
+.team-contact-band .editorial-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px clamp(42px, 8vw, 120px);
+  align-items: end;
+}
+
+.team-contact-band .section-label-inline {
+  grid-column: 1 / -1;
+  color: rgba(247, 243, 236, 0.72);
+}
+
+.team-contact-band .section-label-inline::after {
+  background: rgba(247, 243, 236, 0.54);
+}
+
+.team-contact-band h2 {
+  max-width: 760px;
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 5.2vw, 5.2rem);
+  font-weight: 400;
+  line-height: 0.96;
+}
+
+.team-contact-band p:not(.section-label-inline) {
+  grid-column: 1;
+  max-width: 620px;
+  color: rgba(247, 243, 236, 0.76);
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.team-contact-band .button {
+  grid-column: 2;
+  grid-row: 2 / span 2;
   display: inline-flex;
   width: fit-content;
-  max-width: 100%;
   align-items: center;
   justify-content: center;
-  justify-self: end;
   padding: 0 28px;
-  text-align: center;
-  line-height: 1.1;
+  border-color: rgba(247, 243, 236, 0.72);
+  color: var(--paper);
+}
+
+.team-contact-band .button:hover,
+.team-contact-band .button:focus-visible {
+  border-color: var(--paper);
+  background: var(--paper);
+  color: var(--olive-dark);
 }
 
 .route-legal-logo {
@@ -2839,38 +2917,60 @@ h3 {
     font-size: 0.9rem;
   }
 
-  .team-why-statement {
-    padding: 48px 0 44px;
+  .team-process {
+    gap: 42px;
+    padding-top: 54px;
+    padding-bottom: 58px;
   }
 
-  .team-why-statement .editorial-section {
+  .team-process-heading {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 24px;
   }
 
-  .team-why-quote {
-    grid-row: auto;
-    font-size: 4rem;
+  .team-process-heading .section-label-inline {
+    grid-column: auto;
   }
 
-  .team-why-statement blockquote {
-    font-size: 1.65rem;
+  .team-process-heading h2 {
+    font-size: 2.65rem;
   }
 
-  .team-why-signature {
+  .team-process-steps {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .team-partner-strip {
+    align-items: flex-start;
+  }
+
+  .team-partner-strip > div {
     display: grid;
-    justify-content: start;
-    padding-top: 22px;
   }
 
-  .team-note {
+  .team-contact-band {
+    padding: 58px 0 62px;
+  }
+
+  .team-contact-band .editorial-section {
     grid-template-columns: 1fr;
-    padding-top: 32px;
-    padding-bottom: 42px;
+    gap: 24px;
   }
 
-  .team-note .button {
-    justify-self: start;
+  .team-contact-band .section-label-inline,
+  .team-contact-band p:not(.section-label-inline),
+  .team-contact-band .button {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .team-contact-band h2 {
+    font-size: 3rem;
+  }
+
+  .team-contact-band .button {
+    margin-top: 8px;
   }
 
   .services-grid {

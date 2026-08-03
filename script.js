@@ -132,10 +132,20 @@ const translations = {
     teamWhyStatCountries: "Países que han marcado nuestra experiencia",
     teamWhyStatScope: "Coordinación inmobiliaria, legal y relocation",
     teamWhyStatContact: "Punto de contacto dedicado",
-    teamWhyStatement: "Combinamos atención directa con una red de especialistas de confianza para cuidar tanto los aspectos prácticos como el lado humano de cada cambio de vida.",
-    teamWhySignature: "Un punto de contacto. Un equipo detrás.",
-    teamNoteTitle: "Un equipo flexible, sin perder el trato directo.",
-    teamNoteCopy: "Atela Homes mantiene una relación cercana con cada cliente e incorpora especialistas cuando es necesario.",
+    teamProcessLabel: "Cómo trabajamos",
+    teamProcessTitle: "Un equipo que se adapta a cada proceso.",
+    teamProcessIntro: "Empiezas siempre con una conversación directa. A partir de ahí coordinamos únicamente el apoyo que necesitas, sin multiplicar interlocutores.",
+    teamProcessOneTitle: "Empiezas con Miren",
+    teamProcessOneCopy: "Definimos tus prioridades, tu momento y las decisiones que tienes por delante.",
+    teamProcessTwoTitle: "Sumamos el apoyo adecuado",
+    teamProcessTwoCopy: "Activamos la coordinación legal o de relocation cuando realmente aporta valor.",
+    teamProcessThreeTitle: "Mantienes una visión clara",
+    teamProcessThreeCopy: "Centralizamos avances y próximos pasos para que el proceso siga siendo sencillo.",
+    teamPartnersLabel: "Colaboraciones especializadas",
+    teamContactLabel: "Hablemos",
+    teamContactTitle: "Cuéntanos en qué punto estás.",
+    teamContactCopy: "Te ayudaremos a ordenar los siguientes pasos y a identificar qué apoyo necesitas.",
+    teamContactCta: "Empezar una conversación",
 
     // Contact
     contactLabel: "Contacto",
@@ -301,10 +311,20 @@ const translations = {
     teamWhyStatCountries: "Countries that have shaped our perspective",
     teamWhyStatScope: "Real estate, legal and relocation coordination",
     teamWhyStatContact: "Dedicated point of contact",
-    teamWhyStatement: "We combine direct attention with a trusted specialist network to care for both the practical details and the human side of every life transition.",
-    teamWhySignature: "One point of contact. A team behind it.",
-    teamNoteTitle: "A flexible team, with direct attention intact.",
-    teamNoteCopy: "Atela Homes keeps a close relationship with each client and brings in specialists when needed.",
+    teamProcessLabel: "How we work",
+    teamProcessTitle: "A team that adapts to each process.",
+    teamProcessIntro: "You always begin with a direct conversation. From there, we coordinate only the support you need, without multiplying points of contact.",
+    teamProcessOneTitle: "You begin with Miren",
+    teamProcessOneCopy: "We define your priorities, your timing and the decisions ahead.",
+    teamProcessTwoTitle: "We add the right support",
+    teamProcessTwoCopy: "We activate legal or relocation coordination when it genuinely adds value.",
+    teamProcessThreeTitle: "You retain a clear overview",
+    teamProcessThreeCopy: "We centralize progress and next steps so the process remains straightforward.",
+    teamPartnersLabel: "Specialist collaborators",
+    teamContactLabel: "Let's talk",
+    teamContactTitle: "Tell us where you are in the process.",
+    teamContactCopy: "We will help you organize the next steps and identify the support you need.",
+    teamContactCta: "Start a conversation",
 
     // Contact
     contactLabel: "Contact",
@@ -407,7 +427,7 @@ function updateCustomSelectLabels() {
 function initRevealMotion() {
   const imageMotionElements = document.querySelectorAll(".figure-card, .zone-photo-grid article, .about-image, .property-card");
   const revealElements = document.querySelectorAll(
-    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .properties-heading, .property-card, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-why-overview, .team-why-statement, .team-note"
+    ".intro, .figure-card, .areas-heading, .map-panel, .zone-photo-grid article, .properties-heading, .property-card, .service-chapter, .legal-layout, .availability-heading, .routes-table, .about-image, .about-copy, .contact-heading, .contact-form, .team-hero, .team-member-card, .team-why-overview, .team-process-heading, .team-process-steps li, .team-partner-strip, .team-contact-band .editorial-section"
   );
 
   imageMotionElements.forEach((element) => {
