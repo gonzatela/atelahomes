@@ -85,10 +85,10 @@ function renderPropertyPage() {
 
   const map = document.querySelector("[data-property-map]");
   const mapContainer = map.closest(".property-location-map");
-  const hasAreaMap = Boolean(property.areaMapId);
+  const hasAreaMap = Boolean(property.mapArea);
   mapContainer.classList.toggle("is-area-map", hasAreaMap);
   map.src = hasAreaMap
-    ? `https://www.google.com/maps/d/u/0/embed?mid=${encodeURIComponent(property.areaMapId)}&ehbc=2E312F&noprof=1`
+    ? `/maps/area/?area=${encodeURIComponent(property.mapArea)}&lang=${language}&v=71`
     : `https://www.google.com/maps?q=${encodeURIComponent(property.mapAreaQuery || property.mapQuery)}&output=embed&z=14`;
   map.title = `${copy.location}: ${property.location}`;
 

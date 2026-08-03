@@ -22,7 +22,7 @@ window.propertyCatalog = [
       en: "A practical location by the Castellana axis, with quick connections, everyday services and Madrid's financial district only minutes away."
     },
     mapQuery: "Poeta Joan Maragall, Madrid",
-    mapAreaQuery: "Castillejos, Madrid",
+    mapArea: "castillejos",
     images: Array.from({ length: 11 }, (_, index) => `/assets/properties/poeta-joan-maragall/${String(index + 1).padStart(2, "0")}.webp`)
   },
   {
@@ -48,7 +48,7 @@ window.propertyCatalog = [
       en: "In Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
     mapQuery: "Calle Alberto Bosch, Madrid",
-    mapAreaQuery: "Los Jeronimos, Madrid",
+    mapArea: "jeronimos",
     layout: "/assets/properties/alberto-bosch/13.webp",
     images: Array.from({ length: 12 }, (_, index) => `/assets/properties/alberto-bosch/${String(index + 1).padStart(2, "0")}.webp`)
   },
@@ -75,7 +75,7 @@ window.propertyCatalog = [
       en: "In Trafalgar, within Chamberí, a residential area with authentic neighbourhood life, markets, dining and quick connections to central Madrid."
     },
     mapQuery: "Calle Manuel Lafuente, Madrid",
-    mapAreaQuery: "Trafalgar, Chamberi, Madrid",
+    mapArea: "trafalgar",
     images: Array.from({ length: 8 }, (_, index) => `/assets/properties/manuel-lafuente-trafalgar/${String(index + 1).padStart(2, "0")}.jpeg`)
   },
   {
@@ -95,7 +95,7 @@ window.propertyCatalog = [
       en: "In El Viso, one of Madrid's most exclusive residential neighbourhoods, close to Castellana and surrounded by services, schools and green spaces."
     },
     mapQuery: "Calle Juan de la Cierva, El Viso, Madrid",
-    areaMapId: "13DQeY_9Co3wY7zYozHO1AwvMr4uNKxg",
+    mapArea: "el-viso",
     layout: "/assets/properties/juan-de-la-cierva-el-viso/layout.png",
     images: ["01.jpeg", ...Array.from({ length: 11 }, (_, index) => `${String(index + 2).padStart(2, "0")}.avif`)].map((file) => `/assets/properties/juan-de-la-cierva-el-viso/${file}`)
   },
@@ -116,7 +116,7 @@ window.propertyCatalog = [
       en: "A quiet Castellana address in the Salamanca district, close to Serrano and well connected to Madrid's principal avenues."
     },
     mapQuery: "Calle Castello, Castellana, Madrid",
-    areaMapId: "1PqdtY8oj8Wh6tSaJPrC_0L38XZ_cUYM",
+    mapArea: "castellana",
     layout: "/assets/properties/castello-castellana/layout.jpg",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/castello-castellana/0${number}.avif`)
   },
@@ -137,7 +137,7 @@ window.propertyCatalog = [
       en: "By Serrano and Hermanos Bécquer, in a distinguished Castellana setting close to the Lázaro Galdiano Museum and the Golden Mile."
     },
     mapQuery: "Serrano con Hermanos Becquer, Madrid",
-    areaMapId: "1PqdtY8oj8Wh6tSaJPrC_0L38XZ_cUYM",
+    mapArea: "castellana",
     layout: "/assets/properties/serrano-con-hermanos-becquer/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-con-hermanos-becquer/0${number}.avif`)
   },
@@ -158,7 +158,7 @@ window.propertyCatalog = [
       en: "In Recoletos, within the Salamanca district, close to El Retiro, Calle Goya and a refined selection of shops, restaurants and services."
     },
     mapQuery: "Goya, Recoletos, Madrid",
-    areaMapId: "1ffKwQtSiOVRXUWW5GgI50XPKFYcsUsE",
+    mapArea: "recoletos",
     layout: "/assets/properties/goya-recoletos/layout.png",
     images: ["01.avif", "02.avif", "03.avif", "04.avif", "05.jpeg", "06.avif", "07.avif", "08.avif", "09.avif", "10.avif", "11.avif"].map((file) => `/assets/properties/goya-recoletos/${file}`)
   },
@@ -179,7 +179,7 @@ window.propertyCatalog = [
       en: "In Goya, one of the Salamanca district's most dynamic areas, close to El Retiro and surrounded by shopping, dining and excellent connections."
     },
     mapQuery: "General Pardinas, Goya, Madrid",
-    areaMapId: "1veYZKIxGwgONX5H_TH-_u3k9I0lgmHg",
+    mapArea: "goya",
     layout: "/assets/properties/general-pardinas-ii-goya/layout.jpeg",
     images: Array.from({ length: 13 }, (_, index) => `/assets/properties/general-pardinas-ii-goya/${String(index + 1).padStart(2, "0")}.avif`)
   },
@@ -200,7 +200,7 @@ window.propertyCatalog = [
       en: "On a residential Goya street, close to El Retiro and Salamanca's main shopping avenues, with services and transport nearby."
     },
     mapQuery: "Calle Lombia, Goya, Madrid",
-    areaMapId: "1veYZKIxGwgONX5H_TH-_u3k9I0lgmHg",
+    mapArea: "goya",
     layout: "/assets/properties/lombia-goya/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/lombia-goya/0${number}.avif`)
   }
