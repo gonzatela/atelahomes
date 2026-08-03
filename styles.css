@@ -2516,11 +2516,18 @@ h3 {
 }
 
 .team-contact-band .section-label-inline {
+  display: inline-flex;
   grid-column: 1 / -1;
+  gap: 10px;
+  align-items: center;
+  justify-self: start;
   color: rgba(247, 243, 236, 0.72);
 }
 
 .team-contact-band .section-label-inline::after {
+  width: 28px;
+  height: 1px;
+  content: "";
   background: rgba(247, 243, 236, 0.54);
 }
 
