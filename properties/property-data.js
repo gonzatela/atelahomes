@@ -26,7 +26,7 @@ window.propertyCatalog = [
     images: Array.from({ length: 11 }, (_, index) => `/assets/properties/poeta-joan-maragall/${String(index + 1).padStart(2, "0")}.webp`)
   },
   {
-    slug: "alberto-bosch",
+    slug: "jeronimos-retiro",
     status: "sale",
     location: "Jerónimos · Retiro · Madrid",
     title: {
@@ -47,9 +47,9 @@ window.propertyCatalog = [
       es: "En Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
       en: "In Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
-    mapQuery: "Calle Alberto Bosch, Madrid",
+    mapQuery: "Jerónimos, Retiro, Madrid",
     mapArea: "jeronimos",
-    images: Array.from({ length: 12 }, (_, index) => `/assets/properties/alberto-bosch/${String(index + 1).padStart(2, "0")}.webp`)
+    images: Array.from({ length: 12 }, (_, index) => `/assets/properties/jeronimos-retiro/${String(index + 1).padStart(2, "0")}.webp`)
   },
   {
     slug: "manuel-lafuente-trafalgar",
