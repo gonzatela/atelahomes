@@ -2765,6 +2765,23 @@ h3 {
   align-items: flex-start;
 }
 
+.footer-signature {
+  display: grid;
+  gap: 6px;
+}
+
+.footer-credit {
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  transition: color 180ms ease;
+}
+
+.footer-credit:hover,
+.footer-credit:focus-visible {
+  color: var(--olive-dark);
+}
+
 .footer-logo {
   width: 90px;
   height: auto;
