@@ -176,6 +176,7 @@ const translations = {
     footerLegal: "Aviso Legal",
     footerPrivacy: "Política de Privacidad",
     footerCookies: "Política de Cookies",
+    footerCredit: "Creado por Atela Studio",
     footerTop: "Volver arriba"
   },
   en: {
@@ -355,6 +356,7 @@ const translations = {
     footerLegal: "Legal Notice",
     footerPrivacy: "Privacy Policy",
     footerCookies: "Cookie Policy",
+    footerCredit: "Created by Atela Studio",
     footerTop: "Back to top"
   }
 };
