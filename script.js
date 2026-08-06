@@ -168,7 +168,7 @@ const translations = {
     residencePenthouse: "Penthouse",
     formBudget: "Rango de presupuesto",
     formMessage: "Qué deberíamos saber",
-    formPrivacy: "He leído y acepto la Política de Privacidad.",
+    formPrivacy: "He leído y acepto la <a href=\"/politica-de-privacidad/\">Política de Privacidad</a>.",
     formSubmit: "Enviar mi consulta",
     formExpectation: "El equipo de Atela Homes revisará tu consulta y responderá en un plazo de 24–48 horas laborables.",
     
@@ -347,7 +347,7 @@ const translations = {
     residencePenthouse: "Penthouse",
     formBudget: "Budget range",
     formMessage: "What should we know?",
-    formPrivacy: "I have read and accept the Privacy Policy.",
+    formPrivacy: "I have read and accept the <a href=\"/en/privacy-policy/\">Privacy Policy</a>.",
     formSubmit: "Send my enquiry",
     formExpectation: "The Atela Homes team will review your enquiry and respond within 24–48 business hours.",
     
@@ -372,11 +372,60 @@ const contactForm = document.querySelector(".contact-form");
 const customSelects = document.querySelectorAll("[data-custom-select]");
 const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 const pageName = document.body.dataset.page || "home";
+const translatableElements = document.querySelectorAll("[data-i18n]");
+
+const footerLegalPaths = {
+  es: {
+    legal: "/aviso-legal/",
+    privacy: "/politica-de-privacidad/",
+    cookies: "/politica-de-cookies/"
+  },
+  en: {
+    legal: "/en/legal-notice/",
+    privacy: "/en/privacy-policy/",
+    cookies: "/en/cookie-policy/"
+  }
+};
+
+const cookieConsentKey = "atela-cookie-consent-v1";
+const cookieConsentText = {
+  es: {
+    title: "Cookies",
+    copy: "Utilizamos cookies técnicas necesarias para que la web funcione y para recordar tu selección. Puedes aceptar, rechazar o configurar las cookies opcionales.",
+    policy: "Política de cookies",
+    accept: "Aceptar cookies",
+    reject: "Rechazar cookies",
+    settings: "Configurar",
+    save: "Guardar selección",
+    essentialTitle: "Cookies técnicas",
+    essentialCopy: "Siempre activas. Son necesarias para recordar preferencias básicas y mantener la web operativa.",
+    analyticsTitle: "Cookies analíticas",
+    analyticsCopy: "Nos ayudarían a entender el uso de la web. No se activan si no das tu consentimiento.",
+    footerSettings: "Configurar cookies"
+  },
+  en: {
+    title: "Cookies",
+    copy: "We use necessary technical cookies to keep the website working and remember your choice. You can accept, reject or configure optional cookies.",
+    policy: "Cookie Policy",
+    accept: "Accept cookies",
+    reject: "Reject",
+    settings: "Configure",
+    save: "Save selection",
+    essentialTitle: "Technical cookies",
+    essentialCopy: "Always active. They are needed to remember basic preferences and keep the website operational.",
+    analyticsTitle: "Analytics cookies",
+    analyticsCopy: "They would help us understand website usage. They are not enabled unless you consent.",
+    footerSettings: "Cookie settings"
+  }
+};
+
 function setHeaderState() {
+  if (!header) return;
   header.classList.toggle("scrolled", window.scrollY > 8);
 }
 
 function closeMenu() {
+  if (!nav || !header || !menuToggle) return;
   document.body.classList.remove("nav-open");
   nav.classList.remove("open");
   header.classList.remove("menu-active");
@@ -422,6 +471,162 @@ function updateCustomSelectLabels() {
     const label = selectedOption.closest("label")?.querySelector("span");
     current.textContent = label?.textContent || selectedOption.value;
   });
+}
+
+function updateFooterLegalLinks(language) {
+  const paths = footerLegalPaths[language] || footerLegalPaths.en;
+
+  document.querySelectorAll("[data-legal-link]").forEach((link) => {
+    const path = paths[link.dataset.legalLink];
+    if (path) link.setAttribute("href", path);
+  });
+}
+
+function getCookieLanguage() {
+  return document.documentElement.lang?.toLowerCase().startsWith("es") ? "es" : "en";
+}
+
+function getCookieConsent() {
+  try {
+    const rawConsent = localStorage.getItem(cookieConsentKey);
+    return rawConsent ? JSON.parse(rawConsent) : null;
+  } catch (error) {
+    return null;
+  }
+}
+
+function setCookieConsent(consent) {
+  try {
+    localStorage.setItem(cookieConsentKey, JSON.stringify(consent));
+  } catch (error) {
+    // The selection still applies to the current page if storage is unavailable.
+  }
+}
+
+function applyCookieConsent(consent) {
+  const normalizedConsent = consent || { essential: true, analytics: false };
+  window.atelaCookieConsent = normalizedConsent;
+  document.documentElement.dataset.cookieAnalytics = normalizedConsent.analytics ? "granted" : "denied";
+}
+
+function updateCookieConsentText() {
+  const language = getCookieLanguage();
+  const text = cookieConsentText[language] || cookieConsentText.en;
+
+  document.querySelectorAll("[data-cookie-text]").forEach((element) => {
+    const value = text[element.dataset.cookieText];
+    if (value) element.textContent = value;
+  });
+
+  document.querySelectorAll("[data-cookie-policy-link]").forEach((link) => {
+    link.setAttribute("href", footerLegalPaths[language].cookies);
+  });
+}
+
+function showCookieBanner(showSettings = false) {
+  const banner = document.querySelector("[data-cookie-banner]");
+  const preferences = document.querySelector("[data-cookie-preferences]");
+  const analyticsInput = document.querySelector("[data-cookie-analytics]");
+  const consent = getCookieConsent();
+
+  if (!banner) return;
+  if (analyticsInput) analyticsInput.checked = Boolean(consent?.analytics);
+
+  banner.hidden = false;
+  banner.classList.toggle("is-configuring", showSettings);
+  if (preferences) preferences.hidden = !showSettings;
+}
+
+function hideCookieBanner() {
+  const banner = document.querySelector("[data-cookie-banner]");
+  if (banner) banner.hidden = true;
+}
+
+function saveCookieSelection(analytics) {
+  const consent = {
+    essential: true,
+    analytics: Boolean(analytics),
+    updatedAt: new Date().toISOString()
+  };
+
+  setCookieConsent(consent);
+  applyCookieConsent(consent);
+  hideCookieBanner();
+}
+
+function openCookieSettingsFromHash() {
+  if (window.location.hash !== "#cookie-settings") return;
+  showCookieBanner(true);
+
+  if (window.history?.replaceState) {
+    window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+  }
+}
+
+function createCookieConsentUi() {
+  if (!document.querySelector("[data-cookie-banner]")) {
+    const banner = document.createElement("section");
+    banner.className = "cookie-banner";
+    banner.setAttribute("data-cookie-banner", "");
+    banner.setAttribute("aria-live", "polite");
+    banner.hidden = true;
+    banner.innerHTML = `
+      <div class="cookie-banner__copy">
+        <h2 data-cookie-text="title"></h2>
+        <p><span data-cookie-text="copy"></span> <a data-cookie-policy-link data-cookie-text="policy"></a></p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button type="button" data-cookie-reject data-cookie-text="reject"></button>
+        <button type="button" data-cookie-settings data-cookie-text="settings"></button>
+        <button type="button" data-cookie-accept data-cookie-text="accept"></button>
+      </div>
+      <div class="cookie-preferences" data-cookie-preferences hidden>
+        <label class="cookie-option is-required">
+          <input type="checkbox" checked disabled />
+          <span>
+            <strong data-cookie-text="essentialTitle"></strong>
+            <small data-cookie-text="essentialCopy"></small>
+          </span>
+        </label>
+        <label class="cookie-option">
+          <input type="checkbox" data-cookie-analytics />
+          <span>
+            <strong data-cookie-text="analyticsTitle"></strong>
+            <small data-cookie-text="analyticsCopy"></small>
+          </span>
+        </label>
+        <button class="cookie-save" type="button" data-cookie-save data-cookie-text="save"></button>
+      </div>
+    `;
+    document.body.appendChild(banner);
+
+    banner.querySelector("[data-cookie-accept]")?.addEventListener("click", () => saveCookieSelection(true));
+    banner.querySelector("[data-cookie-reject]")?.addEventListener("click", () => saveCookieSelection(false));
+    banner.querySelector("[data-cookie-settings]")?.addEventListener("click", () => showCookieBanner(true));
+    banner.querySelector("[data-cookie-save]")?.addEventListener("click", () => {
+      saveCookieSelection(Boolean(banner.querySelector("[data-cookie-analytics]")?.checked));
+    });
+  }
+
+  const footerLinks = document.querySelector(".footer-legal-links");
+  if (footerLinks && !footerLinks.querySelector("[data-cookie-open]")) {
+    const settingsLink = document.createElement("a");
+    settingsLink.className = "footer-cookie-settings";
+    settingsLink.href = "#cookie-settings";
+    settingsLink.setAttribute("data-cookie-open", "");
+    settingsLink.setAttribute("data-cookie-text", "footerSettings");
+    footerLinks.appendChild(settingsLink);
+  }
+}
+
+function initCookieConsent() {
+  createCookieConsentUi();
+  updateCookieConsentText();
+
+  const consent = getCookieConsent();
+  applyCookieConsent(consent);
+  if (!consent) showCookieBanner(false);
+  openCookieSettingsFromHash();
 }
 
 function initRevealMotion() {
@@ -476,7 +681,7 @@ function setLanguage(language) {
   document.title = dictionary[titleKey] || dictionary.pageTitle;
   metaDescription?.setAttribute("content", dictionary[descriptionKey] || dictionary.pageDescription);
 
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
+  translatableElements.forEach((element) => {
     const key = element.dataset.i18n;
     if (dictionary[key]) {
       let text = dictionary[key];
@@ -493,16 +698,19 @@ function setLanguage(language) {
 
   updateBudgetLabel(language);
   updateCustomSelectLabels();
+  updateFooterLegalLinks(language);
+  updateCookieConsentText();
 }
 
-menuToggle.addEventListener("click", () => {
+menuToggle?.addEventListener("click", () => {
+  if (!nav || !header) return;
   const isOpen = nav.classList.toggle("open");
   document.body.classList.toggle("nav-open", isOpen);
   header.classList.toggle("menu-active", isOpen);
   menuToggle.setAttribute("aria-expanded", String(isOpen));
 });
 
-nav.querySelectorAll("a").forEach((link) => {
+nav?.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", closeMenu);
 });
 
@@ -527,12 +735,20 @@ document.querySelectorAll("[data-custom-option]").forEach((option) => {
 });
 
 document.addEventListener("click", (event) => {
+  if (event.target.closest?.("[data-cookie-open]")) {
+    event.preventDefault();
+    showCookieBanner(true);
+    return;
+  }
+
   customSelects.forEach((select) => {
     if (select.open && !select.contains(event.target)) {
       select.removeAttribute("open");
     }
   });
 });
+
+window.addEventListener("hashchange", openCookieSettingsFromHash);
 
 contactForm?.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -601,7 +817,8 @@ contactForm?.addEventListener("submit", (event) => {
     : "If your mail app doesn't open automatically, <a href='" + mailtoLink + "' style='text-decoration:underline; font-weight:560;'>click here</a> or email <b>info@atelahomes.com</b>.";
 });
 
-year.textContent = new Date().getFullYear();
+if (year) year.textContent = new Date().getFullYear();
 setHeaderState();
 initRevealMotion();
-setLanguage("en");
+initCookieConsent();
+if (translatableElements.length) setLanguage("en");

@@ -28,28 +28,28 @@ window.propertyCatalog = [
   {
     slug: "jeronimos-retiro",
     status: "sale",
-    location: "Jerónimos · Retiro · Madrid",
+    location: "Alberto Bosch 14 · Jerónimos · Madrid",
     title: {
-      es: "Vivienda reformada junto al Retiro",
-      en: "Renovated home by El Retiro"
+      es: "Alberto Bosch 14, reformado y exterior",
+      en: "Alberto Bosch 14, renovated exterior home"
     },
-    price: { es: "1.225.000 €", en: "€1,225,000" },
-    priceValue: 1225000,
+    price: { es: "1.390.000 €", en: "€1,390,000" },
+    priceValue: 1390000,
     facts: {
-      es: ["97 m² construidos", "2 dormitorios", "1 baño", "Planta 1ª"],
-      en: ["97 m² built", "2 bedrooms", "1 bathroom", "1st floor"]
+      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "1º exterior"],
+      en: ["97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "1st-floor exterior"]
     },
     description: {
-      es: "Vivienda interior reformada e impecable, con 97 m² construidos y 86 m² útiles. Dispone de un amplio salón luminoso, cocina completamente equipada, dos dormitorios, un baño completo, calefacción y agua caliente individuales y servicio de conserjería por la mañana. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual. Existe la posibilidad de alquilar una plaza de garaje en las proximidades.",
-      en: "An impeccably renovated interior home with 97 m² built and 86 m² usable. It offers a spacious bright living room, fully equipped kitchen, two bedrooms, one full bathroom, individual heating and hot water, and morning concierge service. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106. A parking space may be rented nearby."
+      es: "Vivienda exterior reformada con 97 m² construidos y 86 m² útiles. Dispone de salón luminoso con balcones, cocina equipada, dos dormitorios y un baño completo. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual.",
+      en: "A renovated exterior home with 97 m² built and 86 m² usable. It offers a bright living room with balconies, an equipped kitchen, two bedrooms and one full bathroom. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106."
     },
     locationDescription: {
-      es: "En Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
-      en: "In Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
+      es: "En la calle Alberto Bosch, en Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
+      en: "On Calle Alberto Bosch in Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
-    mapQuery: "Jerónimos, Retiro, Madrid",
+    mapQuery: "Calle Alberto Bosch 14, Madrid",
     mapArea: "jeronimos",
-    images: Array.from({ length: 12 }, (_, index) => `/assets/properties/jeronimos-retiro/${String(index + 1).padStart(2, "0")}.webp`)
+    images: Array.from({ length: 15 }, (_, index) => `/assets/properties/jeronimos-retiro/${String(index + 1).padStart(2, "0")}.jpeg`)
   },
   {
     slug: "manuel-lafuente-trafalgar",
@@ -75,37 +75,19 @@ window.propertyCatalog = [
     },
     mapQuery: "Calle Manuel Lafuente, Madrid",
     mapArea: "trafalgar",
-    images: Array.from({ length: 8 }, (_, index) => `/assets/properties/manuel-lafuente-trafalgar/${String(index + 1).padStart(2, "0")}.jpeg`)
-  },
-  {
-    slug: "juan-de-la-cierva-el-viso",
-    status: "sale",
-    location: "Juan de la Cierva · El Viso · Madrid",
-    title: { es: "Rubí, amplitud y luz en El Viso", en: "Rubí, space and light in El Viso" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
-    facts: { es: ["245 m²", "3 dormitorios", "4 baños", "A reformar"], en: ["245 m²", "3 bedrooms", "4 bathrooms", "To renovate"] },
-    description: {
-      es: "Rubí representa la esencia del lujo atemporal. Esta propiedad exterior de 245 m² ofrece amplitud y versatilidad, con terraza, plaza de garaje, trastero, portero físico, ascensor y zonas verdes.",
-      en: "Rubí embodies timeless luxury. This 245 m² exterior home offers generous, versatile spaces, a terrace, parking, storage, concierge service, lift and landscaped communal areas."
-    },
-    locationDescription: {
-      es: "En El Viso, uno de los barrios residenciales más exclusivos de Madrid, cerca del eje de Castellana y rodeada de servicios, colegios y zonas verdes.",
-      en: "In El Viso, one of Madrid's most exclusive residential neighbourhoods, close to Castellana and surrounded by services, schools and green spaces."
-    },
-    mapQuery: "Calle Juan de la Cierva, El Viso, Madrid",
-    mapArea: "el-viso",
-    layout: "/assets/properties/juan-de-la-cierva-el-viso/layout.png",
-    images: ["01.jpeg", ...Array.from({ length: 11 }, (_, index) => `${String(index + 2).padStart(2, "0")}.avif`)].map((file) => `/assets/properties/juan-de-la-cierva-el-viso/${file}`)
+    images: ["01.jpeg", "02.jpeg", "03.jpeg", "05.jpeg", "06.jpeg", "07.jpeg", "08.jpeg"].map((file) => `/assets/properties/manuel-lafuente-trafalgar/${file}`)
   },
   {
     slug: "castello-castellana",
     status: "sale",
-    location: "Castelló · Castellana · Madrid",
-    title: { es: "Luna, vivienda reformada en Castellana", en: "Luna, renovated home in Castellana" },
+    location: "Castelló 98 · Castellana · Madrid",
+    title: { es: "Castelló 98", en: "Castelló 98" },
     price: { es: "Precio a consultar", en: "Price on request" },
     priceValue: null,
-    facts: { es: ["276 m²", "4 dormitorios", "4 baños", "Reformada y amueblada"], en: ["276 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"] },
+    facts: {
+      es: ["276 m²", "4 dormitorios", "4 baños", "Reformado y amueblado"],
+      en: ["276 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"]
+    },
     description: {
       es: "Amplia vivienda exterior reformada y amueblada, con una distribución equilibrada en el barrio de Castellana.",
       en: "A spacious renovated and furnished exterior home with a balanced layout in the Castellana neighbourhood."
@@ -114,7 +96,7 @@ window.propertyCatalog = [
       es: "Una dirección tranquila en Castellana, dentro del barrio de Salamanca, próxima a Serrano y bien conectada con los principales ejes de la ciudad.",
       en: "A quiet Castellana address in the Salamanca district, close to Serrano and well connected to Madrid's principal avenues."
     },
-    mapQuery: "Calle Castello, Castellana, Madrid",
+    mapQuery: "Calle Castelló 98, Madrid",
     mapArea: "castellana",
     layout: "/assets/properties/castello-castellana/layout.jpg",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/castello-castellana/0${number}.avif`)
@@ -122,62 +104,46 @@ window.propertyCatalog = [
   {
     slug: "serrano-con-hermanos-becquer",
     status: "sale",
-    location: "Serrano · Hermanos Bécquer · Madrid",
-    title: { es: "Arsis, arquitectura clásica junto a Serrano", en: "Arsis, classical architecture by Serrano" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
-    facts: { es: ["241 m²", "3 dormitorios", "3 baños", "A reformar"], en: ["241 m²", "3 bedrooms", "3 bathrooms", "To renovate"] },
+    location: "López de Hoyos · Madrid",
+    title: { es: "López de Hoyos", en: "López de Hoyos" },
+    price: { es: "2.760.000 €", en: "€2,760,000" },
+    priceValue: 2760000,
+    facts: {
+      es: ["241 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["241 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+    },
     description: {
-      es: "Propiedad a reformar en una finca clásica, con techos altos y una ubicación privilegiada cerca del Museo Lázaro Galdiano y la calle Serrano.",
-      en: "A renovation opportunity in a classical building, with high ceilings and a privileged location near the Lázaro Galdiano Museum and Serrano."
+      es: "Propiedad a reformar en una finca clásica, con techos altos, estancias amplias y una ubicación privilegiada en la calle López de Hoyos.",
+      en: "A renovation opportunity in a classical building, with high ceilings, generous rooms and a privileged location on Calle López de Hoyos."
     },
     locationDescription: {
-      es: "Junto a Serrano y Hermanos Bécquer, en un entorno distinguido de Castellana cercano al Museo Lázaro Galdiano y a la Milla de Oro.",
-      en: "By Serrano and Hermanos Bécquer, in a distinguished Castellana setting close to the Lázaro Galdiano Museum and the Golden Mile."
+      es: "En la calle López de Hoyos, en un entorno residencial consolidado y bien conectado, con comercios, restaurantes y servicios a pocos minutos.",
+      en: "On Calle López de Hoyos, in an established and well-connected residential area with shops, restaurants and services close by."
     },
-    mapQuery: "Serrano con Hermanos Becquer, Madrid",
-    mapArea: "castellana",
+    mapQuery: "Calle López de Hoyos, Madrid",
     layout: "/assets/properties/serrano-con-hermanos-becquer/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-con-hermanos-becquer/0${number}.avif`)
   },
   {
-    slug: "goya-recoletos",
-    status: "sale",
-    location: "Goya · Recoletos · Madrid",
-    title: { es: "Tándem, tradición e innovación en Recoletos", en: "Tándem, tradition and innovation in Recoletos" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
-    facts: { es: ["292 m²", "3 dormitorios", "3 baños", "A reformar"], en: ["292 m²", "3 bedrooms", "3 bathrooms", "To renovate"] },
-    description: {
-      es: "Tándem combina elementos clásicos preexistentes con materiales contemporáneos. Sus 292 m² han sido planteados para crear una vivienda elegante, equilibrada y llena de carácter.",
-      en: "Tándem combines original classical details with contemporary materials. Its 292 m² are conceived as an elegant, balanced home full of character."
-    },
-    locationDescription: {
-      es: "En Recoletos, dentro del barrio de Salamanca, cerca del Retiro, la calle Goya y una cuidada selección de comercios, restaurantes y servicios.",
-      en: "In Recoletos, within the Salamanca district, close to El Retiro, Calle Goya and a refined selection of shops, restaurants and services."
-    },
-    mapQuery: "Goya, Recoletos, Madrid",
-    mapArea: "recoletos",
-    layout: "/assets/properties/goya-recoletos/layout.png",
-    images: ["01.avif", "02.avif", "03.avif", "04.avif", "05.jpeg", "06.avif", "07.avif", "08.avif", "09.avif", "10.avif", "11.avif"].map((file) => `/assets/properties/goya-recoletos/${file}`)
-  },
-  {
     slug: "general-pardinas-ii-goya",
     status: "sale",
-    location: "General Pardiñas II · Goya · Madrid",
-    title: { es: "Libre, un refugio luminoso en Goya", en: "Libre, a bright retreat in Goya" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
-    facts: { es: ["139 m²", "3 dormitorios", "3 baños", "Terraza de 17 m²"], en: ["139 m²", "3 bedrooms", "3 bathrooms", "17 m² terrace"] },
+    location: "General Pardiñas · Goya · Madrid",
+    title: { es: "General Pardiñas", en: "General Pardiñas" },
+    price: { es: "785.000 €", en: "€785,000" },
+    priceValue: 785000,
+    facts: {
+      es: ["139 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["139 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+    },
     description: {
-      es: "Libre encarna amplitud y ligereza. Situada en una finca clásica, esta vivienda exterior de 139 m² cuenta con tres dormitorios y una terraza de 17 m² con vistas despejadas.",
-      en: "Libre is defined by openness and lightness. Set in a classical building, this 139 m² exterior home offers three bedrooms and a 17 m² terrace with open views."
+      es: "Vivienda exterior a reformar en una finca clásica, con tres dormitorios y una terraza de 17 m² con vistas despejadas.",
+      en: "An exterior renovation opportunity in a classical building, with three bedrooms and a 17 m² terrace with open views."
     },
     locationDescription: {
-      es: "En Goya, una de las zonas más dinámicas del barrio de Salamanca, cerca del Retiro y rodeada de comercio, restauración y excelentes conexiones.",
-      en: "In Goya, one of the Salamanca district's most dynamic areas, close to El Retiro and surrounded by shopping, dining and excellent connections."
+      es: "En General Pardiñas, en una de las zonas más dinámicas del barrio de Salamanca, cerca del Retiro y rodeada de comercio, restauración y excelentes conexiones.",
+      en: "On General Pardiñas, in one of the Salamanca district's most dynamic areas, close to El Retiro and surrounded by shopping, dining and excellent connections."
     },
-    mapQuery: "General Pardinas, Goya, Madrid",
+    mapQuery: "Calle General Pardiñas, Madrid",
     mapArea: "goya",
     layout: "/assets/properties/general-pardinas-ii-goya/layout.jpeg",
     images: Array.from({ length: 13 }, (_, index) => `/assets/properties/general-pardinas-ii-goya/${String(index + 1).padStart(2, "0")}.avif`)
@@ -186,21 +152,69 @@ window.propertyCatalog = [
     slug: "lombia-goya",
     status: "sale",
     location: "Lombia · Goya · Madrid",
-    title: { es: "Lumbre, ático con terraza en Goya", en: "Lumbre, penthouse with a terrace in Goya" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
-    facts: { es: ["119 m²", "3 dormitorios", "3 baños", "A reformar"], en: ["119 m²", "3 bedrooms", "3 bathrooms", "To renovate"] },
+    title: { es: "Lombia", en: "Lombia" },
+    price: { es: "1.350.000 €", en: "€1,350,000" },
+    priceValue: 1350000,
+    facts: {
+      es: ["119 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["119 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+    },
     description: {
-      es: "Ático exterior en una finca clásica, con una amplia terraza y estancias luminosas en pleno barrio de Goya.",
-      en: "An exterior penthouse in a classical building, with a generous terrace and bright rooms in the heart of Goya."
+      es: "Ático exterior a reformar en una finca clásica, con una amplia terraza y estancias luminosas en pleno barrio de Goya.",
+      en: "An exterior penthouse to renovate in a classical building, with a generous terrace and bright rooms in the heart of Goya."
     },
     locationDescription: {
-      es: "En una calle residencial de Goya, cerca del Retiro y de los principales ejes comerciales del barrio de Salamanca, con servicios y transporte próximos.",
-      en: "On a residential Goya street, close to El Retiro and Salamanca's main shopping avenues, with services and transport nearby."
+      es: "En la calle Lombia, cerca del Retiro y de los principales ejes comerciales del barrio de Salamanca, con servicios y transporte próximos.",
+      en: "On Calle Lombia, close to El Retiro and Salamanca's main shopping avenues, with services and transport nearby."
     },
     mapQuery: "Calle Lombia, Goya, Madrid",
     mapArea: "goya",
     layout: "/assets/properties/lombia-goya/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/lombia-goya/0${number}.avif`)
+  },
+  {
+    slug: "rios-rosas",
+    status: "sale",
+    location: "Ríos Rosas · Chamberí · Madrid",
+    title: { es: "Ríos Rosas", en: "Ríos Rosas" },
+    price: { es: "1.850.000 €", en: "€1,850,000" },
+    priceValue: 1850000,
+    facts: {
+      es: ["167 m²", "3 dormitorios", "3 baños", "8 balcones", "A reformar"],
+      en: ["167 m²", "3 bedrooms", "3 bathrooms", "8 balconies", "To renovate"]
+    },
+    description: {
+      es: "Vivienda exterior a reformar de 167 m², con tres dormitorios, tres baños y ocho balcones que aportan luz y carácter a sus estancias.",
+      en: "A 167 m² exterior home to renovate, with three bedrooms, three bathrooms and eight balconies bringing light and character to its rooms."
+    },
+    locationDescription: {
+      es: "En Ríos Rosas, dentro de Chamberí, un barrio residencial con vida local, comercios, restauración y excelentes conexiones con el centro de Madrid.",
+      en: "In Ríos Rosas, within Chamberí, a residential neighbourhood with local life, shops, dining and excellent connections to central Madrid."
+    },
+    mapQuery: "Calle Ríos Rosas, Madrid",
+    layout: "/assets/properties/rios-rosas/layout.png",
+    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/rios-rosas/0${number}.avif`)
+  },
+  {
+    slug: "garcia-de-paredes-almagro",
+    status: "sale",
+    location: "García de Paredes · Almagro · Chamberí · Madrid",
+    title: { es: "García de Paredes", en: "García de Paredes" },
+    price: { es: "960.000 €", en: "€960,000" },
+    priceValue: 960000,
+    facts: {
+      es: ["93 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["93 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+    },
+    description: {
+      es: "Vivienda a reformar de 93 m² con tres dormitorios y tres baños, situada en una finca clásica del barrio de Almagro.",
+      en: "A 93 m² home to renovate, with three bedrooms and three bathrooms in a classical building in Almagro."
+    },
+    locationDescription: {
+      es: "En García de Paredes, dentro de Almagro y Chamberí, una zona elegante y tranquila con servicios, colegios y buenas conexiones.",
+      en: "On García de Paredes, in Almagro and Chamberí, an elegant and quiet area with services, schools and good connections."
+    },
+    mapQuery: "Calle García de Paredes, Madrid",
+    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/garcia-de-paredes-almagro/0${number}.avif`)
   }
 ];
