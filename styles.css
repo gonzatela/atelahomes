@@ -1590,7 +1590,17 @@ h3 {
 
 .footer-legal-links a:hover,
 .footer-legal-links a:focus-visible {
-  color: var(--paper);
+  color: var(--olive-dark);
+}
+
+.footer-top {
+  color: var(--muted);
+  transition: color 180ms ease;
+}
+
+.footer-top:hover,
+.footer-top:focus-visible {
+  color: var(--olive-dark);
 }
 
 .button {

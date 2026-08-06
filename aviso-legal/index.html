@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Aviso Legal | Atela Homes</title>
     <link rel="icon" type="image/svg+xml" href="/assets/logo-favicon.svg" />
-    <link rel="stylesheet" href="/styles.css?v=75" />
+    <link rel="stylesheet" href="/styles.css?v=76" />
   </head>
-  <body>
+  <body class="subpage legal-page-body">
     <header class="site-header" data-header>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menú</span>
+      </button>
       <a class="brand" href="/" aria-label="Atela Homes home">
-        <span style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 1.5rem; color: var(--ink);">Atela Homes</span>
+        <img class="brand-logo" src="/assets/logo-horizontal.svg" alt="Atela Homes" />
       </a>
       <nav class="site-nav" id="site-nav" data-nav>
         <a href="/">Volver a inicio / Back to home</a>
       </nav>
     </header>
-    <main class="legal-page editorial-section">
+    <main class="legal-page editorial-section" id="home">
       <article class="legal-document">
         <p class="legal-kicker">Atela Homes</p>
         <h1>Aviso legal y condiciones generales de uso</h1>
@@ -98,13 +103,15 @@
     </main>
     <footer class="site-footer">
       <div class="footer-brand">
+        <img class="footer-logo" src="/assets/logo-stacked.svg" alt="Atela Homes" />
         <p>© <span data-year></span> Atela Homes</p>
       </div>
       <div class="footer-legal-links">
-        <a href="/aviso-legal">Aviso Legal</a>
-        <a href="/politica-de-privacidad">Política de Privacidad</a>
-        <a href="/politica-de-cookies">Política de Cookies</a>
+        <a href="/aviso-legal/">Aviso Legal</a>
+        <a href="/politica-de-privacidad/">Política de Privacidad</a>
+        <a href="/politica-de-cookies/">Política de Cookies</a>
       </div>
+      <a href="#home" class="footer-top">Volver arriba</a>
     </footer>
     <script src="/script.js?v=79"></script>
   </body>
