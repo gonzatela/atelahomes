@@ -28,10 +28,10 @@ window.propertyCatalog = [
   {
     slug: "jeronimos-retiro",
     status: "sale",
-    location: "Alberto Bosch · Jerónimos · Madrid",
+    location: "Alberto Bosch 14 · Jerónimos · Madrid",
     title: {
-      es: "Alberto Bosch, exterior",
-      en: "Alberto Bosch, exterior"
+      es: "Alberto Bosch 14, exterior",
+      en: "Alberto Bosch 14, exterior"
     },
     price: { es: "1.390.000 €", en: "€1,390,000" },
     priceValue: 1390000,
@@ -47,17 +47,17 @@ window.propertyCatalog = [
       es: "En la calle Alberto Bosch, en Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
       en: "On Calle Alberto Bosch in Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
-    mapQuery: "Calle Alberto Bosch, Madrid",
+    mapQuery: "Calle Alberto Bosch 14, Madrid",
     mapArea: "jeronimos",
     images: Array.from({ length: 15 }, (_, index) => `/assets/properties/jeronimos-retiro/${String(index + 1).padStart(2, "0")}.jpeg`)
   },
   {
     slug: "alberto-bosch-interior",
     status: "sale",
-    location: "Alberto Bosch · Jerónimos · Madrid",
+    location: "Alberto Bosch 14 · Jerónimos · Madrid",
     title: {
-      es: "Alberto Bosch, interior",
-      en: "Alberto Bosch, interior"
+      es: "Alberto Bosch 14, interior",
+      en: "Alberto Bosch 14, interior"
     },
     price: { es: "1.225.000 €", en: "€1,225,000" },
     priceValue: 1225000,
@@ -73,7 +73,7 @@ window.propertyCatalog = [
       es: "En la calle Alberto Bosch, en Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
       en: "On Calle Alberto Bosch in Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
-    mapQuery: "Calle Alberto Bosch, Madrid",
+    mapQuery: "Calle Alberto Bosch 14, Madrid",
     mapArea: "jeronimos",
     images: Array.from({ length: 12 }, (_, index) => `/assets/properties/alberto-bosch/${String(index + 1).padStart(2, "0")}.webp`)
   },
