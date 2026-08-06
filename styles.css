@@ -2499,7 +2499,7 @@ h3 {
 }
 
 .team-why {
-  background: #fff;
+  background: var(--paper);
 }
 
 .team-why-overview {
