@@ -824,3 +824,4 @@ setHeaderState();
 initRevealMotion();
 initCookieConsent();
 if (translatableElements.length) setLanguage("en");
+

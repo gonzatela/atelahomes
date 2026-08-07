@@ -244,3 +244,4 @@ window.propertyCatalog = [
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/garcia-de-paredes-almagro/0${number}.avif`)
   }
 ];
+

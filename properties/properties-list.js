@@ -100,3 +100,4 @@ filterButtons.forEach((button) => {
 const languageObserver = new MutationObserver(renderPropertyList);
 languageObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
 renderPropertyList();
+

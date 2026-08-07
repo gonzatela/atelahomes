@@ -42,3 +42,4 @@ map.fitBounds(boundary.getBounds(), {
 });
 
 L.control.scale({ imperial: false, maxWidth: 110, position: "bottomleft" }).addTo(map);
+

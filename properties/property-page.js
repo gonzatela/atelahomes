@@ -211,3 +211,4 @@ document.addEventListener("keydown", (event) => {
 const propertyLanguageObserver = new MutationObserver(renderPropertyPage);
 propertyLanguageObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
 renderPropertyPage();
+
