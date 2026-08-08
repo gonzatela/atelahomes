@@ -108,8 +108,8 @@ window.propertyCatalog = [
     status: "sale",
     location: "Castelló 98 · Castellana · Madrid",
     title: { es: "Castelló 98", en: "Castelló 98" },
-    price: { es: "Precio a consultar", en: "Price on request" },
-    priceValue: null,
+    price: { es: "2.890.000 €", en: "€2,890,000" },
+    priceValue: 2890000,
     facts: {
       es: ["276 m²", "4 dormitorios", "4 baños", "Reformado y amueblado"],
       en: ["276 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"]
