@@ -491,18 +491,38 @@ function getCookieLanguage() {
 function getCookieConsent() {
   try {
     const rawConsent = localStorage.getItem(cookieConsentKey);
-    return rawConsent ? JSON.parse(rawConsent) : null;
+    if (rawConsent) {
+      return JSON.parse(rawConsent);
+    }
+  } catch (error) {
+    // Fall back to a real cookie when storage is blocked by the browser.
+  }
+
+  const cookieMatch = document.cookie
+    .split("; ")
+    .find((cookie) => cookie.startsWith(`${cookieConsentKey}=`));
+
+  if (!cookieMatch) {
+    return null;
+  }
+
+  try {
+    return JSON.parse(decodeURIComponent(cookieMatch.split("=").slice(1).join("=")));
   } catch (error) {
     return null;
   }
 }
 
 function setCookieConsent(consent) {
+  const encodedConsent = encodeURIComponent(JSON.stringify(consent));
+
   try {
     localStorage.setItem(cookieConsentKey, JSON.stringify(consent));
   } catch (error) {
-    // The selection still applies to the current page if storage is unavailable.
+    // The selection still applies through the cookie fallback.
   }
+
+  document.cookie = `${cookieConsentKey}=${encodedConsent}; max-age=31536000; path=/; SameSite=Lax`;
 }
 
 function applyCookieConsent(consent) {

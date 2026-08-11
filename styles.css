@@ -1655,7 +1655,9 @@ h3 {
 }
 
 .legal-page {
-  padding: clamp(122px, 16vw, 172px) max(21px, calc((100vw - 980px) / 2)) clamp(64px, 10vw, 118px);
+  width: 100%;
+  max-width: none;
+  padding: clamp(122px, 16vw, 172px) clamp(21px, 5vw, 80px) clamp(64px, 10vw, 118px);
   background: var(--paper);
   color: var(--ink);
 }
