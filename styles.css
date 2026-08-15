@@ -348,12 +348,16 @@ textarea {
 .hero-title {
   display: flex;
   min-width: 0;
+  width: min(100%, 580px);
   max-width: 100%;
   animation: revealUp 820ms ease 80ms both;
 }
 
 .hero-logo-svg {
-  width: 100%;
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  width: min(100%, 580px);
   max-width: 580px;
   height: auto;
 }
@@ -3119,6 +3123,11 @@ h3 {
     padding-bottom: 34px;
   }
 
+  .hero-layout > * {
+    min-width: 0;
+    width: 100%;
+  }
+
   .hero-line,
   .hero-subtitle,
   .hero-note,
@@ -3126,8 +3135,27 @@ h3 {
     grid-column: auto;
   }
 
+  .hero-line {
+    max-width: 100%;
+    width: 100%;
+    font-size: clamp(1.9rem, 8.4vw, 2.2rem);
+    overflow-wrap: anywhere;
+  }
+
+  .hero-subtitle,
+  .hero-note {
+    max-width: 100%;
+    width: 100%;
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+
   .hero-title {
-    font-size: clamp(3.05rem, 12.8vw, 4.4rem);
+    width: min(100%, 320px);
+  }
+
+  .hero-logo-svg {
+    width: min(100%, 320px);
   }
 
   .hero-band p {
