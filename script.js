@@ -176,6 +176,7 @@ const translations = {
     footerLegal: "Aviso Legal",
     footerPrivacy: "Política de Privacidad",
     footerCookies: "Política de Cookies",
+    footerAdmin: "Área Administración",
     footerCredit: "Creado por Atela Studio",
     footerTop: "Volver arriba"
   },
@@ -356,6 +357,7 @@ const translations = {
     footerLegal: "Legal Notice",
     footerPrivacy: "Privacy Policy",
     footerCookies: "Cookie Policy",
+    footerAdmin: "Administration Area",
     footerCredit: "Created by Atela Studio",
     footerTop: "Back to top"
   }
@@ -643,6 +645,15 @@ function createCookieConsentUi() {
   }
 
   const footerLinks = document.querySelector(".footer-legal-links");
+  if (footerLinks && !footerLinks.querySelector("[data-footer-admin]")) {
+    const adminLink = document.createElement("a");
+    adminLink.href = "/administracion/";
+    adminLink.dataset.footerAdmin = "";
+    adminLink.dataset.i18n = "footerAdmin";
+    const language = document.documentElement.lang === "es" ? "es" : "en";
+    adminLink.textContent = translations[language]?.footerAdmin || "Área Administración";
+    footerLinks.append(adminLink);
+  }
   if (footerLinks && !footerLinks.querySelector("[data-cookie-open]")) {
     const settingsLink = document.createElement("a");
     settingsLink.className = "footer-cookie-settings";

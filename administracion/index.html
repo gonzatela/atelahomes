@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <title>Área Administración | Atela Homes</title>
+    <meta name="description" content="Área privada de documentación de Atela Homes." />
+    <link rel="icon" type="image/svg+xml" href="../assets/logo-favicon.svg" />
+    <link rel="stylesheet" href="../styles.css?v=84" />
+  </head>
+  <body class="admin-page">
+    <main class="admin-main">
+      <section class="admin-login" data-admin-login>
+        <a href="../" class="admin-brand" aria-label="Volver a Atela Homes">
+          <img src="../assets/logo-stacked.svg" alt="Atela Homes" />
+        </a>
+        <div class="admin-login-copy">
+          <p class="section-label-inline">Área privada</p>
+          <h1>Administración</h1>
+          <p>Accede a las fichas comerciales de las propiedades activas.</p>
+        </div>
+        <form class="admin-login-form" data-admin-form novalidate>
+          <label for="admin-user">Usuario</label>
+          <input id="admin-user" name="username" type="text" autocomplete="username" required />
+          <label for="admin-password">Contraseña</label>
+          <input id="admin-password" name="password" type="password" autocomplete="current-password" required />
+          <p class="admin-login-error" data-admin-error role="alert" hidden>Usuario o contraseña incorrectos.</p>
+          <button class="button" type="submit">Entrar</button>
+        </form>
+      </section>
+
+      <section class="admin-dashboard" data-admin-dashboard hidden>
+        <header class="admin-dashboard-header">
+          <a href="../" class="admin-dashboard-brand" aria-label="Volver a Atela Homes">
+            <img src="../assets/logo-horizontal.svg" alt="Atela Homes" />
+          </a>
+          <button class="admin-logout" type="button" data-admin-logout>Cerrar sesión</button>
+        </header>
+        <div class="admin-dashboard-heading">
+          <p class="section-label-inline">Documentación comercial</p>
+          <h1>Fichas de propiedades</h1>
+          <p data-admin-count></p>
+        </div>
+        <div class="admin-property-grid" data-admin-grid></div>
+      </section>
+    </main>
+    <script src="./admin.js?v=83"></script>
+  </body>
+</html>

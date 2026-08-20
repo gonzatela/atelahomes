@@ -1,79 +1,53 @@
 window.propertyCatalog = [
   {
-    slug: "poeta-joan-maragall",
-    status: "rent",
-    location: "Madrid · Poeta Joan Maragall",
-    title: {
-      es: "Vivienda amueblada con vistas panorámicas",
-      en: "Furnished home with panoramic views"
-    },
-    price: { es: "1.700 €/mes", en: "€1,700/month" },
-    priceValue: 1700,
-    facts: {
-      es: ["1 dormitorio", "1 baño", "Planta 19", "Portero"],
-      en: ["1 bedroom", "1 bathroom", "19th floor", "Concierge"]
-    },
-    description: {
-      es: "Vivienda amueblada para alquiler de larga estancia, situada en una planta alta con mucha luz y vistas privilegiadas sobre Madrid.",
-      en: "A furnished long-term rental on a high floor, with abundant natural light and privileged views across Madrid."
-    },
-    locationDescription: {
-      es: "Una ubicación práctica junto al eje de la Castellana, con conexiones rápidas, servicios cotidianos y el distrito financiero de Madrid a pocos minutos.",
-      en: "A practical location by the Castellana axis, with quick connections, everyday services and Madrid's financial district only minutes away."
-    },
-    mapQuery: "Poeta Joan Maragall, Madrid",
-    mapArea: "castillejos",
-    images: Array.from({ length: 11 }, (_, index) => `/assets/properties/poeta-joan-maragall/${String(index + 1).padStart(2, "0")}.webp`)
-  },
-  {
     slug: "jeronimos-retiro",
     status: "sale",
-    location: "Alberto Bosch 14 · Jerónimos · Madrid",
+    location: "Alberto Bosch · Jerónimos · Madrid",
     title: {
-      es: "Alberto Bosch 14, exterior",
-      en: "Alberto Bosch 14, exterior"
+      es: "Alberto Bosch, exterior",
+      en: "Alberto Bosch, exterior"
     },
     price: { es: "1.390.000 €", en: "€1,390,000" },
     priceValue: 1390000,
     facts: {
-      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "1º exterior"],
-      en: ["97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "1st-floor exterior"]
+      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "A reformar"],
+      en: ["97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "To renovate"]
     },
     description: {
-      es: "Vivienda exterior reformada con 97 m² construidos y 86 m² útiles. Dispone de salón luminoso con balcones, cocina equipada, dos dormitorios y un baño completo. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual.",
-      en: "A renovated exterior home with 97 m² built and 86 m² usable. It offers a bright living room with balconies, an equipped kitchen, two bedrooms and one full bathroom. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106."
+      es: "Vivienda exterior a reformar con 97 m² construidos y 86 m² útiles. Dispone de salón luminoso con balcones, cocina, dos dormitorios y un baño completo. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual.",
+      en: "An exterior home to renovate with 97 m² built and 86 m² usable. It offers a bright living room with balconies, a kitchen, two bedrooms and one full bathroom. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106."
     },
     locationDescription: {
       es: "En la calle Alberto Bosch, en Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
       en: "On Calle Alberto Bosch in Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
-    mapQuery: "Calle Alberto Bosch 14, Madrid",
+    mapQuery: "Calle Alberto Bosch, Madrid",
     mapArea: "jeronimos",
     images: Array.from({ length: 15 }, (_, index) => `/assets/properties/jeronimos-retiro/${String(index + 1).padStart(2, "0")}.jpeg`)
   },
   {
     slug: "alberto-bosch-interior",
     status: "sale",
-    location: "Alberto Bosch 14 · Jerónimos · Madrid",
+    location: "Alberto Bosch · Jerónimos · Madrid",
     title: {
-      es: "Alberto Bosch 14, interior",
-      en: "Alberto Bosch 14, interior"
+      es: "Alberto Bosch, interior",
+      en: "Alberto Bosch, interior"
     },
     price: { es: "1.225.000 €", en: "€1,225,000" },
     priceValue: 1225000,
     facts: {
-      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "1º interior"],
-      en: ["97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "1st-floor interior"]
+      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "A reformar"],
+      en: ["97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "To renovate"]
     },
     description: {
-      es: "Vivienda interior reformada e impecable, con 97 m² construidos y 86 m² útiles. Dispone de un amplio salón luminoso, cocina completamente equipada, dos dormitorios, un baño completo, calefacción y agua caliente individuales y servicio de conserjería por la mañana. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual. Existe la posibilidad de alquilar una plaza de garaje en las proximidades.",
-      en: "An impeccably renovated interior home with 97 m² built and 86 m² usable. It offers a spacious bright living room, fully equipped kitchen, two bedrooms, one full bathroom, individual heating and hot water, and morning concierge service. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106. A parking space may be rented nearby."
+      es: "Vivienda interior a reformar, con 97 m² construidos y 86 m² útiles. Dispone de un amplio salón luminoso, cocina, dos dormitorios, un baño completo, calefacción y agua caliente individuales y servicio de conserjería por la mañana. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual. Existe la posibilidad de alquilar una plaza de garaje en las proximidades.",
+      en: "An interior home to renovate with 97 m² built and 86 m² usable. It offers a spacious bright living room, kitchen, two bedrooms, one full bathroom, individual heating and hot water, and morning concierge service. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106. A parking space may be rented nearby."
     },
     locationDescription: {
       es: "En la calle Alberto Bosch, en Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
       en: "On Calle Alberto Bosch in Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
-    mapQuery: "Calle Alberto Bosch 14, Madrid",
+    mapQuery: "Calle Alberto Bosch, Madrid",
     mapArea: "jeronimos",
     images: Array.from({ length: 12 }, (_, index) => `/assets/properties/alberto-bosch/${String(index + 1).padStart(2, "0")}.webp`)
   },
@@ -82,18 +56,18 @@ window.propertyCatalog = [
     status: "sale",
     location: "Manuel Lafuente · Trafalgar · Madrid",
     title: {
-      es: "Vivienda reformada y luminosa en Trafalgar",
-      en: "Bright renovated home in Trafalgar"
+      es: "Vivienda luminosa en Trafalgar",
+      en: "Bright home in Trafalgar"
     },
     price: { es: "587.000 €", en: "€587,000" },
     priceValue: 587000,
     facts: {
-      es: ["61 m² construidos", "2 dormitorios", "1 baño", "Planta 1ª"],
-      en: ["61 m² built", "2 bedrooms", "1 bathroom", "1st floor"]
+      es: ["61 m² construidos", "2 dormitorios", "1 baño", "A reformar"],
+      en: ["61 m² built", "2 bedrooms", "1 bathroom", "To renovate"]
     },
     description: {
-      es: "Vivienda interior en buen estado que aprovecha al máximo cada metro cuadrado. Cuenta con salón-cocina de concepto abierto, dos dormitorios, un baño completo y una zona independiente para lavadora y secadora. Todas las estancias tienen ventana a patio y disfrutan de buena luz natural en un entorno tranquilo. La finca data de 1927 y cuenta con certificado energético E, 160 € mensuales de comunidad y 300 € de IBI anual.",
-      en: "A well-kept interior home designed to make the most of every square metre. It features an open-plan living room and kitchen, two bedrooms, one full bathroom and a separate laundry area. Every room has a window onto a courtyard and enjoys good natural light in a quiet setting. The building dates from 1927 and has an E energy rating, monthly community fees of €160 and annual property tax of €300."
+      es: "Vivienda interior a reformar que aprovecha al máximo cada metro cuadrado. Cuenta con salón-cocina de concepto abierto, dos dormitorios, un baño completo y una zona independiente para lavadora y secadora. Todas las estancias tienen ventana a patio y disfrutan de buena luz natural en un entorno tranquilo. La finca data de 1927 y cuenta con certificado energético E, 160 € mensuales de comunidad y 300 € de IBI anual.",
+      en: "An interior home to renovate, designed to make the most of every square metre. It features an open-plan living room and kitchen, two bedrooms, one full bathroom and a separate laundry area. Every room has a window onto a courtyard and enjoys good natural light in a quiet setting. The building dates from 1927 and has an E energy rating, monthly community fees of €160 and annual property tax of €300."
     },
     locationDescription: {
       es: "En Trafalgar, dentro de Chamberí, una zona residencial con auténtica vida de barrio, mercados, restauración y conexiones rápidas con el centro de Madrid.",
@@ -104,10 +78,34 @@ window.propertyCatalog = [
     images: ["01.jpeg", "02.jpeg", "03.jpeg", "05.jpeg", "06.jpeg", "07.jpeg", "08.jpeg"].map((file) => `/assets/properties/manuel-lafuente-trafalgar/${file}`)
   },
   {
+    slug: "serrano-castellana-604ec",
+    status: "sale",
+    location: "Serrano · Castellana · Madrid",
+    title: { es: "Serrano", en: "Serrano" },
+    price: { es: "3.530.000 €", en: "€3,530,000" },
+    priceValue: 3530000,
+    facts: {
+      es: ["191 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["191 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+    },
+    description: {
+      es: "Vivienda a reformar de gran potencial en una de las direcciones más prestigiosas del barrio de Salamanca, ideal para desarrollar un proyecto a medida.",
+      en: "A home to renovate with significant potential in one of Salamanca's most prestigious addresses, ready for a tailored project."
+    },
+    locationDescription: {
+      es: "En Serrano, dentro de Castellana y el barrio de Salamanca, rodeada de comercios, restauración y servicios de primer nivel.",
+      en: "On Serrano, in Castellana and the Salamanca district, surrounded by first-class shops, dining and services."
+    },
+    mapQuery: "Calle Serrano, Madrid",
+    mapArea: "castellana",
+    layout: "/assets/properties/serrano-castellana-604ec/layout.png",
+    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-castellana-604ec/0${number}.avif`)
+  },
+  {
     slug: "castello-castellana",
     status: "sale",
-    location: "Castelló 98 · Castellana · Madrid",
-    title: { es: "Castelló 98", en: "Castelló 98" },
+    location: "Castelló · Castellana · Madrid",
+    title: { es: "Castelló", en: "Castelló" },
     price: { es: "2.890.000 €", en: "€2,890,000" },
     priceValue: 2890000,
     facts: {
@@ -122,7 +120,7 @@ window.propertyCatalog = [
       es: "Una dirección tranquila en Castellana, dentro del barrio de Salamanca, próxima a Serrano y bien conectada con los principales ejes de la ciudad.",
       en: "A quiet Castellana address in the Salamanca district, close to Serrano and well connected to Madrid's principal avenues."
     },
-    mapQuery: "Calle Castelló 98, Madrid",
+    mapQuery: "Calle Castelló, Madrid",
     mapArea: "castellana",
     layout: "/assets/properties/castello-castellana/layout.jpg",
     images: [
@@ -156,8 +154,8 @@ window.propertyCatalog = [
   {
     slug: "conde-de-penalver-goya",
     status: "sale",
-    location: "Conde de Peñalver 31 · Goya · Madrid",
-    title: { es: "Conde de Peñalver 31", en: "Conde de Peñalver 31" },
+    location: "Conde de Peñalver · Goya · Madrid",
+    title: { es: "Conde de Peñalver", en: "Conde de Peñalver" },
     price: { es: "785.000 €", en: "€785,000" },
     priceValue: 785000,
     facts: {
@@ -169,10 +167,10 @@ window.propertyCatalog = [
       en: "A bright interior apartment with high ceilings in a refurbished classical building, with a flexible layout that can be planned with up to three bedrooms in the heart of Goya."
     },
     locationDescription: {
-      es: "En Conde de Peñalver 31, dentro del barrio de Salamanca, rodeada de servicios, comercio y restauración, con excelentes conexiones y el Retiro a pocos minutos.",
-      en: "At Conde de Peñalver 31, within the Salamanca district, surrounded by services, shops and dining, with excellent connections and El Retiro just minutes away."
+      es: "En Conde de Peñalver, dentro del barrio de Salamanca, rodeada de servicios, comercio y restauración, con excelentes conexiones y el Retiro a pocos minutos.",
+      en: "On Conde de Peñalver, within the Salamanca district, surrounded by services, shops and dining, with excellent connections and El Retiro just minutes away."
     },
-    mapQuery: "Calle del Conde de Peñalver 31, Madrid",
+    mapQuery: "Calle del Conde de Peñalver, Madrid",
     mapArea: "goya",
     layout: "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b83_Plano-CP.png",
     images: [
@@ -211,32 +209,6 @@ window.propertyCatalog = [
     images: [
       ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/lombia-goya/0${number}.avif`),
       "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/68c028cafa18f9ef9db2b3ac_Lumbre-Thumbnail.jpeg"
-    ]
-  },
-  {
-    slug: "rios-rosas",
-    status: "sale",
-    location: "Ríos Rosas · Chamberí · Madrid",
-    title: { es: "Ríos Rosas", en: "Ríos Rosas" },
-    price: { es: "1.850.000 €", en: "€1,850,000" },
-    priceValue: 1850000,
-    facts: {
-      es: ["167 m²", "3 dormitorios", "3 baños", "8 balcones", "A reformar"],
-      en: ["167 m²", "3 bedrooms", "3 bathrooms", "8 balconies", "To renovate"]
-    },
-    description: {
-      es: "Vivienda exterior a reformar de 167 m², con tres dormitorios, tres baños y ocho balcones que aportan luz y carácter a sus estancias.",
-      en: "A 167 m² exterior home to renovate, with three bedrooms, three bathrooms and eight balconies bringing light and character to its rooms."
-    },
-    locationDescription: {
-      es: "En Ríos Rosas, dentro de Chamberí, un barrio residencial con vida local, comercios, restauración y excelentes conexiones con el centro de Madrid.",
-      en: "In Ríos Rosas, within Chamberí, a residential neighbourhood with local life, shops, dining and excellent connections to central Madrid."
-    },
-    mapQuery: "Calle Ríos Rosas, Madrid",
-    layout: "/assets/properties/rios-rosas/layout.png",
-    images: [
-      ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/rios-rosas/0${number}.avif`),
-      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/697c73f9c1a8d27260d480fc_DSC_2082.jpeg"
     ]
   },
   {
