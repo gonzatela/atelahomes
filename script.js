@@ -364,6 +364,7 @@ const translations = {
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
+const brandLogo = document.querySelector("[data-logo-light][data-logo-dark]");
 const languageButtons = document.querySelectorAll("[data-lang]");
 const year = document.querySelector("[data-year]");
 const metaDescription = document.querySelector('meta[name="description"]');
@@ -424,6 +425,16 @@ const cookieConsentText = {
 function setHeaderState() {
   if (!header) return;
   header.classList.toggle("scrolled", window.scrollY > 8);
+  updateHeaderLogo();
+}
+
+function updateHeaderLogo() {
+  if (!header || !brandLogo) return;
+  const useDarkLogo = header.classList.contains("scrolled") || header.classList.contains("menu-active");
+  const nextLogo = useDarkLogo ? brandLogo.dataset.logoDark : brandLogo.dataset.logoLight;
+  if (nextLogo && brandLogo.getAttribute("src") !== nextLogo) {
+    brandLogo.setAttribute("src", nextLogo);
+  }
 }
 
 function closeMenu() {
@@ -432,6 +443,7 @@ function closeMenu() {
   nav.classList.remove("open");
   header.classList.remove("menu-active");
   menuToggle.setAttribute("aria-expanded", "false");
+  updateHeaderLogo();
 }
 
 function updateBudgetLabel(language = document.documentElement.lang || "en") {
@@ -730,6 +742,7 @@ menuToggle?.addEventListener("click", () => {
   document.body.classList.toggle("nav-open", isOpen);
   header.classList.toggle("menu-active", isOpen);
   menuToggle.setAttribute("aria-expanded", String(isOpen));
+  updateHeaderLogo();
 });
 
 nav?.querySelectorAll("a").forEach((link) => {
