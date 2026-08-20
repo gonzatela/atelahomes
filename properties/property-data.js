@@ -210,7 +210,7 @@ window.propertyCatalog = [
     layout: "/assets/properties/lombia-goya/layout.png",
     images: [
       ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/lombia-goya/0${number}.avif`),
-      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/68c028cafa18f9ef9db2b3a9_FP_LOMBIA-12_Img-05.jpeg"
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/68c028cafa18f9ef9db2b3ac_Lumbre-Thumbnail.jpeg"
     ]
   },
   {
