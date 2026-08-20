@@ -125,7 +125,10 @@ window.propertyCatalog = [
     mapQuery: "Calle Castelló 98, Madrid",
     mapArea: "castellana",
     layout: "/assets/properties/castello-castellana/layout.jpg",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/castello-castellana/0${number}.avif`)
+    images: [
+      ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/castello-castellana/0${number}.avif`),
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/6867b14356c68c28370eea56_Castello--98-_-11.avif"
+    ]
   },
   {
     slug: "serrano-con-hermanos-becquer",
@@ -179,7 +182,8 @@ window.propertyCatalog = [
       "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b8c_Renders-CP_ComedorCocina1.avif",
       "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b95_Renders-CP_ComedorCocina.avif",
       "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b7d_Renders-CP_Master.avif",
-      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b80_Renders-CP_Ban-o.avif"
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b80_Renders-CP_Ban-o.avif",
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b7a_Fachada-CP.jpeg"
     ]
   },
   {
@@ -204,7 +208,10 @@ window.propertyCatalog = [
     mapQuery: "Calle Lombia, Goya, Madrid",
     mapArea: "goya",
     layout: "/assets/properties/lombia-goya/layout.png",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/lombia-goya/0${number}.avif`)
+    images: [
+      ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/lombia-goya/0${number}.avif`),
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/68c028cafa18f9ef9db2b3a9_FP_LOMBIA-12_Img-05.jpeg"
+    ]
   },
   {
     slug: "rios-rosas",
@@ -227,7 +234,10 @@ window.propertyCatalog = [
     },
     mapQuery: "Calle Ríos Rosas, Madrid",
     layout: "/assets/properties/rios-rosas/layout.png",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/rios-rosas/0${number}.avif`)
+    images: [
+      ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/rios-rosas/0${number}.avif`),
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/697c73f9c1a8d27260d480fc_DSC_2082.jpeg"
+    ]
   },
   {
     slug: "garcia-de-paredes-almagro",
@@ -249,7 +259,10 @@ window.propertyCatalog = [
       en: "On García de Paredes, in Almagro and Chamberí, an elegant and quiet area with services, schools and good connections."
     },
     mapQuery: "Calle García de Paredes, Madrid",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/garcia-de-paredes-almagro/0${number}.avif`)
+    images: [
+      ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/garcia-de-paredes-almagro/0${number}.avif`),
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/697c94f382adc157fc0d3176_Gemini_Generated_Image_oo8nszoo8nszoo8n.jpeg"
+    ]
   }
 ];
 
