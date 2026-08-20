@@ -151,28 +151,36 @@ window.propertyCatalog = [
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-con-hermanos-becquer/0${number}.avif`)
   },
   {
-    slug: "general-pardinas-ii-goya",
+    slug: "conde-de-penalver-goya",
     status: "sale",
-    location: "General Pardiñas · Goya · Madrid",
-    title: { es: "General Pardiñas", en: "General Pardiñas" },
+    location: "Conde de Peñalver 31 · Goya · Madrid",
+    title: { es: "Conde de Peñalver 31", en: "Conde de Peñalver 31" },
     price: { es: "785.000 €", en: "€785,000" },
     priceValue: 785000,
     facts: {
-      es: ["139 m²", "3 dormitorios", "3 baños", "A reformar"],
-      en: ["139 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+      es: ["68 m²", "2 dormitorios", "2 baños", "A reformar"],
+      en: ["68 m²", "2 bedrooms", "2 bathrooms", "To renovate"]
     },
     description: {
-      es: "Vivienda exterior a reformar en una finca clásica, con tres dormitorios y una terraza de 17 m² con vistas despejadas.",
-      en: "An exterior renovation opportunity in a classical building, with three bedrooms and a 17 m² terrace with open views."
+      es: "Piso interior luminoso de techos altos en una finca clásica rehabilitada, con una distribución flexible que permite proyectar hasta tres dormitorios en pleno barrio de Goya.",
+      en: "A bright interior apartment with high ceilings in a refurbished classical building, with a flexible layout that can be planned with up to three bedrooms in the heart of Goya."
     },
     locationDescription: {
-      es: "En General Pardiñas, en una de las zonas más dinámicas del barrio de Salamanca, cerca del Retiro y rodeada de comercio, restauración y excelentes conexiones.",
-      en: "On General Pardiñas, in one of the Salamanca district's most dynamic areas, close to El Retiro and surrounded by shopping, dining and excellent connections."
+      es: "En Conde de Peñalver 31, dentro del barrio de Salamanca, rodeada de servicios, comercio y restauración, con excelentes conexiones y el Retiro a pocos minutos.",
+      en: "At Conde de Peñalver 31, within the Salamanca district, surrounded by services, shops and dining, with excellent connections and El Retiro just minutes away."
     },
-    mapQuery: "Calle General Pardiñas, Madrid",
+    mapQuery: "Calle del Conde de Peñalver 31, Madrid",
     mapArea: "goya",
-    layout: "/assets/properties/general-pardinas-ii-goya/layout.jpeg",
-    images: Array.from({ length: 13 }, (_, index) => `/assets/properties/general-pardinas-ii-goya/${String(index + 1).padStart(2, "0")}.avif`)
+    layout: "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b83_Plano-CP.png",
+    images: [
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b92_Renders-CP_Salon.avif",
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b74_Renders-CP_Salon1.avif",
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b8f_Renders-CP_Salo-n2.avif",
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b8c_Renders-CP_ComedorCocina1.avif",
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b95_Renders-CP_ComedorCocina.avif",
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b7d_Renders-CP_Master.avif",
+      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b80_Renders-CP_Ban-o.avif"
+    ]
   },
   {
     slug: "lombia-goya",
