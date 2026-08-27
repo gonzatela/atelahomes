@@ -1618,11 +1618,11 @@ h3 {
 
 .admin-login {
   display: grid;
-  grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1.2fr);
-  gap: 56px 9vw;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  gap: 56px clamp(54px, 6vw, 96px);
   align-content: center;
   min-height: 100vh;
-  max-width: 1120px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 72px 32px;
 }
@@ -1644,6 +1644,14 @@ h3 {
   font-size: clamp(3rem, 6vw, 5.6rem);
   font-weight: 400;
   line-height: 0.95;
+}
+
+.admin-login-copy {
+  min-width: 0;
+}
+
+.admin-login-copy h1 {
+  font-size: clamp(3rem, 5vw, 5.3rem);
 }
 
 .admin-login-copy > p:last-child,
@@ -1787,10 +1795,32 @@ h3 {
   padding: 0 22px;
 }
 
+.admin-property-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.admin-property-actions .button-secondary {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.admin-property-actions .button-secondary:hover,
+.admin-property-actions .button-secondary:focus-visible {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
 @media (max-width: 860px) {
   .admin-login {
     grid-template-columns: 1fr;
     gap: 34px;
+  }
+
+  .admin-login-copy h1 {
+    font-size: clamp(3rem, 12vw, 4.8rem);
   }
 
   .admin-property-grid {

@@ -23,7 +23,7 @@ PAPER = HexColor("#F7F3EC")
 INK = HexColor("#151A16")
 MUTED = HexColor("#6A665F")
 LINE = HexColor("#D0C6B8")
-OLIVE = HexColor("#3F4A40")
+OLIVE = HexColor("#667A69")
 
 
 def prepare_logo(source: Path, target: Path, color: tuple[int, int, int], opacity: float = 1.0) -> None:
@@ -110,42 +110,65 @@ def draw_standard_footer(pdf: canvas.Canvas, page_number: int, total_pages: int,
     pdf.linkURL("https://www.atelahomes.com", (126, 39, 235, 54), relative=0)
 
 
-def draw_cover(pdf: canvas.Canvas, property_data: dict, cover: Image.Image, logo_white: Path, page_number: int, total_pages: int) -> None:
+def draw_plain_footer(pdf: canvas.Canvas, page_number: int, total_pages: int, name: str) -> None:
+    pdf.setStrokeColor(LINE)
+    pdf.setLineWidth(0.6)
+    pdf.line(38, 34, 922, 34)
+    pdf.setFillColor(MUTED)
+    pdf.setFont("Helvetica", 7.5)
+    pdf.drawString(38, 47, name.upper())
+    pdf.drawRightString(922, 47, f"{page_number:02d} / {total_pages:02d}")
+
+
+def draw_cover(
+    pdf: canvas.Canvas,
+    property_data: dict,
+    cover: Image.Image,
+    logo_white: Path,
+    page_number: int,
+    total_pages: int,
+    branded: bool,
+) -> None:
     width, height = PAGE_SIZE
     panel_width = 374
     pdf.setFillColor(OLIVE)
     pdf.rect(0, 0, panel_width, height, fill=1, stroke=0)
     draw_cover_image(pdf, cover, panel_width, 0, width - panel_width, height)
 
-    draw_logo(pdf, logo_white, 42, 430, 116)
+    if branded:
+        draw_logo(pdf, logo_white, 42, 430, 116)
     pdf.setFillColor(PAPER)
     pdf.setFont("Helvetica", 8)
-    pdf.drawString(42, 389, property_data["operation"].upper())
+    pdf.drawString(42, 389 if branded else 436, property_data["operation"].upper())
     pdf.setFont("Times-Roman", 34)
     title = property_data["name"]
     if len(title) > 24:
         pdf.setFont("Times-Roman", 29)
-    pdf.drawString(42, 337, title)
+    pdf.drawString(42, 337 if branded else 384, title)
     pdf.setFont("Helvetica", 9)
-    pdf.drawString(42, 311, property_data["location"].upper())
+    pdf.drawString(42, 311 if branded else 358, property_data["location"].upper())
 
     pdf.setStrokeColor(HexColor("#829083"))
-    pdf.line(42, 286, 330, 286)
+    divider_y = 286 if branded else 333
+    pdf.line(42, divider_y, 330, divider_y)
     pdf.setFont("Times-Roman", 24)
-    pdf.drawString(42, 247, property_data["price"])
+    pdf.drawString(42, 247 if branded else 294, property_data["price"])
 
     pdf.setFont("Helvetica", 9)
-    fact_y = 212
+    fact_y = 212 if branded else 259
     for fact in property_data["facts"]:
         pdf.circle(46, fact_y + 2, 1.4, fill=1, stroke=0)
         pdf.drawString(58, fact_y - 1, fact)
         fact_y -= 22
 
     pdf.setFont("Helvetica", 7.5)
-    pdf.drawString(42, 49, "WWW.ATELAHOMES.COM")
-    pdf.drawString(42, 37, "INFO@ATELAHOMES.COM  ·  +34 650 07 57 47")
-    pdf.drawRightString(330, 37, f"{page_number:02d} / {total_pages:02d}")
-    pdf.linkURL("https://www.atelahomes.com", (42, 45, 152, 57), relative=0)
+    if branded:
+        pdf.drawString(42, 49, "WWW.ATELAHOMES.COM")
+        pdf.drawString(42, 37, "INFO@ATELAHOMES.COM  ·  +34 650 07 57 47")
+        pdf.drawRightString(330, 37, f"{page_number:02d} / {total_pages:02d}")
+        pdf.linkURL("https://www.atelahomes.com", (42, 45, 152, 57), relative=0)
+    else:
+        pdf.drawRightString(330, 37, f"{page_number:02d} / {total_pages:02d}")
 
 
 def draw_gallery_page(
@@ -156,6 +179,7 @@ def draw_gallery_page(
     watermark: Path,
     page_number: int,
     total_pages: int,
+    branded: bool,
 ) -> None:
     width, height = PAGE_SIZE
     pdf.setFillColor(PAPER)
@@ -167,16 +191,21 @@ def draw_gallery_page(
     if len(images) == 1:
         frame = (38, 82, 884, 380)
         draw_cover_image(pdf, images[0], *frame)
-        draw_watermark(pdf, watermark, frame)
+        if branded:
+            draw_watermark(pdf, watermark, frame)
     else:
         left_frame = (38, 82, 517, 380)
         right_frame = (571, 82, 351, 380)
         draw_cover_image(pdf, images[0], *left_frame)
         draw_cover_image(pdf, images[1], *right_frame)
-        draw_watermark(pdf, watermark, left_frame)
-        draw_watermark(pdf, watermark, right_frame)
+        if branded:
+            draw_watermark(pdf, watermark, left_frame)
+            draw_watermark(pdf, watermark, right_frame)
 
-    draw_standard_footer(pdf, page_number, total_pages, logo_dark, property_data["name"])
+    if branded:
+        draw_standard_footer(pdf, page_number, total_pages, logo_dark, property_data["name"])
+    else:
+        draw_plain_footer(pdf, page_number, total_pages, property_data["name"])
 
 
 def draw_layout_page(
@@ -186,6 +215,7 @@ def draw_layout_page(
     logo_dark: Path,
     page_number: int,
     total_pages: int,
+    branded: bool,
 ) -> None:
     width, height = PAGE_SIZE
     pdf.setFillColor(PAPER)
@@ -196,7 +226,10 @@ def draw_layout_page(
     pdf.setFont("Times-Roman", 24)
     pdf.drawRightString(922, 487, property_data["name"])
     draw_contain_image(pdf, layout, 90, 78, 780, 385)
-    draw_standard_footer(pdf, page_number, total_pages, logo_dark, property_data["name"])
+    if branded:
+        draw_standard_footer(pdf, page_number, total_pages, logo_dark, property_data["name"])
+    else:
+        draw_plain_footer(pdf, page_number, total_pages, property_data["name"])
 
 
 def create_brochure(
@@ -206,6 +239,8 @@ def create_brochure(
     logo_white: Path,
     logo_dark: Path,
     watermark: Path,
+    output_name: str,
+    branded: bool,
 ) -> Path:
     image_paths = [image_source(value, cache_dir) for value in property_data["images"]]
     images = [open_image(path) for path in image_paths]
@@ -213,21 +248,21 @@ def create_brochure(
 
     gallery_groups = [images[index:index + 2] for index in range(1, len(images), 2)]
     total_pages = 1 + len(gallery_groups) + (1 if layout else 0)
-    output_path = output_dir / property_data["pdf"]
+    output_path = output_dir / output_name
     pdf = canvas.Canvas(str(output_path), pagesize=PAGE_SIZE, pageCompression=1)
-    pdf.setTitle(f"{property_data['name']} | Atela Homes")
-    pdf.setAuthor("Atela Homes")
-    pdf.setSubject("Ficha comercial de propiedad")
+    pdf.setTitle(f"{property_data['name']} | Atela Homes" if branded else property_data["name"])
+    pdf.setAuthor("Atela Homes" if branded else "")
+    pdf.setSubject("Ficha comercial de propiedad" if branded else "Información de propiedad")
 
-    draw_cover(pdf, property_data, images[0], logo_white, 1, total_pages)
+    draw_cover(pdf, property_data, images[0], logo_white, 1, total_pages, branded)
     pdf.showPage()
     page_number = 2
     for group in gallery_groups:
-        draw_gallery_page(pdf, property_data, group, logo_dark, watermark, page_number, total_pages)
+        draw_gallery_page(pdf, property_data, group, logo_dark, watermark, page_number, total_pages, branded)
         pdf.showPage()
         page_number += 1
     if layout:
-        draw_layout_page(pdf, property_data, layout, logo_dark, page_number, total_pages)
+        draw_layout_page(pdf, property_data, layout, logo_dark, page_number, total_pages, branded)
         pdf.showPage()
 
     pdf.save()
@@ -255,8 +290,28 @@ def main() -> None:
         prepare_logo(SOURCE_LOGO, watermark, (255, 255, 255), opacity=0.18)
 
         for property_data in properties:
-            output = create_brochure(property_data, output_dir, cache_dir, logo_white, logo_dark, watermark)
-            print(output)
+            branded_output = create_brochure(
+                property_data,
+                output_dir,
+                cache_dir,
+                logo_white,
+                logo_dark,
+                watermark,
+                property_data["pdf"],
+                branded=True,
+            )
+            blind_output = create_brochure(
+                property_data,
+                output_dir,
+                cache_dir,
+                logo_white,
+                logo_dark,
+                watermark,
+                property_data["pdf"].replace(".pdf", "-ciega.pdf"),
+                branded=False,
+            )
+            print(branded_output)
+            print(blind_output)
 
 
 if __name__ == "__main__":

@@ -18,8 +18,8 @@
     "location": "Jerónimos · Madrid",
     "operation": "Venta",
     "price": "1.390.000 €",
-    "facts": ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "A reformar"],
-    "description": "Vivienda exterior luminosa junto al Retiro, con balcones y una distribución flexible para actualizar a medida.",
+    "facts": ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "Reformado"],
+    "description": "Vivienda exterior renovada y luminosa junto al Retiro, con balcones y una distribución funcional.",
     "cover": "../assets/properties/jeronimos-retiro/01.jpeg",
     "images": ["../assets/properties/jeronimos-retiro/01.jpeg", "../assets/properties/jeronimos-retiro/02.jpeg", "../assets/properties/jeronimos-retiro/03.jpeg", "../assets/properties/jeronimos-retiro/04.jpeg", "../assets/properties/jeronimos-retiro/05.jpeg", "../assets/properties/jeronimos-retiro/06.jpeg", "../assets/properties/jeronimos-retiro/07.jpeg", "../assets/properties/jeronimos-retiro/08.jpeg", "../assets/properties/jeronimos-retiro/09.jpeg", "../assets/properties/jeronimos-retiro/10.jpeg", "../assets/properties/jeronimos-retiro/11.jpeg", "../assets/properties/jeronimos-retiro/12.jpeg", "../assets/properties/jeronimos-retiro/13.jpeg", "../assets/properties/jeronimos-retiro/14.jpeg", "../assets/properties/jeronimos-retiro/15.jpeg"],
     "layout": null,
@@ -31,8 +31,8 @@
     "location": "Jerónimos · Madrid",
     "operation": "Venta",
     "price": "1.225.000 €",
-    "facts": ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "A reformar"],
-    "description": "Vivienda interior luminosa junto al Retiro, con estancias amplias y una base excelente para un proyecto personalizado.",
+    "facts": ["97 m² construidos", "86 m² útiles", "2 dormitorios", "2 baños", "Reformado"],
+    "description": "Vivienda interior renovada y luminosa junto al Retiro, con dos dormitorios, dos baños y estancias amplias.",
     "cover": "../assets/properties/alberto-bosch/01.webp",
     "images": ["../assets/properties/alberto-bosch/01.webp", "../assets/properties/alberto-bosch/02.webp", "../assets/properties/alberto-bosch/03.webp", "../assets/properties/alberto-bosch/04.webp", "../assets/properties/alberto-bosch/05.webp", "../assets/properties/alberto-bosch/06.webp", "../assets/properties/alberto-bosch/07.webp", "../assets/properties/alberto-bosch/08.webp", "../assets/properties/alberto-bosch/09.webp", "../assets/properties/alberto-bosch/10.webp", "../assets/properties/alberto-bosch/11.webp", "../assets/properties/alberto-bosch/12.webp"],
     "layout": null,
@@ -40,7 +40,7 @@
   },
   {
     "slug": "manuel-lafuente-trafalgar",
-    "name": "Manuel Lafuente",
+    "name": "Modesto Lafuente",
     "location": "Trafalgar · Madrid",
     "operation": "Venta",
     "price": "587.000 €",
@@ -49,7 +49,7 @@
     "cover": "../assets/properties/manuel-lafuente-trafalgar/01.jpeg",
     "images": ["../assets/properties/manuel-lafuente-trafalgar/01.jpeg", "../assets/properties/manuel-lafuente-trafalgar/02.jpeg", "../assets/properties/manuel-lafuente-trafalgar/03.jpeg", "../assets/properties/manuel-lafuente-trafalgar/05.jpeg", "../assets/properties/manuel-lafuente-trafalgar/06.jpeg", "../assets/properties/manuel-lafuente-trafalgar/07.jpeg", "../assets/properties/manuel-lafuente-trafalgar/08.jpeg"],
     "layout": null,
-    "pdf": "manuel-lafuente.pdf"
+    "pdf": "modesto-lafuente.pdf"
   },
   {
     "slug": "castello-castellana",

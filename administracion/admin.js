@@ -19,7 +19,7 @@ async function loadProperties() {
   const response = await fetch("./fichas.json", { cache: "no-store" });
   if (!response.ok) throw new Error("No se pudo cargar el catálogo de fichas.");
   const properties = await response.json();
-  propertyCount.textContent = `${properties.length} fichas disponibles`;
+  propertyCount.textContent = `${properties.length} propiedades disponibles`;
   propertyGrid.innerHTML = properties.map((property) => `
     <article class="admin-property-card">
       <img src="${property.cover}" alt="${property.name}" loading="lazy" />
@@ -27,7 +27,10 @@ async function loadProperties() {
         <p>${property.operation}</p>
         <h2>${property.name}</h2>
         <span>${property.price}</span>
-        <a class="button" href="../assets/admin/fichas/${property.pdf}" download>Descargar PDF</a>
+        <div class="admin-property-actions">
+          <a class="button" href="../assets/admin/fichas/${property.pdf}" download>Ficha Atela Homes</a>
+          <a class="button button-secondary" href="../assets/admin/fichas/${property.pdf.replace(/\.pdf$/i, "-ciega.pdf")}" download>Ficha ciega</a>
+        </div>
       </div>
     </article>
   `).join("");

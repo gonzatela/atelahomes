@@ -10,12 +10,12 @@ window.propertyCatalog = [
     price: { es: "1.390.000 €", en: "€1,390,000" },
     priceValue: 1390000,
     facts: {
-      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "A reformar"],
-      en: ["97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "To renovate"]
+      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "Reformado"],
+      en: ["97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "Renovated"]
     },
     description: {
-      es: "Vivienda exterior a reformar con 97 m² construidos y 86 m² útiles. Dispone de salón luminoso con balcones, cocina, dos dormitorios y un baño completo. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual.",
-      en: "An exterior home to renovate with 97 m² built and 86 m² usable. It offers a bright living room with balconies, a kitchen, two bedrooms and one full bathroom. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106."
+      es: "Vivienda exterior renovada con 97 m² construidos y 86 m² útiles. Dispone de salón luminoso con balcones, cocina, dos dormitorios y un baño completo. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual.",
+      en: "A renovated exterior home with 97 m² built and 86 m² usable. It offers a bright living room with balconies, a kitchen, two bedrooms and one full bathroom. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106."
     },
     locationDescription: {
       es: "En la calle Alberto Bosch, en Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
@@ -36,12 +36,12 @@ window.propertyCatalog = [
     price: { es: "1.225.000 €", en: "€1,225,000" },
     priceValue: 1225000,
     facts: {
-      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "A reformar"],
-      en: ["97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "To renovate"]
+      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "2 baños", "Reformado"],
+      en: ["97 m² built", "86 m² usable", "2 bedrooms", "2 bathrooms", "Renovated"]
     },
     description: {
-      es: "Vivienda interior a reformar, con 97 m² construidos y 86 m² útiles. Dispone de un amplio salón luminoso, cocina, dos dormitorios, un baño completo, calefacción y agua caliente individuales y servicio de conserjería por la mañana. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual. Existe la posibilidad de alquilar una plaza de garaje en las proximidades.",
-      en: "An interior home to renovate with 97 m² built and 86 m² usable. It offers a spacious bright living room, kitchen, two bedrooms, one full bathroom, individual heating and hot water, and morning concierge service. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106. A parking space may be rented nearby."
+      es: "Vivienda interior renovada, con 97 m² construidos y 86 m² útiles. Dispone de un amplio salón luminoso, cocina, dos dormitorios, dos baños completos, calefacción y agua caliente individuales y servicio de conserjería por la mañana. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual. Existe la posibilidad de alquilar una plaza de garaje en las proximidades.",
+      en: "A renovated interior home with 97 m² built and 86 m² usable. It offers a spacious bright living room, kitchen, two bedrooms, two full bathrooms, individual heating and hot water, and morning concierge service. The building dates from 1910, with monthly community fees of €85 and annual property tax of €1,106. A parking space may be rented nearby."
     },
     locationDescription: {
       es: "En la calle Alberto Bosch, en Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
@@ -54,10 +54,10 @@ window.propertyCatalog = [
   {
     slug: "manuel-lafuente-trafalgar",
     status: "sale",
-    location: "Manuel Lafuente · Trafalgar · Madrid",
+    location: "Modesto Lafuente · Trafalgar · Madrid",
     title: {
-      es: "Vivienda luminosa en Trafalgar",
-      en: "Bright home in Trafalgar"
+      es: "Modesto Lafuente",
+      en: "Modesto Lafuente"
     },
     price: { es: "587.000 €", en: "€587,000" },
     priceValue: 587000,
@@ -73,7 +73,7 @@ window.propertyCatalog = [
       es: "En Trafalgar, dentro de Chamberí, una zona residencial con auténtica vida de barrio, mercados, restauración y conexiones rápidas con el centro de Madrid.",
       en: "In Trafalgar, within Chamberí, a residential area with authentic neighbourhood life, markets, dining and quick connections to central Madrid."
     },
-    mapQuery: "Calle Manuel Lafuente, Madrid",
+    mapQuery: "Calle Modesto Lafuente, Madrid",
     mapArea: "trafalgar",
     images: ["01.jpeg", "02.jpeg", "03.jpeg", "05.jpeg", "06.jpeg", "07.jpeg", "08.jpeg"].map((file) => `/assets/properties/manuel-lafuente-trafalgar/${file}`)
   },
