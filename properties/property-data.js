@@ -63,7 +63,7 @@ window.propertyCatalog = [
     priceValue: 587000,
     facts: {
       es: ["61 m² construidos", "2 dormitorios", "1 baño", "A reformar"],
-      en: ["61 m² built", "2 bedrooms", "1 bathroom", "To renovate"]
+      en: ["61 m² built", "2 bedrooms", "1 bathroom", "Renovated"]
     },
     description: {
       es: "Vivienda interior a reformar que aprovecha al máximo cada metro cuadrado. Cuenta con salón-cocina de concepto abierto, dos dormitorios, un baño completo y una zona independiente para lavadora y secadora. Todas las estancias tienen ventana a patio y disfrutan de buena luz natural en un entorno tranquilo. La finca data de 1927 y cuenta con certificado energético E, 160 € mensuales de comunidad y 300 € de IBI anual.",
