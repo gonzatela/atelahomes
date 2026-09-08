@@ -1058,6 +1058,13 @@ h3 {
   padding: 20px 0 0;
 }
 
+.property-availability-history {
+  margin: -4px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
 .property-copy .property-location,
 .property-features {
   margin: 0;
@@ -2401,6 +2408,41 @@ h3 {
   height: 100%;
   object-fit: cover;
   transition: transform 420ms ease;
+}
+
+.property-rental-details {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.65fr) minmax(0, 1.35fr);
+  gap: 40px 80px;
+  padding-top: 24px;
+  padding-bottom: 72px;
+  border-top: 1px solid var(--ink);
+}
+
+.property-rental-heading h2 {
+  margin: 10px 0 16px;
+  font-family: var(--serif);
+  font-size: clamp(2.3rem, 4vw, 3.6rem);
+  font-weight: 400;
+}
+
+.property-rental-heading strong {
+  font-size: 1.15rem;
+}
+
+.property-rental-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.property-rental-facts li {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
 }
 
 .property-gallery-grid video {
@@ -3901,6 +3943,7 @@ section[id], div[id] {
 
   .property-detail-summary,
   .property-detail-overview,
+  .property-rental-details,
   .property-gallery-heading,
   .property-detail-section-heading,
   .property-detail-page .property-location,
@@ -3921,6 +3964,15 @@ section[id], div[id] {
 
   .property-detail-overview p:last-child {
     font-size: 1.55rem;
+  }
+
+  .property-rental-details {
+    gap: 28px;
+    padding-bottom: 48px;
+  }
+
+  .property-rental-facts {
+    grid-template-columns: 1fr;
   }
 
   .property-gallery-heading {

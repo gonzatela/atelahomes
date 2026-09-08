@@ -61,6 +61,18 @@ window.propertyCatalog = [
     },
     price: { es: "587.000 €", en: "€587,000" },
     priceValue: 587000,
+    formerOperations: {
+      es: "Anteriormente disponible en venta y alquiler temporal",
+      en: "Previously available for sale and short-term rental"
+    },
+    rentalDetails: {
+      title: { es: "Alquiler temporal", en: "Short-term rental" },
+      price: { es: "1.700 €/mes", en: "€1,700/month" },
+      facts: {
+        es: ["2 habitaciones", "1 baño completo", "Amueblado", "Portero", "1.º interior", "Mucha luz", "61 m²", "1 mes de fianza + 1 mes de garantía"],
+        en: ["2 bedrooms", "1 full bathroom", "Furnished", "Concierge", "First-floor interior", "Abundant natural light", "61 m²", "1 month deposit + 1 month additional guarantee"]
+      }
+    },
     facts: {
       es: ["61 m² construidos", "2 dormitorios", "1 baño", "A reformar"],
       en: ["61 m² built", "2 bedrooms", "1 bathroom", "Renovated"]

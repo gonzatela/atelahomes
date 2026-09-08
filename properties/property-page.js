@@ -70,6 +70,28 @@ function renderPropertyPage() {
   document.querySelector("[data-property-facts]").innerHTML = property.facts[language]
     .map((fact) => `<li>${fact}</li>`)
     .join("");
+
+  let rentalSection = document.querySelector("[data-property-rental]");
+  if (property.rentalDetails) {
+    if (!rentalSection) {
+      rentalSection = document.createElement("section");
+      rentalSection.className = "property-rental-details editorial-section";
+      rentalSection.setAttribute("data-property-rental", "");
+      document.querySelector(".property-detail-overview").insertAdjacentElement("afterend", rentalSection);
+    }
+    rentalSection.innerHTML = `
+      <div class="property-rental-heading">
+        <p class="section-label-inline">${property.formerOperations[language]}</p>
+        <h2>${property.rentalDetails.title[language]}</h2>
+        <strong>${property.rentalDetails.price[language]}</strong>
+      </div>
+      <ul class="property-rental-facts">
+        ${property.rentalDetails.facts[language].map((fact) => `<li>${fact}</li>`).join("")}
+      </ul>
+    `;
+  } else {
+    rentalSection?.remove();
+  }
   const imageGallery = property.images
     .slice(1)
     .map((image, index) => `
