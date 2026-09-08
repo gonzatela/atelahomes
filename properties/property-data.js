@@ -53,7 +53,7 @@ window.propertyCatalog = [
   },
   {
     slug: "manuel-lafuente-trafalgar",
-    status: "sale",
+    status: "archived",
     location: "Modesto Lafuente · Trafalgar · Madrid",
     title: {
       es: "Modesto Lafuente",
@@ -75,7 +75,8 @@ window.propertyCatalog = [
     },
     mapQuery: "Calle Modesto Lafuente, Madrid",
     mapArea: "trafalgar",
-    images: ["01.jpeg", "02.jpeg", "03.jpeg", "05.jpeg", "06.jpeg", "07.jpeg", "08.jpeg"].map((file) => `/assets/properties/manuel-lafuente-trafalgar/${file}`)
+    images: ["01.jpeg", "02.jpeg", "03.jpeg", "04.jpeg", "05.jpeg", "06.jpeg", "07.jpeg", "08.jpeg"].map((file) => `/assets/properties/manuel-lafuente-trafalgar/${file}`),
+    videos: ["/assets/properties/manuel-lafuente-trafalgar/video.mp4"]
   },
   {
     slug: "serrano-castellana-604ec",

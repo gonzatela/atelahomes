@@ -12,6 +12,7 @@ function renderPropertyPage() {
     ? {
         statusRent: "Alquiler",
         statusSale: "Venta",
+        statusArchived: "Descatalogada",
         back: "Todas las propiedades",
         gallery: "Galería",
         galleryIntro: "Recorre los espacios y detalles de la propiedad.",
@@ -24,6 +25,7 @@ function renderPropertyPage() {
         closeGallery: "Cerrar galería",
         previousImage: "Imagen anterior",
         nextImage: "Imagen siguiente",
+        propertyVideo: "Vídeo de la propiedad",
         ctaLabel: "Consulta",
         ctaTitle: "¿Quieres visitar esta propiedad?",
         ctaCopy: "Cuéntanos tus fechas y necesidades. Te responderemos con disponibilidad y próximos pasos.",
@@ -32,6 +34,7 @@ function renderPropertyPage() {
     : {
         statusRent: "For rent",
         statusSale: "For sale",
+        statusArchived: "Off market",
         back: "All properties",
         gallery: "Gallery",
         galleryIntro: "Explore the property's spaces and details.",
@@ -44,6 +47,7 @@ function renderPropertyPage() {
         closeGallery: "Close gallery",
         previousImage: "Previous image",
         nextImage: "Next image",
+        propertyVideo: "Property video",
         ctaLabel: "Enquiry",
         ctaTitle: "Would you like to view this property?",
         ctaCopy: "Tell us your preferred dates and requirements. We will reply with availability and next steps.",
@@ -54,7 +58,11 @@ function renderPropertyPage() {
   document.querySelector('meta[name="description"]')?.setAttribute("content", property.description[language]);
   document.querySelector("[data-property-hero-image]")?.setAttribute("src", property.images[0]);
   document.querySelector("[data-property-hero-image]")?.setAttribute("alt", property.title[language]);
-  document.querySelector("[data-property-status]").textContent = property.status === "rent" ? copy.statusRent : copy.statusSale;
+  document.querySelector("[data-property-status]").textContent = property.status === "rent"
+    ? copy.statusRent
+    : property.status === "archived"
+      ? copy.statusArchived
+      : copy.statusSale;
   document.querySelector("[data-property-location]").textContent = property.location;
   document.querySelector("[data-property-title]").textContent = property.title[language];
   document.querySelector("[data-property-price]").textContent = property.price[language];
@@ -62,7 +70,7 @@ function renderPropertyPage() {
   document.querySelector("[data-property-facts]").innerHTML = property.facts[language]
     .map((fact) => `<li>${fact}</li>`)
     .join("");
-  document.querySelector("[data-property-gallery]").innerHTML = property.images
+  const imageGallery = property.images
     .slice(1)
     .map((image, index) => `
       <figure>
@@ -72,6 +80,16 @@ function renderPropertyPage() {
       </figure>
     `)
     .join("");
+  const videoGallery = (property.videos || [])
+    .map((video) => `
+      <figure class="property-gallery-video">
+        <video controls preload="metadata" playsinline aria-label="${copy.propertyVideo}">
+          <source src="${video}" type="video/mp4" />
+        </video>
+      </figure>
+    `)
+    .join("");
+  document.querySelector("[data-property-gallery]").innerHTML = imageGallery + videoGallery;
 
   updateLightboxCopy(copy);
 
