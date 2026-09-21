@@ -9,6 +9,8 @@ interpretarse como ausencia de terraza. El propietario de la web ha confirmado
 que enviará los datos restantes más adelante.
 
 Datos proporcionados por el propietario:
+- Captura confirmada el 21 de septiembre: Alberto Bosch 14, 1.º exterior y
+  1.º interior; Modesto Lafuente 7, 1.º interior. Las fichas usan estos datos.
 - Castelló: calle Castelló 98, 6.ª planta.
 - García de Paredes: 895.000 €.
 - Lombia: 1.295.000 €.

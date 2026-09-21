@@ -35,8 +35,8 @@
   {
     "slug": "jeronimos-retiro",
     "name": "Alberto Bosch, exterior",
-    "address": "Calle Alberto Bosch, Madrid (n.º por confirmar)",
-    "floor": "Planta: por confirmar",
+    "address": "Calle Alberto Bosch, 14, Madrid",
+    "floor": "1.ª planta exterior",
     "terrace": "Terraza: por confirmar (con balcones)",
     "location": "Jerónimos · Madrid",
     "operation": "Venta",
@@ -51,7 +51,7 @@
   {
     "slug": "alberto-bosch-interior",
     "name": "Alberto Bosch, interior",
-    "address": "Calle de Alberto Bosch, 14, puerta 2, Madrid",
+    "address": "Calle Alberto Bosch, 14, Madrid",
     "floor": "1.ª planta interior",
     "terrace": "Terraza: por confirmar",
     "location": "Jerónimos · Madrid",
@@ -67,7 +67,7 @@
   {
     "slug": "manuel-lafuente-trafalgar",
     "name": "Modesto Lafuente",
-    "address": "Calle Modesto Lafuente, Madrid (n.º por confirmar)",
+    "address": "Calle Modesto Lafuente, 7, Madrid",
     "floor": "1.ª planta interior",
     "terrace": "Terraza: por confirmar",
     "location": "Trafalgar · Madrid",

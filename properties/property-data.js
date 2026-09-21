@@ -10,8 +10,8 @@ window.propertyCatalog = [
     price: { es: "1.390.000 €", en: "€1,390,000" },
     priceValue: 1390000,
     facts: {
-      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "Reformado"],
-      en: ["97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "Renovated"]
+      es: ["1.ª planta exterior", "97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "Reformado"],
+      en: ["1st floor, exterior", "97 m² built", "86 m² usable", "2 bedrooms", "1 bathroom", "Renovated"]
     },
     description: {
       es: "Vivienda exterior renovada con 97 m² construidos y 86 m² útiles. Dispone de salón luminoso con balcones, cocina, dos dormitorios y un baño completo. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual.",
@@ -21,7 +21,7 @@ window.propertyCatalog = [
       es: "En la calle Alberto Bosch, en Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
       en: "On Calle Alberto Bosch in Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
-    mapQuery: "Calle Alberto Bosch, Madrid",
+    mapQuery: "Calle Alberto Bosch 14, Madrid",
     mapArea: "jeronimos",
     images: Array.from({ length: 15 }, (_, index) => `/assets/properties/jeronimos-retiro/${String(index + 1).padStart(2, "0")}.jpeg`)
   },
@@ -36,8 +36,8 @@ window.propertyCatalog = [
     price: { es: "1.225.000 €", en: "€1,225,000" },
     priceValue: 1225000,
     facts: {
-      es: ["97 m² construidos", "86 m² útiles", "2 dormitorios", "2 baños", "Reformado"],
-      en: ["97 m² built", "86 m² usable", "2 bedrooms", "2 bathrooms", "Renovated"]
+      es: ["1.ª planta interior", "97 m² construidos", "86 m² útiles", "2 dormitorios", "2 baños", "Reformado"],
+      en: ["1st floor, interior", "97 m² built", "86 m² usable", "2 bedrooms", "2 bathrooms", "Renovated"]
     },
     description: {
       es: "Vivienda interior renovada, con 97 m² construidos y 86 m² útiles. Dispone de un amplio salón luminoso, cocina, dos dormitorios, dos baños completos, calefacción y agua caliente individuales y servicio de conserjería por la mañana. La finca data de 1910, con 85 € mensuales de comunidad y 1.106 € de IBI anual. Existe la posibilidad de alquilar una plaza de garaje en las proximidades.",
@@ -47,7 +47,7 @@ window.propertyCatalog = [
       es: "En la calle Alberto Bosch, en Los Jerónimos, a un paso del Retiro y del Paseo del Prado, rodeada de museos, arquitectura histórica y excelentes conexiones con el centro.",
       en: "On Calle Alberto Bosch in Los Jerónimos, moments from El Retiro and Paseo del Prado, surrounded by museums, historic architecture and excellent city-centre connections."
     },
-    mapQuery: "Calle Alberto Bosch, Madrid",
+    mapQuery: "Calle Alberto Bosch 14, Madrid",
     mapArea: "jeronimos",
     images: Array.from({ length: 12 }, (_, index) => `/assets/properties/alberto-bosch/${String(index + 1).padStart(2, "0")}.webp`)
   },
@@ -75,8 +75,8 @@ window.propertyCatalog = [
       }
     },
     facts: {
-      es: ["61 m² construidos", "2 dormitorios", "1 baño", "A reformar"],
-      en: ["61 m² built", "2 bedrooms", "1 bathroom", "Renovated"]
+      es: ["1.ª planta interior", "61 m² construidos", "2 dormitorios", "1 baño", "A reformar"],
+      en: ["1st floor, interior", "61 m² built", "2 bedrooms", "1 bathroom", "Renovated"]
     },
     description: {
       es: "Vivienda interior a reformar que aprovecha al máximo cada metro cuadrado. Cuenta con salón-cocina de concepto abierto, dos dormitorios, un baño completo y una zona independiente para lavadora y secadora. Todas las estancias tienen ventana a patio y disfrutan de buena luz natural en un entorno tranquilo. La finca data de 1927 y cuenta con certificado energético E, 160 € mensuales de comunidad y 300 € de IBI anual.",
@@ -86,7 +86,7 @@ window.propertyCatalog = [
       es: "En Trafalgar, dentro de Chamberí, una zona residencial con auténtica vida de barrio, mercados, restauración y conexiones rápidas con el centro de Madrid.",
       en: "In Trafalgar, within Chamberí, a residential area with authentic neighbourhood life, markets, dining and quick connections to central Madrid."
     },
-    mapQuery: "Calle Modesto Lafuente, Madrid",
+    mapQuery: "Calle Modesto Lafuente 7, Madrid",
     mapArea: "trafalgar",
     images: ["01.jpeg", "02.jpeg", "03.jpeg", "04.jpeg", "05.jpeg", "06.jpeg", "07.jpeg", "08.jpeg"].map((file) => `/assets/properties/manuel-lafuente-trafalgar/${file}`),
     videos: ["/assets/properties/manuel-lafuente-trafalgar/video.mp4"]
