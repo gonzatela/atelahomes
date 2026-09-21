@@ -102,8 +102,8 @@ window.propertyCatalog = [
     price: { es: "2.390.000 €", en: "€2,390,000" },
     priceValue: 2390000,
     facts: {
-      es: ["Ático - última planta", "Terraza de 20 m²", "171 m²", "13.977 €/m²", "3 dormitorios", "3,5 baños", "A reformar"],
-      en: ["Penthouse - top floor", "20 m² terrace", "171 m²", "€13,977/m²", "3 bedrooms", "3.5 bathrooms", "To renovate"]
+      es: ["Ático exterior - última planta", "Terraza de 20 m²", "171 m²", "13.977 €/m²", "3 dormitorios", "3,5 baños", "A reformar"],
+      en: ["Exterior penthouse - top floor", "20 m² terrace", "171 m²", "€13,977/m²", "3 bedrooms", "3.5 bathrooms", "To renovate"]
     },
     description: {
       es: "Ático exterior exclusivo a reformar en la última planta de una finca clásica de 1936. La vivienda ofrece 171 m², con 151 m² catastrales —127 m² de vivienda y 24 m² comunes—, una terraza de 20 m², techos de 3 metros y orientación este. La distribución es personalizable, el estado legal está saneado y la propuesta contempla tres dormitorios y tres baños y medio.",
@@ -113,7 +113,7 @@ window.propertyCatalog = [
       es: "En Menéndez Pelayo, junto al Retiro y en el corazón de Recoletos, una ubicación privilegiada del barrio de Salamanca con vistas despejadas, arquitectura clásica y excelentes conexiones.",
       en: "On Menéndez Pelayo, beside El Retiro and in the heart of Recoletos, a privileged Salamanca district location with open views, classical architecture and excellent connections."
     },
-    mapQuery: "Calle Menéndez Pelayo, Recoletos, Madrid",
+    mapQuery: "Menéndez Pelayo 4, Madrid",
     mapArea: "recoletos",
     layout: "/assets/properties/menendez-pelayo-recoletos/layout.png",
     images: [
@@ -140,7 +140,7 @@ window.propertyCatalog = [
       es: "En Serrano, dentro de Castellana y el barrio de Salamanca, rodeada de comercios, restauración y servicios de primer nivel.",
       en: "On Serrano, in Castellana and the Salamanca district, surrounded by first-class shops, dining and services."
     },
-    mapQuery: "Calle Serrano, Madrid",
+    mapQuery: "Calle Serrano 84, Madrid",
     mapArea: "castellana",
     layout: "/assets/properties/serrano-castellana-604ec/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-castellana-604ec/0${number}.avif`)
@@ -153,8 +153,8 @@ window.propertyCatalog = [
     price: { es: "2.890.000 €", en: "€2,890,000" },
     priceValue: 2890000,
     facts: {
-      es: ["6.ª planta", "276 m²", "4 dormitorios", "4 baños", "Reformado y amueblado"],
-      en: ["6th floor", "276 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"]
+      es: ["6.ª planta exterior", "276 m²", "4 dormitorios", "4 baños", "Reformado y amueblado"],
+      en: ["6th floor, exterior", "276 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"]
     },
     description: {
       es: "Amplia vivienda exterior reformada y amueblada, con una distribución equilibrada en el barrio de Castellana.",
@@ -180,8 +180,8 @@ window.propertyCatalog = [
     price: { es: "2.760.000 €", en: "€2,760,000" },
     priceValue: 2760000,
     facts: {
-      es: ["3.ª planta exterior", "241 m²", "3 dormitorios", "3 baños", "A reformar"],
-      en: ["3rd floor, exterior", "241 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+      es: ["3.ª planta izquierda - exterior", "241 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["3rd floor, left - exterior", "241 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
     },
     description: {
       es: "Propiedad a reformar en una finca clásica, con techos altos, estancias amplias y una ubicación privilegiada en la calle López de Hoyos.",
@@ -191,7 +191,7 @@ window.propertyCatalog = [
       es: "En la calle López de Hoyos, en un entorno residencial consolidado y bien conectado, con comercios, restaurantes y servicios a pocos minutos.",
       en: "On Calle López de Hoyos, in an established and well-connected residential area with shops, restaurants and services close by."
     },
-    mapQuery: "Calle López de Hoyos, Madrid",
+    mapQuery: "Calle López de Hoyos 7, Madrid",
     layout: "/assets/properties/serrano-con-hermanos-becquer/layout.png",
     images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-con-hermanos-becquer/0${number}.avif`)
   },
@@ -214,7 +214,7 @@ window.propertyCatalog = [
       es: "En Conde de Peñalver, dentro del barrio de Salamanca, rodeada de servicios, comercio y restauración, con excelentes conexiones y el Retiro a pocos minutos.",
       en: "On Conde de Peñalver, within the Salamanca district, surrounded by services, shops and dining, with excellent connections and El Retiro just minutes away."
     },
-    mapQuery: "Calle del Conde de Peñalver, Madrid",
+    mapQuery: "Calle del Conde de Peñalver 31, Madrid",
     mapArea: "goya",
     layout: "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/695e5e6d05c97582b8b35b83_Plano-CP.png",
     images: [
@@ -247,7 +247,7 @@ window.propertyCatalog = [
       es: "En la calle Lombia, cerca del Retiro y de los principales ejes comerciales del barrio de Salamanca, con servicios y transporte próximos.",
       en: "On Calle Lombia, close to El Retiro and Salamanca's main shopping avenues, with services and transport nearby."
     },
-    mapQuery: "Calle Lombia, Goya, Madrid",
+    mapQuery: "Calle Lombia 12, Madrid",
     mapArea: "goya",
     layout: "/assets/properties/lombia-goya/layout.png",
     images: [
@@ -274,7 +274,7 @@ window.propertyCatalog = [
       es: "En García de Paredes, dentro de Almagro y Chamberí, una zona elegante y tranquila con servicios, colegios y buenas conexiones.",
       en: "On García de Paredes, in Almagro and Chamberí, an elegant and quiet area with services, schools and good connections."
     },
-    mapQuery: "Calle García de Paredes, Madrid",
+    mapQuery: "Calle García de Paredes 78, Madrid",
     images: [
       ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/garcia-de-paredes-almagro/0${number}.avif`),
       "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/697c94f382adc157fc0d3176_Gemini_Generated_Image_oo8nszoo8nszoo8n.jpeg"

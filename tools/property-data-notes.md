@@ -9,6 +9,12 @@ interpretarse como ausencia de terraza. El propietario de la web ha confirmado
 que enviará los datos restantes más adelante.
 
 Datos proporcionados por el propietario:
+- Capturas de WhatsApp del 21 de septiembre a las 20:34 y 20:43:
+  Menéndez Pelayo 4, ático exterior; García de Paredes 78, 6.ª interior;
+  López de Hoyos 7, 3.ª izquierda exterior; Serrano 84, 5.ª exterior;
+  Castelló 98, 6.ª exterior; Conde de Peñalver 31, 4.ª interior;
+  Lombia 12, ático exterior. Quedan confirmados todos los números de calle.
+  Las imágenes no aportan datos de terraza: siguen pendientes donde corresponde.
 - Captura confirmada el 21 de septiembre: Alberto Bosch 14, 1.º exterior y
   1.º interior; Modesto Lafuente 7, 1.º interior. Las fichas usan estos datos.
 - Castelló: calle Castelló 98, 6.ª planta.

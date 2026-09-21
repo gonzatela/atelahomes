@@ -2,8 +2,8 @@
   {
     "slug": "menendez-pelayo-recoletos",
     "name": "Menéndez Pelayo",
-    "address": "Menéndez Pelayo, Madrid (n.º por confirmar)",
-    "floor": "Ático - última planta",
+    "address": "Menéndez Pelayo, 4, Madrid",
+    "floor": "Ático exterior - última planta",
     "terrace": "Terraza: sí, 20 m²",
     "pdf": "menendez-pelayo.pdf",
     "location": "Recoletos · Madrid",
@@ -19,7 +19,7 @@
   {
     "slug": "serrano-castellana-604ec",
     "name": "Serrano",
-    "address": "Calle Serrano, Madrid (n.º por confirmar)",
+    "address": "Calle Serrano, 84, Madrid",
     "floor": "5.ª planta exterior",
     "terrace": "Terraza: sí",
     "location": "Castellana · Madrid",
@@ -84,7 +84,7 @@
     "slug": "castello-castellana",
     "name": "Castelló",
     "address": "Calle Castelló, 98, Madrid",
-    "floor": "6.ª planta",
+    "floor": "6.ª planta exterior",
     "terrace": "Terraza: por confirmar (con balcón)",
     "location": "Castellana · Madrid",
     "operation": "Venta",
@@ -99,8 +99,8 @@
   {
     "slug": "serrano-con-hermanos-becquer",
     "name": "López de Hoyos",
-    "address": "Calle López de Hoyos, Madrid (n.º por confirmar)",
-    "floor": "3.ª planta exterior",
+    "address": "Calle López de Hoyos, 7, Madrid",
+    "floor": "3.ª planta izquierda - exterior",
     "terrace": "Terraza: por confirmar",
     "location": "Madrid",
     "operation": "Venta",
@@ -115,7 +115,7 @@
   {
     "slug": "conde-de-penalver-goya",
     "name": "Conde de Peñalver",
-    "address": "Calle Conde de Peñalver, Madrid (n.º por confirmar)",
+    "address": "Calle Conde de Peñalver, 31, Madrid",
     "floor": "4.ª planta interior",
     "terrace": "Terraza: por confirmar",
     "location": "Goya · Madrid",
@@ -131,7 +131,7 @@
   {
     "slug": "lombia-goya",
     "name": "Lombia",
-    "address": "Calle Lombia, Madrid (n.º por confirmar)",
+    "address": "Calle Lombia, 12, Madrid",
     "floor": "6.ª planta - ático exterior",
     "terrace": "Terraza: sí, 13 m²",
     "location": "Goya · Madrid",
@@ -147,7 +147,7 @@
   {
     "slug": "garcia-de-paredes-almagro",
     "name": "García de Paredes",
-    "address": "Calle García de Paredes, Madrid (n.º por confirmar)",
+    "address": "Calle García de Paredes, 78, Madrid",
     "floor": "6.ª planta interior",
     "terrace": "Terraza: por confirmar",
     "location": "Almagro · Madrid",
