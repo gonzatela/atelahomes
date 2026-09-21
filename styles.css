@@ -3997,6 +3997,14 @@ section[id], div[id] {
     aspect-ratio: 4 / 3;
   }
 
+  .property-gallery-grid .property-gallery-video {
+    aspect-ratio: 9 / 16;
+  }
+
+  .property-gallery-grid .property-gallery-video video {
+    object-fit: cover;
+  }
+
   .property-lightbox {
     grid-template-columns: 54px minmax(0, 1fr) 54px;
     grid-template-rows: 58px minmax(0, 1fr);

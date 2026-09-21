@@ -17,7 +17,7 @@ function getFilterCopy(language) {
         all: "Todas las propiedades",
         sale: "En venta",
         rent: "En alquiler",
-        archived: "Descatalogadas",
+        archived: "Vendidas o alquiladas",
         view: "Ver propiedad",
         empty: "No hay propiedades que coincidan con estos filtros.",
         result: "propiedad",
@@ -29,7 +29,7 @@ function getFilterCopy(language) {
         all: "All properties",
         sale: "For sale",
         rent: "For rent",
-        archived: "Off market",
+        archived: "Sold or rented",
         view: "View property",
         empty: "No properties match these filters.",
         result: "property",
@@ -42,7 +42,10 @@ function propertyStatus(property, language) {
     return language === "es" ? "Alquiler" : "For rent";
   }
   if (property.status === "archived") {
-    return language === "es" ? "Descatalogada" : "Off market";
+    if (property.closedStatus === "rented") {
+      return language === "es" ? "Alquilado" : "Rented";
+    }
+    return language === "es" ? "Vendido" : "Sold";
   }
   return language === "es" ? "Venta" : "For sale";
 }

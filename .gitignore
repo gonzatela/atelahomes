@@ -5,3 +5,4 @@ Thumbs.db
 .env*
 *.zip
 .codex-tmp/
+.vercel

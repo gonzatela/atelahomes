@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import io
+import base64
+import xml.etree.ElementTree as ET
 import argparse
 import json
 import tempfile
@@ -16,7 +18,7 @@ from reportlab.pdfgen import canvas
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "administracion" / "fichas.json"
 DEFAULT_OUTPUT_DIR = ROOT / "assets" / "admin" / "fichas"
-SOURCE_LOGO = Path(r"C:\Users\navar\Downloads\ATELA LOGO BLANCO.png")
+SOURCE_LOGO = ROOT / "assets" / "logo-brochure-white.png"
 PAGE_SIZE = (960, 540)
 
 PAPER = HexColor("#F7F3EC")
@@ -47,6 +49,14 @@ def image_source(value: str, cache_dir: Path) -> Path:
 
 
 def open_image(path: Path) -> Image.Image:
+    if path.suffix.lower() == ".svg":
+        # The current-state photograph is stored in an SVG image wrapper.
+        root = ET.parse(path).getroot()
+        embedded = root.find("{http://www.w3.org/2000/svg}image")
+        href = embedded.get("href", "") if embedded is not None else ""
+        if not href.startswith("data:image/") or ";base64," not in href:
+            raise ValueError(f"Unsupported SVG image: {path}")
+        path = io.BytesIO(base64.b64decode(href.split(",", 1)[1]))
     with Image.open(path) as source:
         image = ImageOps.exif_transpose(source).convert("RGB")
         image.thumbnail((2200, 1600), Image.Resampling.LANCZOS)
@@ -154,12 +164,20 @@ def draw_cover(
     pdf.setFont("Times-Roman", 24)
     pdf.drawString(42, 247 if branded else 294, property_data["price"])
 
-    pdf.setFont("Helvetica", 9)
-    fact_y = 212 if branded else 259
-    for fact in property_data["facts"]:
+    facts = []
+    if branded:
+        facts.append(property_data["address"])
+    facts.extend([property_data["floor"], property_data["terrace"]])
+    facts.extend(fact for fact in property_data["facts"] if not fact.startswith("Terraza"))
+    fact_y = 214 if branded else 259
+    spacing = min(22, (fact_y - 76) / max(1, len(facts) - 1))
+    for index, fact in enumerate(facts):
+        font = "Helvetica-Bold" if index < (3 if branded else 2) else "Helvetica"
+        size = min(9, 268 / max(1, pdf.stringWidth(fact, font, 1)))
+        pdf.setFont(font, size)
         pdf.circle(46, fact_y + 2, 1.4, fill=1, stroke=0)
         pdf.drawString(58, fact_y - 1, fact)
-        fact_y -= 22
+        fact_y -= spacing
 
     pdf.setFont("Helvetica", 7.5)
     if branded:

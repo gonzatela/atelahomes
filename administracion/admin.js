@@ -20,7 +20,14 @@ async function loadProperties() {
   if (!response.ok) throw new Error("No se pudo cargar el catálogo de fichas.");
   const properties = await response.json();
   propertyCount.textContent = `${properties.length} propiedades disponibles`;
-  propertyGrid.innerHTML = properties.map((property) => `
+  propertyGrid.innerHTML = properties.map((property) => {
+    const actions = property.pdf
+      ? `
+          <a class="button" href="../assets/admin/fichas/${property.pdf}" download>Ficha Atela Homes</a>
+          <a class="button button-secondary" href="../assets/admin/fichas/${property.pdf.replace(/\.pdf$/i, "-ciega.pdf")}" download>Ficha ciega</a>`
+      : `<a class="button" href="${property.propertyUrl}">Ver propiedad</a>`;
+
+    return `
     <article class="admin-property-card">
       <img src="${property.cover}" alt="${property.name}" loading="lazy" />
       <div>
@@ -28,12 +35,12 @@ async function loadProperties() {
         <h2>${property.name}</h2>
         <span>${property.price}</span>
         <div class="admin-property-actions">
-          <a class="button" href="../assets/admin/fichas/${property.pdf}" download>Ficha Atela Homes</a>
-          <a class="button button-secondary" href="../assets/admin/fichas/${property.pdf.replace(/\.pdf$/i, "-ciega.pdf")}" download>Ficha ciega</a>
+          ${actions}
         </div>
       </div>
     </article>
-  `).join("");
+  `;
+  }).join("");
 }
 
 async function showDashboard() {

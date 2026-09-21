@@ -54,6 +54,7 @@ window.propertyCatalog = [
   {
     slug: "manuel-lafuente-trafalgar",
     status: "archived",
+    closedStatus: "rented",
     location: "Modesto Lafuente · Trafalgar · Madrid",
     title: {
       es: "Modesto Lafuente",
@@ -79,7 +80,7 @@ window.propertyCatalog = [
     },
     description: {
       es: "Vivienda interior a reformar que aprovecha al máximo cada metro cuadrado. Cuenta con salón-cocina de concepto abierto, dos dormitorios, un baño completo y una zona independiente para lavadora y secadora. Todas las estancias tienen ventana a patio y disfrutan de buena luz natural en un entorno tranquilo. La finca data de 1927 y cuenta con certificado energético E, 160 € mensuales de comunidad y 300 € de IBI anual.",
-      en: "An interior home to renovate, designed to make the most of every square metre. It features an open-plan living room and kitchen, two bedrooms, one full bathroom and a separate laundry area. Every room has a window onto a courtyard and enjoys good natural light in a quiet setting. The building dates from 1927 and has an E energy rating, monthly community fees of €160 and annual property tax of €300."
+      en: "A renovated interior home, designed to make the most of every square metre. It features an open-plan living room and kitchen, two bedrooms, one full bathroom and a separate laundry area. Every room has a window onto a courtyard and enjoys good natural light in a quiet setting. The building dates from 1927 and has an E energy rating, monthly community fees of €160 and annual property tax of €300."
     },
     locationDescription: {
       es: "En Trafalgar, dentro de Chamberí, una zona residencial con auténtica vida de barrio, mercados, restauración y conexiones rápidas con el centro de Madrid.",
@@ -91,6 +92,36 @@ window.propertyCatalog = [
     videos: ["/assets/properties/manuel-lafuente-trafalgar/video.mp4"]
   },
   {
+    slug: "menendez-pelayo-recoletos",
+    status: "sale",
+    location: "Menéndez Pelayo · Recoletos · Madrid",
+    title: {
+      es: "Menéndez Pelayo",
+      en: "Menéndez Pelayo"
+    },
+    price: { es: "2.390.000 €", en: "€2,390,000" },
+    priceValue: 2390000,
+    facts: {
+      es: ["Ático - última planta", "Terraza de 20 m²", "171 m²", "13.977 €/m²", "3 dormitorios", "3,5 baños", "A reformar"],
+      en: ["Penthouse - top floor", "20 m² terrace", "171 m²", "€13,977/m²", "3 bedrooms", "3.5 bathrooms", "To renovate"]
+    },
+    description: {
+      es: "Ático exterior exclusivo a reformar en la última planta de una finca clásica de 1936. La vivienda ofrece 171 m², con 151 m² catastrales —127 m² de vivienda y 24 m² comunes—, una terraza de 20 m², techos de 3 metros y orientación este. La distribución es personalizable, el estado legal está saneado y la propuesta contempla tres dormitorios y tres baños y medio.",
+      en: "An exclusive exterior penthouse to renovate on the top floor of a classical 1936 building. The property offers 171 m², including 151 cadastral m² —127 m² of private living space and 24 m² of common areas—, a 20 m² terrace, three-metre ceilings and an east-facing orientation. The layout can be personalised, the legal status is clear, and the proposal includes three bedrooms and three and a half bathrooms."
+    },
+    locationDescription: {
+      es: "En Menéndez Pelayo, junto al Retiro y en el corazón de Recoletos, una ubicación privilegiada del barrio de Salamanca con vistas despejadas, arquitectura clásica y excelentes conexiones.",
+      en: "On Menéndez Pelayo, beside El Retiro and in the heart of Recoletos, a privileged Salamanca district location with open views, classical architecture and excellent connections."
+    },
+    mapQuery: "Calle Menéndez Pelayo, Recoletos, Madrid",
+    mapArea: "recoletos",
+    layout: "/assets/properties/menendez-pelayo-recoletos/layout.png",
+    images: [
+      ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/menendez-pelayo-recoletos/0${number}.avif`),
+      "/assets/properties/menendez-pelayo-recoletos/06-estado-actual.svg"
+    ]
+  },
+  {
     slug: "serrano-castellana-604ec",
     status: "sale",
     location: "Serrano · Castellana · Madrid",
@@ -98,8 +129,8 @@ window.propertyCatalog = [
     price: { es: "3.530.000 €", en: "€3,530,000" },
     priceValue: 3530000,
     facts: {
-      es: ["191 m²", "3 dormitorios", "3 baños", "A reformar"],
-      en: ["191 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+      es: ["5.ª planta exterior", "Terraza", "191 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["5th floor, exterior", "Terrace", "191 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
     },
     description: {
       es: "Vivienda a reformar de gran potencial en una de las direcciones más prestigiosas del barrio de Salamanca, ideal para desarrollar un proyecto a medida.",
@@ -122,8 +153,8 @@ window.propertyCatalog = [
     price: { es: "2.890.000 €", en: "€2,890,000" },
     priceValue: 2890000,
     facts: {
-      es: ["276 m²", "4 dormitorios", "4 baños", "Reformado y amueblado"],
-      en: ["276 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"]
+      es: ["6.ª planta", "276 m²", "4 dormitorios", "4 baños", "Reformado y amueblado"],
+      en: ["6th floor", "276 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"]
     },
     description: {
       es: "Amplia vivienda exterior reformada y amueblada, con una distribución equilibrada en el barrio de Castellana.",
@@ -133,7 +164,7 @@ window.propertyCatalog = [
       es: "Una dirección tranquila en Castellana, dentro del barrio de Salamanca, próxima a Serrano y bien conectada con los principales ejes de la ciudad.",
       en: "A quiet Castellana address in the Salamanca district, close to Serrano and well connected to Madrid's principal avenues."
     },
-    mapQuery: "Calle Castelló, Madrid",
+    mapQuery: "Calle Castelló 98, Madrid",
     mapArea: "castellana",
     layout: "/assets/properties/castello-castellana/layout.jpg",
     images: [
@@ -149,8 +180,8 @@ window.propertyCatalog = [
     price: { es: "2.760.000 €", en: "€2,760,000" },
     priceValue: 2760000,
     facts: {
-      es: ["241 m²", "3 dormitorios", "3 baños", "A reformar"],
-      en: ["241 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+      es: ["3.ª planta exterior", "241 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["3rd floor, exterior", "241 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
     },
     description: {
       es: "Propiedad a reformar en una finca clásica, con techos altos, estancias amplias y una ubicación privilegiada en la calle López de Hoyos.",
@@ -172,8 +203,8 @@ window.propertyCatalog = [
     price: { es: "785.000 €", en: "€785,000" },
     priceValue: 785000,
     facts: {
-      es: ["68 m²", "2 dormitorios", "2 baños", "A reformar"],
-      en: ["68 m²", "2 bedrooms", "2 bathrooms", "To renovate"]
+      es: ["4.ª planta interior", "68 m²", "2 dormitorios", "2 baños", "A reformar"],
+      en: ["4th floor, interior", "68 m²", "2 bedrooms", "2 bathrooms", "To renovate"]
     },
     description: {
       es: "Piso interior luminoso de techos altos en una finca clásica rehabilitada, con una distribución flexible que permite proyectar hasta tres dormitorios en pleno barrio de Goya.",
@@ -202,11 +233,11 @@ window.propertyCatalog = [
     status: "sale",
     location: "Lombia · Goya · Madrid",
     title: { es: "Lombia", en: "Lombia" },
-    price: { es: "1.350.000 €", en: "€1,350,000" },
-    priceValue: 1350000,
+    price: { es: "1.295.000 €", en: "€1,295,000" },
+    priceValue: 1295000,
     facts: {
-      es: ["119 m²", "3 dormitorios", "3 baños", "A reformar"],
-      en: ["119 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+      es: ["6.ª planta - ático", "Terraza de 13 m²", "119 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["6th-floor penthouse", "13 m² terrace", "119 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
     },
     description: {
       es: "Ático exterior a reformar en una finca clásica, con una amplia terraza y estancias luminosas en pleno barrio de Goya.",
@@ -229,11 +260,11 @@ window.propertyCatalog = [
     status: "sale",
     location: "García de Paredes · Almagro · Chamberí · Madrid",
     title: { es: "García de Paredes", en: "García de Paredes" },
-    price: { es: "960.000 €", en: "€960,000" },
-    priceValue: 960000,
+    price: { es: "895.000 €", en: "€895,000" },
+    priceValue: 895000,
     facts: {
-      es: ["93 m²", "3 dormitorios", "3 baños", "A reformar"],
-      en: ["93 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+      es: ["6.ª planta interior", "93 m²", "3 dormitorios", "3 baños", "A reformar"],
+      en: ["6th floor, interior", "93 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
     },
     description: {
       es: "Vivienda a reformar de 93 m² con tres dormitorios y tres baños, situada en una finca clásica del barrio de Almagro.",

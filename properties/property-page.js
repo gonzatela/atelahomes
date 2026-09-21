@@ -12,7 +12,8 @@ function renderPropertyPage() {
     ? {
         statusRent: "Alquiler",
         statusSale: "Venta",
-        statusArchived: "Descatalogada",
+        statusSold: "Vendido",
+        statusRented: "Alquilado",
         back: "Todas las propiedades",
         gallery: "Galería",
         galleryIntro: "Recorre los espacios y detalles de la propiedad.",
@@ -34,7 +35,8 @@ function renderPropertyPage() {
     : {
         statusRent: "For rent",
         statusSale: "For sale",
-        statusArchived: "Off market",
+        statusSold: "Sold",
+        statusRented: "Rented",
         back: "All properties",
         gallery: "Gallery",
         galleryIntro: "Explore the property's spaces and details.",
@@ -61,7 +63,7 @@ function renderPropertyPage() {
   document.querySelector("[data-property-status]").textContent = property.status === "rent"
     ? copy.statusRent
     : property.status === "archived"
-      ? copy.statusArchived
+      ? property.closedStatus === "rented" ? copy.statusRented : copy.statusSold
       : copy.statusSale;
   document.querySelector("[data-property-location]").textContent = property.location;
   document.querySelector("[data-property-title]").textContent = property.title[language];
@@ -105,7 +107,7 @@ function renderPropertyPage() {
   const videoGallery = (property.videos || [])
     .map((video) => `
       <figure class="property-gallery-video">
-        <video controls preload="metadata" playsinline aria-label="${copy.propertyVideo}">
+        <video autoplay loop muted playsinline preload="auto" aria-label="${copy.propertyVideo}">
           <source src="${video}" type="video/mp4" />
         </video>
       </figure>
