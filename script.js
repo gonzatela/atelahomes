@@ -174,7 +174,7 @@ const translations = {
     footerPrivacy: "Política de Privacidad",
     footerCookies: "Política de Cookies",
     footerAdmin: "Área Administración",
-    footerCredit: "Creado por Atela Studio",
+    footerCredit: "Hecho por Gonzalo Atela Navarro",
     footerTop: "Volver arriba"
   },
   en: {
@@ -352,7 +352,7 @@ const translations = {
     footerPrivacy: "Privacy Policy",
     footerCookies: "Cookie Policy",
     footerAdmin: "Administration Area",
-    footerCredit: "Created by Atela Studio",
+    footerCredit: "Made by Gonzalo Atela Navarro",
     footerTop: "Back to top"
   }
 };
