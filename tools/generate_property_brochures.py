@@ -152,8 +152,7 @@ def draw_cover(
     pdf.drawString(42, 389 if branded else 436, property_data["operation"].upper())
     pdf.setFont("Times-Roman", 34)
     title = property_data["name"]
-    if len(title) > 24:
-        pdf.setFont("Times-Roman", 29)
+    pdf.setFont("Times-Roman", min(34, 288 / pdf.stringWidth(title, "Times-Roman", 1)))
     pdf.drawString(42, 337 if branded else 384, title)
     pdf.setFont("Helvetica", 9)
     pdf.drawString(42, 311 if branded else 358, property_data["location"].upper())

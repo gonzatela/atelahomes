@@ -2,6 +2,16 @@
 
 Actualización: 21 de septiembre de 2026.
 
+Serrano, 30 de septiembre: se mantienen dos registros distintos para los dos
+enlaces confirmados por el propietario: `serrano-castellana-604ec` (191 m²)
+y `serrano-con-hermanos-becquer` (241 m²). Este último se mostraba como López
+de Hoyos y pasa a usar el nombre comercial de Sophiq. Se actualizan sus diez
+imágenes, plano, 4 baños y 2 balcones. Se conservan la dirección López de Hoyos 7,
+3.ª izquierda exterior y 2.760.000 € confirmados previamente; el plano de origen
+se identifica como Planta-LH7. Se mantienen las rutas PDF lopez-de-hoyos por
+compatibilidad con descargas existentes.
+Fuente: https://www.sophiqproperties.com/propiedades/serrano-con-hermanos-becquer
+
 Actualización García de Paredes, 30 de septiembre de 2026:
 https://www.sophiqproperties.com/propiedades/garcia-de-paredes-almagro
 Se incorporan 2 baños, hasta 3 dormitorios, orientación sur, techos de 3 m

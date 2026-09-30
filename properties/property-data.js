@@ -175,17 +175,17 @@ window.propertyCatalog = [
   {
     slug: "serrano-con-hermanos-becquer",
     status: "sale",
-    location: "López de Hoyos · Madrid",
-    title: { es: "López de Hoyos", en: "López de Hoyos" },
+    location: "Serrano con Hermanos Bécquer · Castellana · Madrid",
+    title: { es: "Serrano con Hermanos Bécquer", en: "Serrano con Hermanos Bécquer" },
     price: { es: "2.760.000 €", en: "€2,760,000" },
     priceValue: 2760000,
     facts: {
-      es: ["3.ª planta izquierda - exterior", "241 m²", "3 dormitorios", "3 baños", "A reformar"],
-      en: ["3rd floor, left - exterior", "241 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+      es: ["3.ª planta izquierda - exterior", "241 m²", "3 dormitorios", "4 baños", "2 balcones", "A reformar"],
+      en: ["3rd floor, left - exterior", "241 m²", "3 bedrooms", "4 bathrooms", "2 balconies", "To renovate"]
     },
     description: {
-      es: "Propiedad a reformar en una finca clásica, con techos altos, estancias amplias y una ubicación privilegiada en la calle López de Hoyos.",
-      en: "A renovation opportunity in a classical building, with high ceilings, generous rooms and a privileged location on Calle López de Hoyos."
+      es: "Vivienda a reformar de 241 m² en una finca clásica de Castellana. Cuenta con tres dormitorios, cuatro baños y dos balcones. Sus techos altos y espacios amplios ofrecen posibilidades de personalización junto a Serrano y el Museo Lázaro Galdiano.",
+      en: "A 241 m² home to renovate in a classical building in Castellana, with three bedrooms, four bathrooms and two balconies. High ceilings and generous rooms offer scope for a personalised layout near Serrano and the Lázaro Galdiano Museum."
     },
     locationDescription: {
       es: "En la calle López de Hoyos, en un entorno residencial consolidado y bien conectado, con comercios, restaurantes y servicios a pocos minutos.",
@@ -193,7 +193,7 @@ window.propertyCatalog = [
     },
     mapQuery: "Calle López de Hoyos 7, Madrid",
     layout: "/assets/properties/serrano-con-hermanos-becquer/layout.png",
-    images: [1, 2, 3, 4, 5].map((number) => `/assets/properties/serrano-con-hermanos-becquer/0${number}.avif`)
+    images: Array.from({ length: 10 }, (_, index) => `/assets/properties/serrano-con-hermanos-becquer/${String(index + 1).padStart(2, "0")}.avif?v=20260930`)
   },
   {
     slug: "conde-de-penalver-goya",
