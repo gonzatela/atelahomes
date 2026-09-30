@@ -2,6 +2,14 @@
 
 Actualización: 21 de septiembre de 2026.
 
+Actualización García de Paredes, 30 de septiembre de 2026:
+https://www.sophiqproperties.com/propiedades/garcia-de-paredes-almagro
+Se incorporan 2 baños, hasta 3 dormitorios, orientación sur, techos de 3 m
+y las seis imágenes vigentes de la galería. Se conservan precio, dirección
+y planta confirmados por el propietario. Terraza sigue sin confirmar.
+El aviso de no disponibilidad y el plano genérico están ocultos mediante
+`w-condition-invisible` en la página de origen y no se incorporan.
+
 Los campos de dirección, planta y terraza se mantienen en `administracion/fichas.json`.
 La dirección se muestra solo en la versión Atela Homes; planta y terraza aparecen
 en ambas versiones. Los datos no confirmados se indican expresamente y no deben

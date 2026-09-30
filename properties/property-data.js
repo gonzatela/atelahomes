@@ -263,12 +263,12 @@ window.propertyCatalog = [
     price: { es: "895.000 €", en: "€895,000" },
     priceValue: 895000,
     facts: {
-      es: ["6.ª planta interior", "93 m²", "3 dormitorios", "3 baños", "A reformar"],
-      en: ["6th floor, interior", "93 m²", "3 bedrooms", "3 bathrooms", "To renovate"]
+      es: ["6.ª planta interior", "93 m²", "Hasta 3 dormitorios", "2 baños", "Orientación sur", "Techos de 3 m", "A reformar"],
+      en: ["6th floor, interior", "93 m²", "Up to 3 bedrooms", "2 bathrooms", "South-facing", "3 m ceilings", "To renovate"]
     },
     description: {
-      es: "Vivienda a reformar de 93 m² con tres dormitorios y tres baños, situada en una finca clásica del barrio de Almagro.",
-      en: "A 93 m² home to renovate, with three bedrooms and three bathrooms in a classical building in Almagro."
+      es: "Vivienda interior a reformar en Almagro, con orientación sur y luz directa desde un amplio patio. Sus 93 m² y techos de 3 metros permiten una distribución personalizable de hasta tres dormitorios y dos baños.",
+      en: "An interior home to renovate in Almagro, with a south-facing orientation and direct light from a spacious courtyard. Its 93 m² and three-metre ceilings allow a personalised layout with up to three bedrooms and two bathrooms."
     },
     locationDescription: {
       es: "En García de Paredes, dentro de Almagro y Chamberí, una zona elegante y tranquila con servicios, colegios y buenas conexiones.",
@@ -276,8 +276,7 @@ window.propertyCatalog = [
     },
     mapQuery: "Calle García de Paredes 78, Madrid",
     images: [
-      ...[1, 2, 3, 4, 5].map((number) => `/assets/properties/garcia-de-paredes-almagro/0${number}.avif`),
-      "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/697c94f382adc157fc0d3176_Gemini_Generated_Image_oo8nszoo8nszoo8n.jpeg"
+      ...[1, 2, 3, 4, 5, 6].map((number) => `/assets/properties/garcia-de-paredes-almagro/0${number}.avif?v=20260930`)
     ]
   }
 ];

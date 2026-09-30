@@ -153,10 +153,10 @@
     "location": "Almagro · Madrid",
     "operation": "Venta",
     "price": "895.000 €",
-    "facts": ["93 m²", "3 dormitorios", "3 baños", "A reformar"],
-    "description": "Vivienda a reformar con tres dormitorios y tres baños, situada en una finca clásica del barrio de Almagro.",
+    "facts": ["93 m²", "Hasta 3 dormitorios", "2 baños", "Orientación sur", "Techos de 3 m", "A reformar"],
+    "description": "Vivienda interior a reformar en Almagro, con orientación sur y luz directa desde un amplio patio. Sus 93 m² y techos de 3 metros permiten una distribución personalizable de hasta tres dormitorios y dos baños.",
     "cover": "../assets/properties/garcia-de-paredes-almagro/01.avif",
-    "images": ["../assets/properties/garcia-de-paredes-almagro/01.avif", "../assets/properties/garcia-de-paredes-almagro/02.avif", "../assets/properties/garcia-de-paredes-almagro/03.avif", "../assets/properties/garcia-de-paredes-almagro/04.avif", "../assets/properties/garcia-de-paredes-almagro/05.avif", "https://cdn.prod.website-files.com/64b575bbd916d938a1d6a406/697c94f382adc157fc0d3176_Gemini_Generated_Image_oo8nszoo8nszoo8n.jpeg"],
+    "images": ["../assets/properties/garcia-de-paredes-almagro/01.avif", "../assets/properties/garcia-de-paredes-almagro/02.avif", "../assets/properties/garcia-de-paredes-almagro/03.avif", "../assets/properties/garcia-de-paredes-almagro/04.avif", "../assets/properties/garcia-de-paredes-almagro/05.avif", "../assets/properties/garcia-de-paredes-almagro/06.avif"],
     "layout": null,
     "pdf": "garcia-de-paredes.pdf"
   }
