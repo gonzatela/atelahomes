@@ -88,8 +88,8 @@ function renderPropertyList() {
             <h2><a href="./${property.slug}/">${property.title[language]}</a></h2>
             <p class="property-features">${property.facts[language].join(" · ")}</p>
             ${property.formerOperations ? `<p class="property-availability-history">${property.formerOperations[language]}</p>` : ""}
-            <div class="property-footer ${property.priceValue == null ? "property-footer-without-price" : ""}">
-              ${property.priceValue == null ? "" : `<strong>${property.price[language]}</strong>`}
+            <div class="property-footer ${property.priceValue == null && !property.priceOnRequest ? "property-footer-without-price" : ""}">
+              ${property.priceValue == null && !property.priceOnRequest ? "" : `<strong>${property.price[language]}</strong>`}
               <a href="./${property.slug}/">${copy.view} <span aria-hidden="true">→</span></a>
             </div>
           </div>

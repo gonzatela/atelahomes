@@ -2,6 +2,16 @@
 
 Actualización: 21 de septiembre de 2026.
 
+Blanca de Navarra, incorporada el 30 de septiembre de 2026:
+https://www.sophiqproperties.com/propiedades/blanca-de-navarra-almagro
+223 m², 4.ª exterior, 3 dormitorios, 3 baños, 2 balcones y mirador,
+orientación sur, techos de 3,20 m, finca de 1927, a reformar.
+El texto de origen propone 3-4 dormitorios y 3 baños más aseo en la reforma;
+se explica como posibilidad en la descripción. Se incorporan ocho imágenes
+y el plano de distribución. Precio a consultar y número de calle pendiente
+hasta confirmación; no se deduce la dirección del código interno BN7.
+El aviso de no disponibilidad está oculto en el HTML de origen.
+
 Serrano, 30 de septiembre: se mantienen dos registros distintos para los dos
 enlaces confirmados por el propietario: `serrano-castellana-604ec` (191 m²)
 y `serrano-con-hermanos-becquer` (241 m²). Este último se mostraba como López

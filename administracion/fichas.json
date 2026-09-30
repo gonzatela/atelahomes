@@ -1,5 +1,37 @@
 [
   {
+  "slug": "blanca-de-navarra-almagro",
+  "name": "Blanca de Navarra",
+  "address": "Calle Blanca de Navarra, Madrid (n.º por confirmar)",
+  "floor": "4.ª planta exterior",
+  "terrace": "Terraza: por confirmar (2 balcones y mirador)",
+  "location": "Almagro · Madrid",
+  "operation": "Venta",
+  "price": "Precio a consultar",
+  "facts": [
+    "223 m²",
+    "3 dormitorios",
+    "3 baños",
+    "Orientación sur",
+    "Techos de 3,20 m",
+    "A reformar"
+  ],
+  "description": "Vivienda a reformar en una finca clásica de 1927. Su orientación sur, dos balcones y mirador aportan luz natural. La reforma permite proyectar tres o cuatro dormitorios, tres baños completos y un aseo de cortesía. Dispone de conserje y escalera de servicio.",
+  "cover": "../assets/properties/blanca-de-navarra-almagro/01.avif",
+  "images": [
+    "../assets/properties/blanca-de-navarra-almagro/01.avif",
+    "../assets/properties/blanca-de-navarra-almagro/02.avif",
+    "../assets/properties/blanca-de-navarra-almagro/03.avif",
+    "../assets/properties/blanca-de-navarra-almagro/04.avif",
+    "../assets/properties/blanca-de-navarra-almagro/05.avif",
+    "../assets/properties/blanca-de-navarra-almagro/06.avif",
+    "../assets/properties/blanca-de-navarra-almagro/07.avif",
+    "../assets/properties/blanca-de-navarra-almagro/08.avif"
+  ],
+  "layout": "../assets/properties/blanca-de-navarra-almagro/layout.jpeg",
+  "pdf": "blanca-de-navarra.pdf"
+},
+  {
     "slug": "menendez-pelayo-recoletos",
     "name": "Menéndez Pelayo",
     "address": "Menéndez Pelayo, 4, Madrid",

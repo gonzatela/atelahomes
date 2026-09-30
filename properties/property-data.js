@@ -1,5 +1,62 @@
 window.propertyCatalog = [
   {
+  "slug": "blanca-de-navarra-almagro",
+  "status": "sale",
+  "location": "Blanca de Navarra · Almagro · Chamberí · Madrid",
+  "title": {
+    "es": "Blanca de Navarra",
+    "en": "Blanca de Navarra"
+  },
+  "price": {
+    "es": "Precio a consultar",
+    "en": "Price on request"
+  },
+  "priceValue": null,
+  "priceOnRequest": true,
+  "facts": {
+    "es": [
+      "4.ª planta exterior",
+      "223 m²",
+      "3 dormitorios",
+      "3 baños",
+      "2 balcones y mirador",
+      "Orientación sur",
+      "Techos de 3,20 m",
+      "A reformar"
+    ],
+    "en": [
+      "4th floor, exterior",
+      "223 m²",
+      "3 bedrooms",
+      "3 bathrooms",
+      "2 balconies and a bay window",
+      "South-facing",
+      "3.20 m ceilings",
+      "To renovate"
+    ]
+  },
+  "description": {
+    "es": "Vivienda a reformar en una finca clásica de 1927. Su orientación sur, dos balcones y mirador aportan luz natural. La reforma permite proyectar tres o cuatro dormitorios, tres baños completos y un aseo de cortesía. Dispone de conserje y escalera de servicio.",
+    "en": "A home to renovate in a classical 1927 building. Its south-facing orientation, two balconies and bay window provide natural light. The renovation can accommodate three or four bedrooms, three full bathrooms and a guest WC. The building has a concierge and service staircase."
+  },
+  "locationDescription": {
+    "es": "En la calle Blanca de Navarra, en Almagro, Chamberí, Madrid.",
+    "en": "On Calle Blanca de Navarra in Almagro, Chamberí, Madrid."
+  },
+  "mapQuery": "Calle Blanca de Navarra, Madrid",
+  "layout": "/assets/properties/blanca-de-navarra-almagro/layout.jpeg",
+  "images": [
+    "/assets/properties/blanca-de-navarra-almagro/01.avif",
+    "/assets/properties/blanca-de-navarra-almagro/02.avif",
+    "/assets/properties/blanca-de-navarra-almagro/03.avif",
+    "/assets/properties/blanca-de-navarra-almagro/04.avif",
+    "/assets/properties/blanca-de-navarra-almagro/05.avif",
+    "/assets/properties/blanca-de-navarra-almagro/06.avif",
+    "/assets/properties/blanca-de-navarra-almagro/07.avif",
+    "/assets/properties/blanca-de-navarra-almagro/08.avif"
+  ]
+},
+  {
     slug: "jeronimos-retiro",
     status: "sale",
     location: "Alberto Bosch · Jerónimos · Madrid",
