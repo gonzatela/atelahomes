@@ -91,8 +91,8 @@
     "price": "1.225.000 €",
     "facts": ["97 m² construidos", "86 m² útiles", "2 dormitorios", "2 baños", "Reformado"],
     "description": "Vivienda interior renovada y luminosa junto al Retiro, con dos dormitorios, dos baños y estancias amplias.",
-    "cover": "../assets/properties/alberto-bosch/01.webp",
-    "images": ["../assets/properties/alberto-bosch/01.webp", "../assets/properties/alberto-bosch/02.webp", "../assets/properties/alberto-bosch/03.webp", "../assets/properties/alberto-bosch/04.webp", "../assets/properties/alberto-bosch/05.webp", "../assets/properties/alberto-bosch/06.webp", "../assets/properties/alberto-bosch/07.webp", "../assets/properties/alberto-bosch/08.webp", "../assets/properties/alberto-bosch/09.webp", "../assets/properties/alberto-bosch/10.webp", "../assets/properties/alberto-bosch/11.webp", "../assets/properties/alberto-bosch/12.webp"],
+    "cover": "../assets/properties/alberto-bosch/2026-10-12-01.jpeg",
+    "images": ["../assets/properties/alberto-bosch/2026-10-12-01.jpeg", "../assets/properties/alberto-bosch/2026-10-12-02.jpeg", "../assets/properties/alberto-bosch/2026-10-12-03.jpeg", "../assets/properties/alberto-bosch/2026-10-12-04.jpeg", "../assets/properties/alberto-bosch/2026-10-12-05.jpeg", "../assets/properties/alberto-bosch/2026-10-12-06.jpeg", "../assets/properties/alberto-bosch/2026-10-12-07.jpeg", "../assets/properties/alberto-bosch/2026-10-12-08.jpeg"],
     "layout": null,
     "pdf": "alberto-bosch-interior.pdf"
   },

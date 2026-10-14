@@ -105,7 +105,7 @@ window.propertyCatalog = [
     },
     mapQuery: "Calle Alberto Bosch 14, Madrid",
     mapArea: "jeronimos",
-    images: Array.from({ length: 12 }, (_, index) => `/assets/properties/alberto-bosch/${String(index + 1).padStart(2, "0")}.webp`)
+    images: Array.from({ length: 8 }, (_, index) => `/assets/properties/alberto-bosch/2026-10-12-${String(index + 1).padStart(2, "0")}.jpeg`)
   },
   {
     slug: "manuel-lafuente-trafalgar",

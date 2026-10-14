@@ -86,3 +86,8 @@ Dependencias: Pillow (con soporte AVIF) y reportlab. Las imágenes remotas requi
 Alberto Bosch exterior, 14 de octubre de 2026: se sustituyen las quince fotos
 anteriores por las diez imágenes de WhatsApp del 12 de octubre aportadas por
 el propietario. Se usan los mismos originales en portada, galería y fichas PDF.
+
+Alberto Bosch interior, 14 de octubre de 2026: se sustituyen las doce fotos
+anteriores por las ocho imágenes de WhatsApp del 12 de octubre aportadas por
+el propietario. La foto horizontal del salón de las 22.47.14 es la portada.
+Se usan los mismos originales en el catálogo, la administración y las fichas PDF.
