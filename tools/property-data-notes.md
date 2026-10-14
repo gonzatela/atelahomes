@@ -1,6 +1,15 @@
 # Datos de las fichas
 
-Actualización: 21 de septiembre de 2026.
+Actualización: 14 de octubre de 2026.
+
+Cambios confirmados por el propietario el 14 de octubre de 2026:
+- Blanca de Navarra: precio de venta 3.220.000 €.
+- Modesto Lafuente: vivienda reformada; se corrigen el estado y la descripción.
+- Castelló 98: superficie comercializada 225 m², formada por 173 m² de vivienda
+  según catastro y 52 m² de comunes computados. Las zonas comunes anexas suman
+  103 m² (lobby de entrada, plaza de garaje, trastero y tres ascensores);
+  se cuenta la mitad, 51,5 m², redondeada a 52 m².
+Estos datos sustituyen los anteriores en el catálogo y las fichas descargables.
 
 Blanca de Navarra, incorporada el 30 de septiembre de 2026:
 https://www.sophiqproperties.com/propiedades/blanca-de-navarra-almagro
@@ -8,8 +17,9 @@ https://www.sophiqproperties.com/propiedades/blanca-de-navarra-almagro
 orientación sur, techos de 3,20 m, finca de 1927, a reformar.
 El texto de origen propone 3-4 dormitorios y 3 baños más aseo en la reforma;
 se explica como posibilidad en la descripción. Se incorporan ocho imágenes
-y el plano de distribución. Precio a consultar y número de calle pendiente
-hasta confirmación; no se deduce la dirección del código interno BN7.
+y el plano de distribución. El precio inicial era a consultar, confirmado
+el 14 de octubre en 3.220.000 €. El número de calle sigue pendiente
+de confirmación; no se deduce la dirección del código interno BN7.
 El aviso de no disponibilidad está oculto en el HTML de origen.
 
 Serrano, 30 de septiembre: se mantienen dos registros distintos para los dos

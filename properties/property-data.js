@@ -8,11 +8,10 @@ window.propertyCatalog = [
     "en": "Blanca de Navarra"
   },
   "price": {
-    "es": "Precio a consultar",
-    "en": "Price on request"
+    "es": "3.220.000 €",
+    "en": "€3,220,000"
   },
-  "priceValue": null,
-  "priceOnRequest": true,
+  "priceValue": 3220000,
   "facts": {
     "es": [
       "4.ª planta exterior",
@@ -132,11 +131,11 @@ window.propertyCatalog = [
       }
     },
     facts: {
-      es: ["1.ª planta interior", "61 m² construidos", "2 dormitorios", "1 baño", "A reformar"],
+      es: ["1.ª planta interior", "61 m² construidos", "2 dormitorios", "1 baño", "Reformado"],
       en: ["1st floor, interior", "61 m² built", "2 bedrooms", "1 bathroom", "Renovated"]
     },
     description: {
-      es: "Vivienda interior a reformar que aprovecha al máximo cada metro cuadrado. Cuenta con salón-cocina de concepto abierto, dos dormitorios, un baño completo y una zona independiente para lavadora y secadora. Todas las estancias tienen ventana a patio y disfrutan de buena luz natural en un entorno tranquilo. La finca data de 1927 y cuenta con certificado energético E, 160 € mensuales de comunidad y 300 € de IBI anual.",
+      es: "Vivienda interior reformada que aprovecha al máximo cada metro cuadrado. Cuenta con salón-cocina de concepto abierto, dos dormitorios, un baño completo y una zona independiente para lavadora y secadora. Todas las estancias tienen ventana a patio y disfrutan de buena luz natural en un entorno tranquilo. La finca data de 1927 y cuenta con certificado energético E, 160 € mensuales de comunidad y 300 € de IBI anual.",
       en: "A renovated interior home, designed to make the most of every square metre. It features an open-plan living room and kitchen, two bedrooms, one full bathroom and a separate laundry area. Every room has a window onto a courtyard and enjoys good natural light in a quiet setting. The building dates from 1927 and has an E energy rating, monthly community fees of €160 and annual property tax of €300."
     },
     locationDescription: {
@@ -210,12 +209,12 @@ window.propertyCatalog = [
     price: { es: "2.890.000 €", en: "€2,890,000" },
     priceValue: 2890000,
     facts: {
-      es: ["6.ª planta exterior", "276 m²", "4 dormitorios", "4 baños", "Reformado y amueblado"],
-      en: ["6th floor, exterior", "276 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"]
+      es: ["6.ª planta exterior", "225 m²", "4 dormitorios", "4 baños", "Reformado y amueblado"],
+      en: ["6th floor, exterior", "225 m²", "4 bedrooms", "4 bathrooms", "Renovated and furnished"]
     },
     description: {
-      es: "Amplia vivienda exterior reformada y amueblada, con una distribución equilibrada en el barrio de Castellana.",
-      en: "A spacious renovated and furnished exterior home with a balanced layout in the Castellana neighbourhood."
+      es: "Amplia vivienda exterior reformada y amueblada, con una distribución equilibrada en el barrio de Castellana. La superficie comercializada es de 225 m²: 173 m² de vivienda según catastro y 52 m² computados de zonas comunes. Las zonas comunes anexas suman 103 m² e incluyen lobby de entrada, plaza de garaje, trastero y tres ascensores; se computa solo la mitad, redondeada a 52 m².",
+      en: "A spacious renovated and furnished exterior home with a balanced layout in the Castellana neighbourhood. The marketed area is 225 m²: 173 m² of living space according to cadastral records and 52 m² counted from common areas. The attached common areas total 103 m² and include the entrance lobby, parking space, storage room and three lifts; only half is counted, rounded to 52 m²."
     },
     locationDescription: {
       es: "Una dirección tranquila en Castellana, dentro del barrio de Salamanca, próxima a Serrano y bien conectada con los principales ejes de la ciudad.",
