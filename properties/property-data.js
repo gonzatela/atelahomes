@@ -79,7 +79,7 @@ window.propertyCatalog = [
     },
     mapQuery: "Calle Alberto Bosch 14, Madrid",
     mapArea: "jeronimos",
-    images: Array.from({ length: 15 }, (_, index) => `/assets/properties/jeronimos-retiro/${String(index + 1).padStart(2, "0")}.jpeg`)
+    images: Array.from({ length: 10 }, (_, index) => `/assets/properties/jeronimos-retiro/2026-10-12-${String(index + 1).padStart(2, "0")}.jpeg`)
   },
   {
     slug: "alberto-bosch-interior",

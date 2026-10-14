@@ -75,8 +75,8 @@
     "price": "1.390.000 €",
     "facts": ["97 m² construidos", "86 m² útiles", "2 dormitorios", "1 baño", "Reformado"],
     "description": "Vivienda exterior renovada y luminosa junto al Retiro, con balcones y una distribución funcional.",
-    "cover": "../assets/properties/jeronimos-retiro/01.jpeg",
-    "images": ["../assets/properties/jeronimos-retiro/01.jpeg", "../assets/properties/jeronimos-retiro/02.jpeg", "../assets/properties/jeronimos-retiro/03.jpeg", "../assets/properties/jeronimos-retiro/04.jpeg", "../assets/properties/jeronimos-retiro/05.jpeg", "../assets/properties/jeronimos-retiro/06.jpeg", "../assets/properties/jeronimos-retiro/07.jpeg", "../assets/properties/jeronimos-retiro/08.jpeg", "../assets/properties/jeronimos-retiro/09.jpeg", "../assets/properties/jeronimos-retiro/10.jpeg", "../assets/properties/jeronimos-retiro/11.jpeg", "../assets/properties/jeronimos-retiro/12.jpeg", "../assets/properties/jeronimos-retiro/13.jpeg", "../assets/properties/jeronimos-retiro/14.jpeg", "../assets/properties/jeronimos-retiro/15.jpeg"],
+    "cover": "../assets/properties/jeronimos-retiro/2026-10-12-01.jpeg",
+    "images": ["../assets/properties/jeronimos-retiro/2026-10-12-01.jpeg", "../assets/properties/jeronimos-retiro/2026-10-12-02.jpeg", "../assets/properties/jeronimos-retiro/2026-10-12-03.jpeg", "../assets/properties/jeronimos-retiro/2026-10-12-04.jpeg", "../assets/properties/jeronimos-retiro/2026-10-12-05.jpeg", "../assets/properties/jeronimos-retiro/2026-10-12-06.jpeg", "../assets/properties/jeronimos-retiro/2026-10-12-07.jpeg", "../assets/properties/jeronimos-retiro/2026-10-12-08.jpeg", "../assets/properties/jeronimos-retiro/2026-10-12-09.jpeg", "../assets/properties/jeronimos-retiro/2026-10-12-10.jpeg"],
     "layout": null,
     "pdf": "alberto-bosch-exterior.pdf"
   },

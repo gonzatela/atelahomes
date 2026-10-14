@@ -82,3 +82,7 @@ Los números de calle no se deducen de direcciones de agencias ni de mapas aprox
 
 Generación: `python tools/generate_property_brochures.py`.
 Dependencias: Pillow (con soporte AVIF) y reportlab. Las imágenes remotas requieren red.
+
+Alberto Bosch exterior, 14 de octubre de 2026: se sustituyen las quince fotos
+anteriores por las diez imágenes de WhatsApp del 12 de octubre aportadas por
+el propietario. Se usan los mismos originales en portada, galería y fichas PDF.
