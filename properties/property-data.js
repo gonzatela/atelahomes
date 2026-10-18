@@ -71,7 +71,8 @@ window.propertyCatalog = [
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/acceso-calle.webp",
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/entorno-acceso.webp",
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/sotano.webp",
-    "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/sotano-detalle.webp"
+    "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/sotano-detalle.webp",
+    "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/sotano-montaje-ia.webp"
   ],
   "imageDetails": {
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/salon.webp": {
@@ -156,6 +157,13 @@ window.propertyCatalog = [
       "alt": {
         "es": "Otra vista del local en sótano en su estado actual · Avenida de Baviera 18",
         "en": "Another view of the basement unit in its current condition · Avenida de Baviera 18"
+      }
+    },
+    "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/sotano-montaje-ia.webp": {
+      "aiModified": true,
+      "alt": {
+        "es": "Montaje con dos vistas del sótano modificadas con IA · Avenida de Baviera 18",
+        "en": "Collage of two AI-modified views of the basement · Avenida de Baviera 18"
       }
     }
   },
