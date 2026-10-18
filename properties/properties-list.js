@@ -80,7 +80,7 @@ function renderPropertyList() {
       (property) => `
         <article class="property-card">
           <a class="property-media" href="./${property.slug}/" aria-label="${copy.view}: ${property.location}">
-            <img src="${property.images[0]}" alt="${property.title[language]}" loading="lazy" />
+            <img src="${property.images[0]}" alt="${property.imageDetails?.[property.images[0]]?.alt?.[language] || property.title[language]}" loading="lazy" />
             <span class="property-status">${propertyStatus(property, language)}</span>
           </a>
           <div class="property-copy">

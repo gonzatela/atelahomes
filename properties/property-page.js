@@ -73,6 +73,8 @@ function renderPropertyPage() {
     .map((fact) => `<li>${fact}</li>`)
     .join("");
 
+  const heroAlt = property.imageDetails?.[property.images[0]]?.alt?.[language];
+  if (heroAlt) document.querySelector("[data-property-hero-image]")?.setAttribute("alt", heroAlt);
   let rentalSection = document.querySelector("[data-property-rental]");
   if (property.rentalDetails) {
     if (!rentalSection) {
@@ -94,12 +96,26 @@ function renderPropertyPage() {
   } else {
     rentalSection?.remove();
   }
+  let technicalSection = document.querySelector("[data-property-technical]");
+  if (property.technicalDetails) {
+    if (!technicalSection) {
+      technicalSection = document.createElement("section");
+      technicalSection.className = "property-rental-details editorial-section";
+      technicalSection.setAttribute("data-property-technical", "");
+      document.querySelector(".property-detail-overview").insertAdjacentElement("afterend", technicalSection);
+    }
+    technicalSection.innerHTML = `<div class="property-rental-heading"><h2>${property.technicalDetails.title[language]}</h2></div><ul class="property-rental-facts">${property.technicalDetails.facts[language].map((fact) => `<li>${fact}</li>`).join("")}</ul>`;
+  } else {
+    technicalSection?.remove();
+  }
+  const aiLabel = language === "es" ? "Imagen modificada con IA" : "AI-modified image";
   const imageGallery = property.images
-    .slice(1)
+    .slice(property.includeHeroInGallery ? 0 : 1)
     .map((image, index) => `
       <figure>
         <button class="property-gallery-open" type="button" data-gallery-index="${index}" aria-label="${copy.openImage}: ${index + 1}">
-          <img src="${image}" alt="${property.title[language]} - ${index + 1}" ${index ? 'loading="lazy"' : ""} />
+          <img src="${image}" alt="${property.imageDetails?.[image]?.alt?.[language] || `${property.title[language]} - ${index + 1}`}" ${index ? 'loading="lazy"' : ""} />
+          ${property.imageDetails?.[image]?.aiModified ? `<span class="property-image-label">${aiLabel}</span>` : ""}
         </button>
       </figure>
     `)
@@ -116,6 +132,7 @@ function renderPropertyPage() {
   document.querySelector("[data-property-gallery]").innerHTML = imageGallery + videoGallery;
 
   updateLightboxCopy(copy);
+  if (!lightbox.hidden) updateLightboxImage();
 
   const layoutSection = document.querySelector("[data-property-layout-section]");
   layoutSection.hidden = !property.layout;
@@ -172,6 +189,7 @@ lightbox.innerHTML = `
   <button type="button" class="property-lightbox-nav property-lightbox-prev" data-lightbox-prev>‹</button>
   <figure class="property-lightbox-figure">
     <img data-lightbox-image alt="" />
+    <figcaption class="property-image-label" data-lightbox-image-label hidden></figcaption>
   </figure>
   <button type="button" class="property-lightbox-nav property-lightbox-next" data-lightbox-next>›</button>
 `;
@@ -197,6 +215,10 @@ function updateLightboxImage() {
   const image = lightbox.querySelector("[data-lightbox-image]");
   image.src = thumbnail.currentSrc || thumbnail.src;
   image.alt = thumbnail.alt;
+  const label = galleryItems[lightboxIndex].querySelector(".property-image-label");
+  const caption = lightbox.querySelector("[data-lightbox-image-label]");
+  caption.hidden = !label;
+  caption.textContent = label?.textContent || "";
   lightbox.querySelector("[data-lightbox-counter]").textContent = `${lightboxIndex + 1} / ${galleryItems.length}`;
 }
 
