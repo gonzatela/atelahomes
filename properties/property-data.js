@@ -2,10 +2,10 @@ window.propertyCatalog = [
   {
   "slug": "avenida-de-baviera-parque-de-las-avenidas",
   "status": "sale",
-  "location": "Avenida de Baviera 18 · Parque de las Avenidas · Madrid",
+  "location": "Avenida de Baviera · Parque de las Avenidas · Madrid",
   "title": {
-    "es": "Avenida de Baviera, 18",
-    "en": "Avenida de Baviera, 18"
+    "es": "Avenida de Baviera",
+    "en": "Avenida de Baviera"
   },
   "price": {
     "es": "895.000 €",
@@ -53,10 +53,10 @@ window.propertyCatalog = [
     }
   },
   "locationDescription": {
-    "es": "En Avenida de Baviera, 18, en el Parque de las Avenidas, Madrid. Un entorno residencial consolidado para disfrutar de la vida de barrio.",
-    "en": "At Avenida de Baviera 18, in Parque de las Avenidas, Madrid. An established residential setting with a neighbourhood atmosphere."
+    "es": "En Avenida de Baviera, en el Parque de las Avenidas, Madrid. Un entorno residencial consolidado para disfrutar de la vida de barrio.",
+    "en": "At Avenida de Baviera, in Parque de las Avenidas, Madrid. An established residential setting with a neighbourhood atmosphere."
   },
-  "mapQuery": "Avenida de Baviera 18, Madrid",
+  "mapQuery": "Avenida de Baviera, Madrid",
   "images": [
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/salon.webp",
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/salon-ventana.webp",
@@ -77,93 +77,93 @@ window.propertyCatalog = [
   "imageDetails": {
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/salon.webp": {
       "alt": {
-        "es": "Salón en su estado actual · Avenida de Baviera 18",
-        "en": "Living room in its current condition · Avenida de Baviera 18"
+        "es": "Salón en su estado actual · Avenida de Baviera",
+        "en": "Living room in its current condition · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/salon-ventana.webp": {
       "alt": {
-        "es": "Salón y ventana · Avenida de Baviera 18",
-        "en": "Living room and window · Avenida de Baviera 18"
+        "es": "Salón y ventana · Avenida de Baviera",
+        "en": "Living room and window · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/dormitorio-principal.webp": {
       "alt": {
-        "es": "Dormitorio con armario empotrado · Avenida de Baviera 18",
-        "en": "Bedroom with built-in wardrobe · Avenida de Baviera 18"
+        "es": "Dormitorio con armario empotrado · Avenida de Baviera",
+        "en": "Bedroom with built-in wardrobe · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/dormitorio.webp": {
       "alt": {
-        "es": "Dormitorio en su estado actual · Avenida de Baviera 18",
-        "en": "Bedroom in its current condition · Avenida de Baviera 18"
+        "es": "Dormitorio en su estado actual · Avenida de Baviera",
+        "en": "Bedroom in its current condition · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/estancia.webp": {
       "alt": {
-        "es": "Estancia con ventana y parquet · Avenida de Baviera 18",
-        "en": "Room with window and parquet floor · Avenida de Baviera 18"
+        "es": "Estancia con ventana y parquet · Avenida de Baviera",
+        "en": "Room with window and parquet floor · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/cocina.webp": {
       "alt": {
-        "es": "Cocina reformada · Avenida de Baviera 18",
-        "en": "Renovated kitchen · Avenida de Baviera 18"
+        "es": "Cocina reformada · Avenida de Baviera",
+        "en": "Renovated kitchen · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/lavanderia.webp": {
       "alt": {
-        "es": "Zona independiente de lavandería · Avenida de Baviera 18",
-        "en": "Separate laundry area · Avenida de Baviera 18"
+        "es": "Zona independiente de lavandería · Avenida de Baviera",
+        "en": "Separate laundry area · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/bano-adaptado.webp": {
       "alt": {
-        "es": "Baño adaptado con ducha a ras de suelo · Avenida de Baviera 18",
-        "en": "Adapted bathroom with level-access shower · Avenida de Baviera 18"
+        "es": "Baño adaptado con ducha a ras de suelo · Avenida de Baviera",
+        "en": "Adapted bathroom with level-access shower · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/segundo-bano.webp": {
       "alt": {
-        "es": "Segundo baño adaptado con ducha · Avenida de Baviera 18",
-        "en": "Second adapted bathroom with shower · Avenida de Baviera 18"
+        "es": "Segundo baño adaptado con ducha · Avenida de Baviera",
+        "en": "Second adapted bathroom with shower · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/acceso-interior.webp": {
       "alt": {
-        "es": "Recibidor y acceso desde el edificio · Avenida de Baviera 18",
-        "en": "Entrance hall and access from the building · Avenida de Baviera 18"
+        "es": "Recibidor y acceso desde el edificio · Avenida de Baviera",
+        "en": "Entrance hall and access from the building · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/acceso-calle.webp": {
       "alt": {
-        "es": "Estancia junto al acceso directo desde la calle · Avenida de Baviera 18",
-        "en": "Room beside direct street access · Avenida de Baviera 18"
+        "es": "Estancia junto al acceso directo desde la calle · Avenida de Baviera",
+        "en": "Room beside direct street access · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/entorno-acceso.webp": {
       "alt": {
-        "es": "Entorno y acceso junto al edificio · Avenida de Baviera 18",
-        "en": "Surroundings and access beside the building · Avenida de Baviera 18"
+        "es": "Entorno y acceso junto al edificio · Avenida de Baviera",
+        "en": "Surroundings and access beside the building · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/sotano.webp": {
       "alt": {
-        "es": "Estado actual del local en sótano de uso de oficinas · Avenida de Baviera 18",
-        "en": "Current condition of the basement office unit · Avenida de Baviera 18"
+        "es": "Estado actual del local en sótano de uso de oficinas · Avenida de Baviera",
+        "en": "Current condition of the basement office unit · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/sotano-detalle.webp": {
       "alt": {
-        "es": "Otra vista del local en sótano en su estado actual · Avenida de Baviera 18",
-        "en": "Another view of the basement unit in its current condition · Avenida de Baviera 18"
+        "es": "Otra vista del local en sótano en su estado actual · Avenida de Baviera",
+        "en": "Another view of the basement unit in its current condition · Avenida de Baviera"
       }
     },
     "/assets/properties/avenida-de-baviera-parque-de-las-avenidas/sotano-montaje-ia.webp": {
       "aiModified": true,
       "alt": {
-        "es": "Montaje con dos vistas del sótano modificadas con IA · Avenida de Baviera 18",
-        "en": "Collage of two AI-modified views of the basement · Avenida de Baviera 18"
+        "es": "Montaje con dos vistas del sótano modificadas con IA · Avenida de Baviera",
+        "en": "Collage of two AI-modified views of the basement · Avenida de Baviera"
       }
     }
   },
