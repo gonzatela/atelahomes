@@ -188,8 +188,10 @@ lightbox.innerHTML = `
   </div>
   <button type="button" class="property-lightbox-nav property-lightbox-prev" data-lightbox-prev>‹</button>
   <figure class="property-lightbox-figure">
-    <img data-lightbox-image alt="" />
-    <figcaption class="property-image-label" data-lightbox-image-label hidden></figcaption>
+    <div class="property-lightbox-image-wrap">
+      <img data-lightbox-image alt="" />
+      <span class="property-image-label" data-lightbox-image-label hidden></span>
+    </div>
   </figure>
   <button type="button" class="property-lightbox-nav property-lightbox-next" data-lightbox-next>›</button>
 `;

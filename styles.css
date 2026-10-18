@@ -4116,4 +4116,5 @@ section[id], div[id] {
   pointer-events: none;
 }
 .property-image-label[hidden] { display: none; }
-.property-lightbox-figure .property-image-label { right: 16px; bottom: 28px; }
+.property-lightbox-image-wrap { position: relative; min-width: 0; min-height: 0; }
+.property-lightbox-figure .property-image-label { right: 8px; bottom: 8px; }
